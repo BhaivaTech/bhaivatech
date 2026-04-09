@@ -8,14 +8,18 @@
     --white: #ffffff;
     --blue-glow: rgba(0, 86, 210, 0.05);
 }
+
 h2 {
-	font-size: 40px;
-	font-weight: 700;
-	color: var(--text-dark);
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--text-dark);
 
 }
+
 /* reset css */
-*, :after, :before {
+*,
+:after,
+:before {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -41,30 +45,43 @@ body::before {
     width: 100%;
     height: 100%;
     background: radial-gradient(circle at 80% 20%, var(--blue-glow) 0%, transparent 50%),
-                radial-gradient(circle at 20% 80%, var(--blue-glow) 0%, transparent 50%);
+        radial-gradient(circle at 20% 80%, var(--blue-glow) 0%, transparent 50%);
     z-index: -1;
     pointer-events: none;
 }
 
-img { width: 100%; display: block; }
-ul, li { list-style: none; margin: 0; padding: 0; }
-a { 
-    text-decoration: none !important; 
+img {
+    width: 100%;
+    display: block;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none !important;
     display: flex;
     align-items: center;
-    font-size: 16px; 
-    cursor: pointer; 
+    font-size: 16px;
+    cursor: pointer;
     color: inherit;
     transition: all 0.3s ease;
 }
 
-select, input, textarea, button { 
-    width: 100%; 
-    border: none; 
-    outline: none; 
-    background: transparent; 
-    cursor: pointer; 
-    font-size: 16px; 
+select,
+input,
+textarea,
+button {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 16px;
     font-family: inherit;
     display: flex;
 }
@@ -123,7 +140,8 @@ nav ul li a {
     color: var(--text-dark);
 }
 
-nav ul li a:hover, nav ul li a.active {
+nav ul li a:hover,
+nav ul li a.active {
     color: var(--primary-blue);
 }
 
@@ -247,25 +265,41 @@ nav ul li a:hover, nav ul li a.active {
 }
 
 @media (max-width: 992px) {
-    .hero-section .fluid-container {
+   .hero-section .fluid-container {
 	flex-direction: column;
 	text-align: center;
-	gap: 22px;
+	gap: 5px;
 }
+
     .hero-content {
         align-items: center;
     }
-    nav { display: none; }
-    .hero-image { justify-content: center; }
+
+    nav {
+        display: none;
+    }
+
+    .hero-image {
+        justify-content: center;
+    }
 }
 
 @media (max-width: 640px) {
-    .fluid-container { padding: 0 20px; }
+    .fluid-container {
+        padding: 0 20px;
+    }
+
     .button-group {
         flex-direction: column;
         width: 100%;
     }
-    .button-group a { justify-content: center; }
+
+    .button-group a {
+        justify-content: center;
+    }
+    .project-swiper {
+	padding-bottom: 40px;
+}
 }
 
 /* Portfolio Section */
@@ -317,16 +351,15 @@ nav ul li a:hover, nav ul li a.active {
 }
 
 .project-card {
-	display: flex;
-	flex-direction: column;
-	gap: 20px;
-	transition: transform 0.3s ease;
-	width: 100%;
-	height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: transform 0.3s ease;
+    width: 100%;
+    height: 100%;
 }
-.project-card:hover {
-    transform: translateY(-8px);
-}
+
+
 
 .project-image-container {
     width: 100%;
@@ -344,13 +377,10 @@ nav ul li a:hover, nav ul li a.active {
     width: 100%;
     height: auto;
     max-height: 85%;
-    filter: drop-shadow(0 20px 30px rgba(0,0,0,0.15));
+    filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.15));
     transition: transform 0.3s ease;
 }
 
-.project-card:hover .project-image-container svg {
-    transform: scale(1.05);
-}
 
 .tag-group {
     display: flex;
@@ -384,8 +414,8 @@ nav ul li a:hover, nav ul li a.active {
 }
 
 .pricing-section {
-	padding: 0 0 100px;
-	background-color: var(--white);
+    padding: 0 0 100px;
+    background-color: var(--white);
 }
 
 .dark-card-wrapper {
@@ -406,7 +436,7 @@ nav ul li a:hover, nav ul li a.active {
 
     color: var(--white);
     margin-bottom: 48px;
-   
+
 }
 
 .features-list-grid {
@@ -424,7 +454,7 @@ nav ul li a:hover, nav ul li a.active {
 .feature-item .icon-box {
     width: 40px;
     height: 40px;
-    background: rgba(255,255,255,0.05);
+    background: rgba(255, 255, 255, 0.05);
     color: var(--white);
     border-radius: 8px;
 }
@@ -437,7 +467,7 @@ nav ul li a:hover, nav ul li a.active {
 
 .feature-item p {
     font-size: 14px;
-    color: rgba(255,255,255,0.6);
+    color: rgba(255, 255, 255, 0.6);
     margin: 0;
     line-height: 1.4;
 }
@@ -447,13 +477,13 @@ nav ul li a:hover, nav ul li a.active {
     background: #1F2937;
     padding: 40px;
     border-radius: 24px;
-    border: 1px solid rgba(255,255,255,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .pricing-cta-card span {
     font-size: 12px;
     font-weight: 700;
-    color: rgba(255,255,255,0.5);
+    color: rgba(255, 255, 255, 0.5);
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 12px;
@@ -512,18 +542,27 @@ nav ul li a:hover, nav ul li a.active {
         padding: 60px 40px;
         gap: 60px;
     }
-    .features-list-grid { gap: 30px; }
+
+    .features-list-grid {
+        gap: 30px;
+    }
 }
 
 @media (max-width: 640px) {
-    .features-list-grid { grid-template-columns: 1fr; }
-    .price-amount { font-size: 40px; }
+    .features-list-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .price-amount {
+        font-size: 40px;
+    }
 }
 
 .cta-section {
-	padding: 70px 0 80px;
-	text-align: center;
+    padding: 70px 0 80px;
+    text-align: center;
 }
+
 .cta-section .fluid-container {
     flex-direction: column;
     align-items: center;
@@ -560,18 +599,18 @@ nav ul li a:hover, nav ul li a.active {
 
 /* Main Footer */
 .main-footer {
-	padding: 80px 0 0;
-	border-top: 1px solid #eee;
-	background-color: var(--white);
+    padding: 80px 0 0;
+    border-top: 1px solid #eee;
+    background-color: var(--white);
 }
 
 .footer-grid {
-	display: flex;
-	gap: 60px;
-	width: 100%;
-	justify-content: space-between;
-	align-items: stretch;
-	padding: 0 0 30px;
+    display: flex;
+    gap: 60px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 0 0 30px;flex-wrap: wrap;
 }
 
 .footer-col h4 {
@@ -584,11 +623,11 @@ nav ul li a:hover, nav ul li a.active {
 }
 
 .footer-description {
-	font-size: 15px;
-	color: var(--text-muted);
-	line-height: 1.6;
-	margin: 5px 0 20px;
-	max-width: 300px;
+    font-size: 15px;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin: 5px 0 20px;
+    max-width: 300px;
 }
 
 .social-links {
@@ -647,10 +686,10 @@ nav ul li a:hover, nav ul li a.active {
 }
 
 .footer-bottom {
-	display: flex;
-	justify-content: center;
-	border-top: 1px solid #eee;
-	padding: 10px 0 7px;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #eee;
+    padding: 10px 0 7px;
 }
 
 .footer-bottom p {
@@ -658,24 +697,22 @@ nav ul li a:hover, nav ul li a.active {
     color: var(--text-muted);
 }
 
-@media (max-width: 1024px) {
-    .footer-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 40px;
-    }
-}
+
 
 @media (max-width: 640px) {
     .footer-grid {
         grid-template-columns: 1fr;
     }
-    .cta-section { padding: 80px 0; }
+
+    .cta-section {
+        padding: 80px 0;
+    }
 }
 
 /* Services Section */
 .services-section {
-	padding: 100px 0 100px;	
-	text-align: center;
+    padding: 100px 0 100px;
+    text-align: center;
 }
 
 .services-section .fluid-container {
@@ -691,18 +728,14 @@ nav ul li a:hover, nav ul li a.active {
 }
 
 .services-header h2 {
-  text-align: center;
+    text-align: center;
 }
 
-.services-swiper {
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
     width: 100%;
-    padding-bottom: 60px; /* space for pagination */
-}
-.services-swiper .swiper-slide {
-    height: auto;
-}
-.services-swiper .swiper-pagination-bullet-active {
-    background: var(--primary-blue);
 }
 
 .service-card {
@@ -715,7 +748,6 @@ nav ul li a:hover, nav ul li a.active {
     align-items: flex-start;
     transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
-    height: 100%;
 }
 
 .service-card:hover {
@@ -749,6 +781,18 @@ nav ul li a:hover, nav ul li a.active {
     margin: 0;
 }
 
+@media (max-width: 1200px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 640px) {
-    .services-section { padding: 60px 0; }
-}
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .services-section {
+        padding: 60px 0;
+    }
+}
