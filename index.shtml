@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--#include virtual="/sanjana/my-project/includes/meta-tags.html" -->
+</head>
+
+<body>
+  <div class="glow-bottom-left"></div>
+
+  <div class="main-wrapper">
+    <!--#include virtual="/sanjana/my-project/includes/header.html" -->
+
+    <section class="hero-section">
+      <div class="fluid-container">
+        <div class="hero-content">
+          <span class="badge">Expert Engineering</span>
+          <h1>Affordable Web & App Development for Growing Businesses</h1>
+          <p>We build scalable, high-performance applications for startups and local businesses. Precision-engineered
+            solutions that fit your budget.</p>
+
+          <div class="button-group">
+            <a href="#" class="btn-blue">
+              Get a Quote
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#" class="btn-green">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.937 3.659 1.431 5.623 1.432h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+              </svg>
+              WhatsApp Us
+            </a>
+          </div>
+
+          <div class="pricing-info">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#008A5E" stroke-width="3"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            Starting from ₹4999
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <div class="image-card">
+            <!-- SVG Placeholder for Hero Image -->
+            <svg width="100%" height="320" viewBox="0 0 580 320" preserveAspectRatio="xMidYMid slice"
+              style="border-radius: 12px; background: #eee;">
+              <rect width="580" height="320" fill="#2D3E50" />
+              <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Jost" font-size="24"
+                fill="#fff" opacity="0.5">Developer Team Image</text>
+              <rect x="40" y="40" width="100" height="100" rx="50" fill="#fff" opacity="0.1" />
+              <rect x="180" y="80" width="200" height="160" rx="8" fill="#fff" opacity="0.05" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services-section">
+      <div class="fluid-container">
+        <div class="services-header">
+          <span class="badge">Our Services</span>
+          <h2>Technical Excellence in Every Pixel</h2>
+        </div>
+
+        <div class="swiper services-swiper">
+          <div class="swiper-wrapper">
+          <!-- Web Development -->
+          <div class="swiper-slide service-card">
+            <div class="icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                </path>
+              </svg>
+            </div>
+            <h3>Web Development</h3>
+            <p>Responsive, high-speed corporate websites and e-commerce stores built for conversion.</p>
+          </div>
+
+          <!-- Mobile Apps -->
+          <div class="swiper-slide service-card">
+            <div class="icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                <line x1="12" y1="18" x2="12.01" y2="18"></line>
+              </svg>
+            </div>
+            <h3>Mobile Apps</h3>
+            <p>Native-feel cross-platform apps using Flutter & React Native for iOS and Android.</p>
+          </div>
+
+          <!-- Backend/API -->
+          <div class="swiper-slide service-card">
+            <div class="icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+              </svg>
+            </div>
+            <h3>Backend/API</h3>
+            <p>Robust, secure server-side architectures and third-party API integrations.</p>
+          </div>
+
+          <!-- UI/UX Design -->
+          <div class="swiper-slide service-card">
+            <div class="icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7"></path>
+                <path d="M2 12h20"></path>
+                <path d="m22 17-4.41 4.41a2 2 0 0 1-1.42.59H7.83a2 2 0 0 1-1.42-.59L2 17"></path>
+                <path d="m14 12-2 10"></path>
+                <path d="m10 12 2 10"></path>
+                <path d="m12 2v10"></path>
+              </svg>
+            </div>
+            <h3>UI/UX Design</h3>
+            <p>Editorial-grade interfaces focused on accessibility and user delight.</p>
+          </div>
+          </div>
+          <!-- Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio-section" id="portfolio">
+      <div class="fluid-container">
+        <div class="portfolio-header">
+          <div class="portfolio-title">
+            <span class="badge">Portfolio</span>
+            <h2>Selected Works</h2>
+          </div>
+          <a href="#" class="view-gallery">
+            View Gallery
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+        
+        <div class="swiper project-swiper">
+          <div class="swiper-wrapper">
+          <!-- Project 1: Nexus -->
+          <div class="swiper-slide project-card">
+            <div class="project-image-container" style="background-color: #4A9B94;">
+              <svg viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="40" y="40" width="320" height="180" rx="12" fill="white"/>
+                <rect x="60" y="60" width="80" height="10" rx="5" fill="#E5E7EB"/>
+                <rect x="60" y="85" width="280" height="100" rx="8" fill="#F9FAFB"/>
+                <rect x="250" y="60" width="40" height="10" rx="5" fill="#4A9B94"/>
+              </svg>
+            </div>
+            <div class="tag-group">
+              <span class="tag">Next.js</span>
+              <span class="tag">Tailwind</span>
+            </div>
+            <div class="project-info">
+              <h3>Nexus Analytics Platform</h3>
+              <p>A real-time data visualization tool for enterprise supply chain management.</p>
+            </div>
+          </div>
+          
+          <!-- Project 2: GrocerEase -->
+          <div class="swiper-slide project-card">
+            <div class="project-image-container" style="background-color: #F0F2EE;">
+              <svg viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="155" y="30" width="90" height="190" rx="14" fill="#1F2937"/>
+                <rect x="162" y="40" width="76" height="170" rx="10" fill="white"/>
+                <circle cx="200" cy="55" r="15" fill="#E5E7EB"/>
+                <rect x="175" y="85" width="50" height="6" rx="3" fill="#E5E7EB"/>
+                <rect x="175" y="100" width="30" height="6" rx="3" fill="#E5E7EB"/>
+              </svg>
+            </div>
+            <div class="tag-group">
+              <span class="tag">Flutter</span>
+              <span class="tag">Firebase</span>
+            </div>
+            <div class="project-info">
+              <h3>GrocerEase App</h3>
+              <p>Hyper-local delivery application with real-time tracking and offline mode.</p>
+            </div>
+          </div>
+          
+          <!-- Project 3: Vogue -->
+          <div class="swiper-slide project-card">
+            <div class="project-image-container" style="background-color: #F9D6C6;">
+              <svg viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="70" y="60" width="260" height="150" rx="4" fill="#D1D5DB"/>
+                <rect x="80" y="70" width="240" height="130" rx="2" fill="white"/>
+                <rect x="60" y="210" width="280" height="8" rx="4" fill="#9CA3AF"/>
+                <rect x="110" y="90" width="80" height="90" fill="#F9D6C6" opacity="0.4"/>
+                <rect x="210" y="100" width="80" height="8" rx="2" fill="#E5E7EB"/>
+              </svg>
+            </div>
+            <div class="tag-group">
+              <span class="tag">Shopify</span>
+              <span class="tag">React</span>
+            </div>
+            <div class="project-info">
+              <h3>Vogue Studio Store</h3>
+              <p>Boutique e-commerce storefront with high-end editorial aesthetics.</p>
+            </div>
+          </div>
+          <!-- Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing-section" id="pricing">
+  <div class="fluid-container">
+    <div class="dark-card-wrapper">
+      <div class="price-content">
+        <h2>Engineering for the Next Billion Users</h2>
+        
+        <div class="features-list-grid">
+          <!-- Fast Delivery -->
+          <div class="feature-item">
+            <div class="icon-box">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
+            </div>
+            <h4>Fast Delivery</h4>
+            <p>MVP development in as little as 4 weeks.</p>
+          </div>
+          
+          <!-- Scalable Code -->
+          <div class="feature-item">
+            <div class="icon-box">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"></polyline><polyline points="1 20 1 14 7 14"></polyline><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path></svg>
+            </div>
+            <h4>Scalable Code</h4>
+            <p>Architected for 10x growth from day one.</p>
+          </div>
+          
+          <!-- Affordable -->
+          <div class="feature-item">
+            <div class="icon-box">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"></rect><line x1="2" y1="10" x2="22" y2="10"></line></svg>
+            </div>
+            <h4>Affordable</h4>
+            <p>Tiered pricing for every stage of growth.</p>
+          </div>
+          
+          <!-- 24/7 Support -->
+          <div class="feature-item">
+            <div class="icon-box">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            </div>
+            <h4>24/7 Support</h4>
+            <p>Reliable maintenance and security updates.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="pricing-cta-card">
+        <span>Transparent Pricing</span>
+        <p class="starts">Development starts at</p>
+        <div class="price-amount">
+          ₹4999 <small>/ project base</small>
+        </div>
+        
+        <div class="check-list">
+          <div class="check-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#22C55E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            Custom UI Design
+          </div>
+          <div class="check-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#22C55E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            SEO Optimized
+          </div>
+          <div class="check-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#22C55E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            Free Domain (1yr)
+          </div>
+        </div>
+        
+        <a href="#" class="btn-start">
+          Start Your Journey
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="cta-section">
+    <div class="fluid-container">
+        <h2>Let's build your project</h2>
+        <p>From conceptualization to deployment, we handle the heavy lifting while you focus on scaling your business.</p>
+        <a href="#" class="btn-contact-now">Contact Now</a>
+    </div>
+</section>
+
+    
+    <!--#include virtual="/sanjana/my-project/includes/footer.html" -->
+  </div>
+
+  <!-- Core Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
