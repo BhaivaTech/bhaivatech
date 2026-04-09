@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-  <!--#include virtual="/sanjana/my-project/includes/meta-tags.html" -->
+  <!--#include virtual="includes/meta-tags.html" -->
 </head>
 
 <body>
   <div class="glow-bottom-left"></div>
 
   <div class="main-wrapper">
-    <!--#include virtual="/sanjana/my-project/includes/header.html" -->
+    <!--#include virtual="includes/header.html" -->
 
     <section class="hero-section">
       <div class="fluid-container">
@@ -391,7 +391,12 @@
     </section>
 
 
+<<<<<<< HEAD
     <!--#include virtual="/sanjana/my-project/includes/footer.html" -->
+=======
+    
+    <!--#include virtual="includes/footer.html" -->
+>>>>>>> 3ede9f0 (new pages)
   </div>
 
   <!-- Core Scripts -->

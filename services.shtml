@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--#include virtual="includes/meta-tags.html" -->
+  <title>Services | DevArchitects</title>
+</head>
+
+<body>
+  <div class="glow-bottom-left"></div>
+
+  <div class="main-wrapper">
+    <!--#include virtual="includes/header.html" -->
+
+    <!-- Services Header -->
+    <section class="services-header-section">
+      <div class="fluid-container flex-col">
+        <span class="badge">Our Expertise</span>
+        <h1>Architecting the future of digital experiences.</h1>
+        <p>We combine high-end engineering with editorial design precision to build scalable web and mobile solutions that command attention and deliver results.</p>
+      </div>
+    </section>
+
+    <!-- Services Detail -->
+    <section class="services-detail-section">
+      <div class="fluid-container">
+        <div class="services-flex">
+          
+          <div class="service-box large">
+            <div class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2v20"></path></svg></div>
+            <h3>Web Development</h3>
+            <p>Engineering sophisticated web platforms tailored for high performance. From enterprise SaaS to immersive editorial experiences, we build with scalability and SEO at the core.</p>
+            <ul class="service-features">
+              <li>Responsive Architecture</li>
+              <li>Next.js & React 18</li>
+              <li>E-commerce Solutions</li>
+              <li>Web Performance Optimization</li>
+            </ul>
+          </div>
+
+          <div class="service-box small bg-blue">
+            <div class="icon-box inverted"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h4l3-9 5 18 3-9h5"></path></svg></div>
+            <h3>UI/UX Design</h3>
+            <p>Where engineering meets aesthetics. We create intuitive, research-driven interfaces that define modern digital brands.</p>
+          </div>
+
+          <div class="service-box small">
+            <div class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg></div>
+            <h3>Mobile App Development</h3>
+            <p>Native and cross-platform mobile solutions designed for seamless user retention and high-speed execution.</p>
+            <div class="tech-stack text-left" style="margin-top: 20px;">
+              <span>Flutter</span><span>React Native</span><span>iOS/Android</span>
+            </div>
+          </div>
+
+          <div class="service-box full text-left">
+            <div class="flex-row" style="display: flex; gap: 40px; align-items:flex-start;">
+              <div class="text-side" style="flex:1;">
+                <div class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg></div>
+                <h3>Backend & APIs</h3>
+                <p>Robust server-side architecture and custom API development that powers complex workflows and secure data management.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="fluid-container">
+        <div class="cta-card">
+          <h2>Ready to architect your next big project?</h2>
+          <div class="button-group" style="justify-content:center;">
+            <a href="contact.shtml" class="btn-primary">Start Your Journey</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--#include virtual="includes/footer.html" -->
+  </div>
+
+  <!-- Core Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

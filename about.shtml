@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--#include virtual="includes/meta-tags.html" -->
+  <title>About DevArchitects | Precision Digital Engineering</title>
+</head>
+
+<body>
+  <div class="glow-bottom-left"></div>
+
+  <div class="main-wrapper">
+    <!--#include virtual="includes/header.html" -->
+
+    <!-- Hero Section: Editorial Intro -->
+    <section class="about-hero-section">
+      <div class="fluid-container">
+        <div class="editorial-flex">
+          <div class="editorial-content">
+            <span class="badge">Our Identity</span>
+            <h1>Architecting the future of <i>digital commerce</i> through precision code.</h1>
+            <p>At DevArchitects, we don't just build apps; we engineer digital ecosystems. We bridge the gap between complex technical requirements and intuitive user experiences, ensuring every line of code serves a strategic business purpose.</p>
+          </div>
+          <div class="editorial-image">
+            <div class="image-card">
+              <img alt="Development team collaborating" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCleFBMyoxKPMbx6M4D9si1VpcmS_6qJ6kZ4pxBtRTLX0l_o6McYPXoeGarK4im_T8tOzDhirflKmIbmcl0dWulmXz4UMY7oSC_QrgVZwJanaAyZfwVLhRDXOGIUKNFa-hG7BPumbLZGz4kZlggZZxIW1BacOTldrQNj4eLbPHExvPO-hZsAfVlFb4GWuIJPfLaYuUsDzxfNw80s52M83XhFBKOHBtuLG7sSW4yYz2lHtybnRpLBqv7Me3rKUwYhNveFY_GeSmQ9jE" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="mission-section">
+      <div class="fluid-container">
+        <div class="mission-flex">
+          <div class="mission-core">
+            <div class="mission-card">
+              <div class="icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path></svg>
+              </div>
+              <h2>Our Core Mission</h2>
+              <p class="mission-quote">"Helping small businesses grow digitally."</p>
+              <div class="mission-divider"></div>
+              <p>We believe that enterprise-grade technology shouldn't be reserved for the giants. Our mission is to democratize high-performance web and mobile solutions for small businesses ready to scale.</p>
+            </div>
+          </div>
+          
+          <div class="mission-points">
+            <h2>Why Precision Matters</h2>
+            <div class="points-list">
+              <div class="point-item">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--whatsapp-green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                <div class="point-text">
+                  <h4>Bespoke Architecture</h4>
+                  <p>No templates. We build custom foundations tailored to your unique operational flow.</p>
+                </div>
+              </div>
+              <div class="point-item">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--whatsapp-green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                <div class="point-text">
+                  <h4>Scalable Performance</h4>
+                  <p>Our apps are built to grow from 100 to 1,000,000 users without missing a beat.</p>
+                </div>
+              </div>
+              <div class="point-item">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--whatsapp-green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                <div class="point-text">
+                  <h4>User-Centric Logic</h4>
+                  <p>Complexity simplified. We focus on making the advanced feel effortless for your customers.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values-section">
+      <div class="fluid-container">
+        <div class="values-header">
+          <span class="badge">The Process</span>
+          <h2>How we build excellence</h2>
+        </div>
+        <div class="values-flex">
+          <div class="value-card large dark">
+            <h3>Technical Mastery</h3>
+            <p>Our developers are architects first. We analyze the structural integrity of your idea before a single line of code is written.</p>
+          </div>
+          <div class="value-card small primary">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            <div>
+              <h3>Velocity</h3>
+              <p>Rapid deployment without compromising the standards of modern engineering.</p>
+            </div>
+          </div>
+          <div class="value-card small light">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--whatsapp-green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            <div>
+              <h3>Integrity</h3>
+              <p>Security-first mindsets ensure your user data remains a protected asset.</p>
+            </div>
+          </div>
+          <div class="value-card full-width">
+            <div class="text-content">
+              <h3>Partner-Focused Development</h3>
+              <p>We don't work for you; we work with you. Expect transparent communication and weekly sprint updates.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="fluid-container">
+        <div class="cta-card">
+          <h2>Ready to architect your success?</h2>
+          <div class="button-group">
+            <a href="contact.shtml" class="btn-primary">Start a Project</a>
+            <a href="projects.shtml" class="btn-secondary">View Portfolio</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--#include virtual="includes/footer.html" -->
+  </div>
+
+  <!-- Core Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

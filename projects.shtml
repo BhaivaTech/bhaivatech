@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--#include virtual="includes/meta-tags.html" -->
+  <title>Projects | DevArchitects</title>
+</head>
+
+<body>
+  <div class="glow-bottom-left"></div>
+
+  <div class="main-wrapper">
+    <!--#include virtual="includes/header.html" -->
+
+    <!-- Projects Header -->
+    <section class="projects-header-section">
+      <div class="fluid-container flex-col">
+        <span class="badge">Our Portfolio</span>
+        <h1>Engineering <i>Digital Excellence</i></h1>
+        <p>A showcase of modern web architectures and intuitive mobile experiences designed to scale. No borders, just pure engineering.</p>
+      </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects-list-section">
+      <div class="fluid-container">
+        <div class="projects-flex">
+          
+          <!-- Featured Project -->
+          <div class="project-card-large">
+            <div class="project-img-box">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBF7YntFnrpx4pzlfreYUkBcC-KjBuzz9caHkfeD3jc2irXwxkNMSE1is-BasN5xsqA0dJOePqLlqhV6TA8EVfNXdIZR2GgnNNAyPYIZAvb2UeqOSrq4dBMgsfHa9H1RaDCeZ5suN87sdYjIFHDITQDlafhS5FI0ZnHbC9GQZMDKMskKzw0wwVOQsBNpvOtMYjRdi6U8dDGXAZlJ11pGx-RJYDvn1Xv1AVIzzBtbsh2G9L_C7GYpISsE0qcfDL8N3INUulnjbypQks" alt="Vortex">
+            </div>
+            <div class="project-details">
+              <div class="tags">
+                <span class="tag">Web App</span>
+                <span class="tag enterprise">Enterprise</span>
+              </div>
+              <h3>Vortex Analytics Engine</h3>
+              <p>A real-time data processing platform handling millions of events per second with an editorial-grade visualization layer.</p>
+              <div class="tech-stack">
+                <span>Next.js</span><span>TypeScript</span><span>Rust</span><span>AWS</span>
+              </div>
+              <a href="#" class="view-study">View Case Study <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></a>
+            </div>
+          </div>
+
+          <!-- Small Project 1 -->
+          <div class="project-card-small">
+            <div class="project-img-box">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxFOBYtVPtNyeYmbyzd93QLBuNOI02dKeJKnPHnrvVY6cTgTkDnCOfrI7RgoB6ZxuGP_MBP_hIKBLWZJm3ZchZAZpbxNy7kwQqf1iTWVSKiq4ZpkkSK69SgSwFe3hfdYqteO4yudno-J4DLlj84nqQWX-JV7_z6Dj_wuFy4PsAXLaLl3xypZADJvmchbVjzAXXv6zm2WxwSpbBExGM4n8IxJy5R2hHN8_tANrXjZvpBatHoGx8qHrc9c1PzWN0ppIcrQaTkD3ir_4" alt="Luxe">
+            </div>
+            <div class="project-details">
+              <h3>Luxe Retail Mobile</h3>
+              <p>High-performance iOS and Android e-commerce engine with biometric checkout.</p>
+              <div class="tech-stack"><span>Flutter</span><span>Firebase</span></div>
+            </div>
+          </div>
+
+          <!-- Small Project 2 -->
+          <div class="project-card-small">
+            <div class="project-img-box">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6bo9Q8VIztSCFpnTk0xzNaR3nXfubLFPuFRABhRDiZK9SlR5ZpHbYvwJKYooh57G6lWhtC4m9Wl1TtZ2Rm_Z4B3Pcyqk79Vo1SwyQz7LOPFLVOOzGB7iKtWg3Z_wjWjNgl_dwpQLz2ZDXS4L2_0TvBMdjuia1K2t2CVOytXCF1QNAG56wNLFP8x-2LczX-W9mGx-29skj-4EKLdZdvRR0UpKNghKSRq6bRcU4QaMs2_oAP-qjNm6HnohgO0SQP-WgIsD2WIv_WBg" alt="Banking">
+            </div>
+            <div class="project-details">
+              <h3>Apex Banking Core</h3>
+              <p>Microservices architecture for a decentralized finance neo-bank.</p>
+              <div class="tech-stack"><span>Go</span><span>Kubernetes</span></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="fluid-container">
+        <div class="cta-card">
+          <h2>Ready to build your next <i>architectural masterpiece?</i></h2>
+          <div class="button-group" style="justify-content: center;">
+            <a href="contact.shtml" class="btn-primary">Start a Project</a>
+            <a href="services.shtml" class="btn-secondary">View All Services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--#include virtual="includes/footer.html" -->
+  </div>
+
+  <!-- Core Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
