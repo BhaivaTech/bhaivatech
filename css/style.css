@@ -8,29 +8,16 @@
     --white: #ffffff;
     --blue-glow: rgba(0, 86, 210, 0.05);
 }
-<<<<<<< HEAD
-
 h2 {
     font-size: 40px;
     font-weight: 700;
     color: var(--text-dark);
-
 }
 
 /* reset css */
 *,
 :after,
 :before {
-=======
-h2 {
-	font-size: 40px;
-	font-weight: 700;
-	color: var(--text-dark);
-
-}
-/* reset css */
-*, :after, :before {
->>>>>>> 3ede9f0 (new pages)
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -56,16 +43,11 @@ body::before {
     width: 100%;
     height: 100%;
     background: radial-gradient(circle at 80% 20%, var(--blue-glow) 0%, transparent 50%),
-<<<<<<< HEAD
         radial-gradient(circle at 20% 80%, var(--blue-glow) 0%, transparent 50%);
-=======
-                radial-gradient(circle at 20% 80%, var(--blue-glow) 0%, transparent 50%);
->>>>>>> 3ede9f0 (new pages)
     z-index: -1;
     pointer-events: none;
 }
 
-<<<<<<< HEAD
 img {
     width: 100%;
     display: block;
@@ -84,32 +66,10 @@ a {
     align-items: center;
     font-size: 16px;
     cursor: pointer;
-=======
-img { width: 100%; display: block; }
-ul, li { list-style: none; margin: 0; padding: 0; }
-a { 
-    text-decoration: none !important; 
-    display: flex;
-    align-items: center;
-    font-size: 16px; 
-    cursor: pointer; 
->>>>>>> 3ede9f0 (new pages)
     color: inherit;
     transition: all 0.3s ease;
 }
 
-<<<<<<< HEAD
-select,
-input,
-textarea,
-button {
-    width: 100%;
-    border: none;
-    outline: none;
-    background: transparent;
-    cursor: pointer;
-    font-size: 16px;
-=======
 select, input, textarea, button { 
     width: 100%; 
     border: none; 
@@ -117,7 +77,6 @@ select, input, textarea, button {
     background: transparent; 
     cursor: pointer; 
     font-size: 16px; 
->>>>>>> 3ede9f0 (new pages)
     font-family: inherit;
     display: flex;
 }
@@ -176,12 +135,7 @@ nav ul li a {
     color: var(--text-dark);
 }
 
-<<<<<<< HEAD
-nav ul li a:hover,
-nav ul li a.active {
-=======
 nav ul li a:hover, nav ul li a.active {
->>>>>>> 3ede9f0 (new pages)
     color: var(--primary-blue);
 }
 
@@ -305,33 +259,7 @@ nav ul li a:hover, nav ul li a.active {
 }
 
 @media (max-width: 992px) {
-<<<<<<< HEAD
    .hero-section .fluid-container {
-	flex-direction: column;
-	text-align: center;
-	gap: 5px;
-}
-
-    .hero-content {
-        align-items: center;
-    }
-
-    nav {
-        display: none;
-    }
-
-    .hero-image {
-        justify-content: center;
-    }
-}
-
-@media (max-width: 640px) {
-    .fluid-container {
-        padding: 0 20px;
-    }
-
-=======
-    .hero-section .fluid-container {
 	flex-direction: column;
 	text-align: center;
 	gap: 22px;
@@ -342,25 +270,11 @@ nav ul li a:hover, nav ul li a.active {
     nav { display: none; }
     .hero-image { justify-content: center; }
 }
-
-@media (max-width: 640px) {
-    .fluid-container { padding: 0 20px; }
->>>>>>> 3ede9f0 (new pages)
     .button-group {
         flex-direction: column;
         width: 100%;
     }
-<<<<<<< HEAD
-
-    .button-group a {
-        justify-content: center;
-    }
-    .project-swiper {
-	padding-bottom: 40px;
-}
-=======
     .button-group a { justify-content: center; }
->>>>>>> 3ede9f0 (new pages)
 }
 
 /* Portfolio Section */
@@ -412,7 +326,7 @@ nav ul li a:hover, nav ul li a.active {
 }
 
 .project-card {
-<<<<<<< HEAD
+
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -422,18 +336,10 @@ nav ul li a:hover, nav ul li a.active {
 }
 
 
-=======
-	display: flex;
-	flex-direction: column;
-	gap: 20px;
-	transition: transform 0.3s ease;
-	width: 100%;
-	height: 100%;
-}
+
 .project-card:hover {
     transform: translateY(-8px);
 }
->>>>>>> 3ede9f0 (new pages)
 
 .project-image-container {
     width: 100%;
@@ -451,20 +357,13 @@ nav ul li a:hover, nav ul li a.active {
     width: 100%;
     height: auto;
     max-height: 85%;
-<<<<<<< HEAD
     filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.15));
-    transition: transform 0.3s ease;
-}
-
-=======
-    filter: drop-shadow(0 20px 30px rgba(0,0,0,0.15));
     transition: transform 0.3s ease;
 }
 
 .project-card:hover .project-image-container svg {
     transform: scale(1.05);
 }
->>>>>>> 3ede9f0 (new pages)
 
 .tag-group {
     display: flex;
@@ -498,13 +397,8 @@ nav ul li a:hover, nav ul li a.active {
 }
 
 .pricing-section {
-<<<<<<< HEAD
     padding: 0 0 100px;
     background-color: var(--white);
-=======
-	padding: 0 0 100px;
-	background-color: var(--white);
->>>>>>> 3ede9f0 (new pages)
 }
 
 .dark-card-wrapper {
@@ -525,11 +419,6 @@ nav ul li a:hover, nav ul li a.active {
 
     color: var(--white);
     margin-bottom: 48px;
-<<<<<<< HEAD
-
-=======
-   
->>>>>>> 3ede9f0 (new pages)
 }
 
 .features-list-grid {
@@ -547,11 +436,7 @@ nav ul li a:hover, nav ul li a.active {
 .feature-item .icon-box {
     width: 40px;
     height: 40px;
-<<<<<<< HEAD
     background: rgba(255, 255, 255, 0.05);
-=======
-    background: rgba(255,255,255,0.05);
->>>>>>> 3ede9f0 (new pages)
     color: var(--white);
     border-radius: 8px;
 }
@@ -564,11 +449,7 @@ nav ul li a:hover, nav ul li a.active {
 
 .feature-item p {
     font-size: 14px;
-<<<<<<< HEAD
     color: rgba(255, 255, 255, 0.6);
-=======
-    color: rgba(255,255,255,0.6);
->>>>>>> 3ede9f0 (new pages)
     margin: 0;
     line-height: 1.4;
 }
@@ -578,21 +459,18 @@ nav ul li a:hover, nav ul li a.active {
     background: #1F2937;
     padding: 40px;
     border-radius: 24px;
-<<<<<<< HEAD
-    border: 1px solid rgba(255, 255, 255, 0.1);
-=======
+
     border: 1px solid rgba(255,255,255,0.1);
->>>>>>> 3ede9f0 (new pages)
+
 }
 
 .pricing-cta-card span {
     font-size: 12px;
     font-weight: 700;
-<<<<<<< HEAD
-    color: rgba(255, 255, 255, 0.5);
-=======
+
+
     color: rgba(255,255,255,0.5);
->>>>>>> 3ede9f0 (new pages)
+
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 12px;
@@ -651,29 +529,7 @@ nav ul li a:hover, nav ul li a.active {
         padding: 60px 40px;
         gap: 60px;
     }
-<<<<<<< HEAD
 
-    .features-list-grid {
-        gap: 30px;
-    }
-}
-
-@media (max-width: 640px) {
-    .features-list-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .price-amount {
-        font-size: 40px;
-    }
-}
-
-.cta-section {
-    padding: 70px 0 80px;
-    text-align: center;
-}
-
-=======
     .features-list-grid { gap: 30px; }
 }
 
@@ -686,7 +542,7 @@ nav ul li a:hover, nav ul li a.active {
 	padding: 70px 0 80px;
 	text-align: center;
 }
->>>>>>> 3ede9f0 (new pages)
+
 .cta-section .fluid-container {
     flex-direction: column;
     align-items: center;
@@ -723,20 +579,7 @@ nav ul li a:hover, nav ul li a.active {
 
 /* Main Footer */
 .main-footer {
-<<<<<<< HEAD
-    padding: 80px 0 0;
-    border-top: 1px solid #eee;
-    background-color: var(--white);
-}
 
-.footer-grid {
-    display: flex;
-    gap: 60px;
-    width: 100%;
-    justify-content: space-between;
-    align-items: stretch;
-    padding: 0 0 30px;flex-wrap: wrap;
-=======
 	padding: 80px 0 0;
 	border-top: 1px solid #eee;
 	background-color: var(--white);
@@ -749,7 +592,7 @@ nav ul li a:hover, nav ul li a.active {
 	justify-content: space-between;
 	align-items: stretch;
 	padding: 0 0 30px;
->>>>>>> 3ede9f0 (new pages)
+
 }
 
 .footer-col h4 {
@@ -762,19 +605,13 @@ nav ul li a:hover, nav ul li a.active {
 }
 
 .footer-description {
-<<<<<<< HEAD
-    font-size: 15px;
-    color: var(--text-muted);
-    line-height: 1.6;
-    margin: 5px 0 20px;
-    max-width: 300px;
-=======
+
 	font-size: 15px;
 	color: var(--text-muted);
 	line-height: 1.6;
 	margin: 5px 0 20px;
 	max-width: 300px;
->>>>>>> 3ede9f0 (new pages)
+
 }
 
 .social-links {
@@ -833,17 +670,12 @@ nav ul li a:hover, nav ul li a.active {
 }
 
 .footer-bottom {
-<<<<<<< HEAD
-    display: flex;
-    justify-content: center;
-    border-top: 1px solid #eee;
-    padding: 10px 0 7px;
-=======
+
 	display: flex;
 	justify-content: center;
 	border-top: 1px solid #eee;
 	padding: 10px 0 7px;
->>>>>>> 3ede9f0 (new pages)
+
 }
 
 .footer-bottom p {
@@ -851,40 +683,26 @@ nav ul li a:hover, nav ul li a.active {
     color: var(--text-muted);
 }
 
-<<<<<<< HEAD
 
-=======
 @media (max-width: 1024px) {
     .footer-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 40px;
     }
 }
->>>>>>> 3ede9f0 (new pages)
+
 
 @media (max-width: 640px) {
     .footer-grid {
         grid-template-columns: 1fr;
     }
-<<<<<<< HEAD
-
-    .cta-section {
-        padding: 80px 0;
-    }
-=======
     .cta-section { padding: 80px 0; }
->>>>>>> 3ede9f0 (new pages)
 }
 
 /* Services Section */
 .services-section {
-<<<<<<< HEAD
-    padding: 100px 0 100px;
-    text-align: center;
-=======
 	padding: 100px 0 100px;	
 	text-align: center;
->>>>>>> 3ede9f0 (new pages)
 }
 
 .services-section .fluid-container {
@@ -900,16 +718,6 @@ nav ul li a:hover, nav ul li a.active {
 }
 
 .services-header h2 {
-<<<<<<< HEAD
-    text-align: center;
-}
-
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 24px;
-    width: 100%;
-=======
   text-align: center;
 }
 
@@ -922,7 +730,6 @@ nav ul li a:hover, nav ul li a.active {
 }
 .services-swiper .swiper-pagination-bullet-active {
     background: var(--primary-blue);
->>>>>>> 3ede9f0 (new pages)
 }
 
 .service-card {
@@ -935,10 +742,7 @@ nav ul li a:hover, nav ul li a.active {
     align-items: flex-start;
     transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
-<<<<<<< HEAD
-=======
     height: 100%;
->>>>>>> 3ede9f0 (new pages)
 }
 
 .service-card:hover {
@@ -972,23 +776,6 @@ nav ul li a:hover, nav ul li a.active {
     margin: 0;
 }
 
-<<<<<<< HEAD
-@media (max-width: 1200px) {
-    .services-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 640px) {
-    .services-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .services-section {
-        padding: 60px 0;
-    }
-}
-=======
 @media (max-width: 640px) {
     .services-section { padding: 60px 0; }
 }
@@ -1318,4 +1105,3 @@ nav ul li a:hover, nav ul li a.active {
 .service-box.bg-blue .icon-box.inverted { background: rgba(255,255,255,0.1); color: var(--white); }
 .service-features { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
 .service-features li { font-size: 14px; color: var(--text-muted); flex: 1 1 45%; }
->>>>>>> 3ede9f0 (new pages)

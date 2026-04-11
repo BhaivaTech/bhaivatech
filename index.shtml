@@ -391,12 +391,10 @@
     </section>
 
 
-<<<<<<< HEAD
-    <!--#include virtual="/sanjana/my-project/includes/footer.html" -->
-=======
+
     
     <!--#include virtual="includes/footer.html" -->
->>>>>>> 3ede9f0 (new pages)
+
   </div>
 
   <!-- Core Scripts -->
