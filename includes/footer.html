@@ -44,7 +44,7 @@
                 <h4>Office</h4>
                 <div class="office-info">
                     <p>Tech Hub Sector 62,<br>Bangalore, Karnataka 560103</p>
-                    <a href="mailto:hello@devarchitects.com" class="office-email">hello@devarchitects.com</a>
+                    <a href="mailto:hello@bhaivatech.com" class="office-email">hello@bhaivatech.com</a>
                 </div>
             </div>
         </div>
@@ -52,6 +52,33 @@
        
     </div>
      <div class="footer-bottom">
-            <p>&copy; 2024 DevArchitects. Built with Precision.</p>
+            <p>&copy; 2024 BhaivaTech. Built with Precision.</p>
     </div>
 </footer>
+
+<!-- Go to Top Button -->
+<button id="backToTopBtn" class="back-to-top" aria-label="Go to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+</button>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const backToTopBtn = document.getElementById('backToTopBtn');
+    if (backToTopBtn) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.add('show');
+            } else {
+                backToTopBtn.classList.remove('show');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
+});
+</script>

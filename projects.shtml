@@ -3,7 +3,8 @@
 
 <head>
   <!--#include virtual="includes/meta-tags.html" -->
-  <title>Projects | DevArchitects</title>
+  <title>Our Web Development Portfolio | BhaivaTech</title>
+  <meta name="description" content="Explore BhaivaTech's portfolio of high-performance web apps and enterprise platforms — built to scale, designed to convert.">
 </head>
 
 <body>
@@ -13,13 +14,18 @@
     <!--#include virtual="includes/header.html" -->
 
     <!-- Projects Header -->
+
     <section class="projects-header-section">
       <div class="fluid-container flex-col">
         <span class="badge">Our Portfolio</span>
-        <h1>Engineering <i>Digital Excellence</i></h1>
-        <p>A showcase of modern web architectures and intuitive mobile experiences designed to scale. No borders, just pure engineering.</p>
+        <h1>Websites That Work as Hard as You Do</h1>
+        <p>From pixel-perfect landing pages to complex enterprise web platforms, every project we ship is built for performance, scalability, and measurable results.</p>
       </div>
     </section>
+
+
+
+    
 
     <!-- Projects Grid -->
     <section class="projects-list-section">
@@ -29,7 +35,7 @@
           <!-- Featured Project -->
           <div class="project-card-large">
             <div class="project-img-box">
-              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBF7YntFnrpx4pzlfreYUkBcC-KjBuzz9caHkfeD3jc2irXwxkNMSE1is-BasN5xsqA0dJOePqLlqhV6TA8EVfNXdIZR2GgnNNAyPYIZAvb2UeqOSrq4dBMgsfHa9H1RaDCeZ5suN87sdYjIFHDITQDlafhS5FI0ZnHbC9GQZMDKMskKzw0wwVOQsBNpvOtMYjRdi6U8dDGXAZlJ11pGx-RJYDvn1Xv1AVIzzBtbsh2G9L_C7GYpISsE0qcfDL8N3INUulnjbypQks" alt="Vortex">
+              <img src="./images/web-app.png" alt="Vortex Analytics Engine — real-time data dashboard web application built by BhaivaTech">
             </div>
             <div class="project-details">
               <div class="tags">
@@ -37,34 +43,34 @@
                 <span class="tag enterprise">Enterprise</span>
               </div>
               <h3>Vortex Analytics Engine</h3>
-              <p>A real-time data processing platform handling millions of events per second with an editorial-grade visualization layer.</p>
+              <p>A real-time data processing platform handling millions of events per second — with an editorial-grade dashboard that turns raw data into decisions.</p>
               <div class="tech-stack">
                 <span>Next.js</span><span>TypeScript</span><span>Rust</span><span>AWS</span>
               </div>
-              <a href="#" class="view-study">View Case Study <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></a>
+              <a href="#" class="view-study">View Case Study →</a>
             </div>
           </div>
 
           <!-- Small Project 1 -->
           <div class="project-card-small">
             <div class="project-img-box">
-              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxFOBYtVPtNyeYmbyzd93QLBuNOI02dKeJKnPHnrvVY6cTgTkDnCOfrI7RgoB6ZxuGP_MBP_hIKBLWZJm3ZchZAZpbxNy7kwQqf1iTWVSKiq4ZpkkSK69SgSwFe3hfdYqteO4yudno-J4DLlj84nqQWX-JV7_z6Dj_wuFy4PsAXLaLl3xypZADJvmchbVjzAXXv6zm2WxwSpbBExGM4n8IxJy5R2hHN8_tANrXjZvpBatHoGx8qHrc9c1PzWN0ppIcrQaTkD3ir_4" alt="Luxe">
+              <img src="./images/mobile-apps.png" alt="Luxe Retail — mobile-first e-commerce web platform built by BhaivaTech">
             </div>
             <div class="project-details">
-              <h3>Luxe Retail Mobile</h3>
-              <p>High-performance iOS and Android e-commerce engine with biometric checkout.</p>
-              <div class="tech-stack"><span>Flutter</span><span>Firebase</span></div>
+              <h3>Luxe Retail Web Platform</h3>
+              <p>A high-conversion e-commerce storefront with a seamless checkout experience, built for speed and mobile-first users.</p>
+              <div class="tech-stack"><span>React</span><span>Firebase</span></div>
             </div>
           </div>
 
           <!-- Small Project 2 -->
           <div class="project-card-small">
             <div class="project-img-box">
-              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6bo9Q8VIztSCFpnTk0xzNaR3nXfubLFPuFRABhRDiZK9SlR5ZpHbYvwJKYooh57G6lWhtC4m9Wl1TtZ2Rm_Z4B3Pcyqk79Vo1SwyQz7LOPFLVOOzGB7iKtWg3Z_wjWjNgl_dwpQLz2ZDXS4L2_0TvBMdjuia1K2t2CVOytXCF1QNAG56wNLFP8x-2LczX-W9mGx-29skj-4EKLdZdvRR0UpKNghKSRq6bRcU4QaMs2_oAP-qjNm6HnohgO0SQP-WgIsD2WIv_WBg" alt="Banking">
+              <img src="./images/apex.png" alt="Apex Banking Core — fintech web infrastructure built with microservices by BhaivaTech">
             </div>
             <div class="project-details">
               <h3>Apex Banking Core</h3>
-              <p>Microservices architecture for a decentralized finance neo-bank.</p>
+              <p>A microservices-based web infrastructure for a decentralized fintech platform — secure, auditable, and built to handle scale from day one.</p>
               <div class="tech-stack"><span>Go</span><span>Kubernetes</span></div>
             </div>
           </div>
@@ -77,10 +83,10 @@
     <section class="cta-section">
       <div class="fluid-container">
         <div class="cta-card">
-          <h2>Ready to build your next <i>architectural masterpiece?</i></h2>
+          <h2>Ready to Build Your Next High-Performance Website?</h2>
           <div class="button-group" style="justify-content: center;">
             <a href="contact.shtml" class="btn-primary">Start a Project</a>
-            <a href="services.shtml" class="btn-secondary">View All Services</a>
+            <!-- <a href="services.shtml" class="btn-secondary">View All Services</a> -->
           </div>
         </div>
       </div>

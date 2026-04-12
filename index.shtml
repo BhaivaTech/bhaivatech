@@ -2,26 +2,31 @@
 <html lang="en">
 
 <head>
+  <title>Affordable Web Development for Startups & Local Businesses</title>
+  <meta name="description" content="BhaivaTech builds fast, scalable websites and web apps for startups and local businesses across India. Custom
+design, SEO-ready, starting at 4999.">
   <!--#include virtual="includes/meta-tags.html" -->
+  <style>
+    .cta-section p {margin-bottom: 18px;}
+  </style>
 </head>
 
 <body>
   <div class="glow-bottom-left"></div>
 
   <div class="main-wrapper">
-    <!--#include virtual="includes/header.html" -->
+    <!--#include virtual="includes/header.html"-->
 
     <section class="hero-section">
       <div class="fluid-container">
         <div class="hero-content">
-          <span class="badge">Expert Engineering</span>
-          <h1>Affordable Web & App Development for Growing Businesses</h1>
-          <p>We build scalable, high-performance applications for startups and local businesses. Precision-engineered
-            solutions that fit your budget.</p>
+          <span class="badge">Expert Web Engineering</span>
+          <h1>Professional Websites Built for Indian Startups & Local Businesses</h1>
+          <p>We design and develop fast, scalable websites and web applications tailored to your goals and built to fit your budget. No bloat. No delays.</p>
 
           <div class="button-group">
             <a href="#" class="btn-blue">
-              Get a Quote
+              Get a Free Quote
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                 stroke-linecap="round" stroke-linejoin="round">
                 <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -42,21 +47,15 @@
               stroke-linecap="round" stroke-linejoin="round">
               <polyline points="20 6 9 17 4 12"></polyline>
             </svg>
-            Starting from ₹4999
+            Projects starting from Rs.14999
           </div>
         </div>
 
         <div class="hero-image">
           <div class="image-card">
             <!-- SVG Placeholder for Hero Image -->
-            <svg width="100%" height="320" viewBox="0 0 580 320" preserveAspectRatio="xMidYMid slice"
-              style="border-radius: 12px; background: #eee;">
-              <rect width="580" height="320" fill="#2D3E50" />
-              <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Jost" font-size="24"
-                fill="#fff" opacity="0.5">Developer Team Image</text>
-              <rect x="40" y="40" width="100" height="100" rx="50" fill="#fff" opacity="0.1" />
-              <rect x="180" y="80" width="200" height="160" rx="8" fill="#fff" opacity="0.05" />
-            </svg>
+            <img src="./images/team-images.png" alt="BhaivaTech development team
+working on a web project">
           </div>
         </div>
       </div>
@@ -66,7 +65,7 @@
       <div class="fluid-container">
         <div class="services-header">
           <span class="badge">Our Services</span>
-          <h2>Technical Excellence in Every Pixel</h2>
+          <h2>Everything Your Business Needs Online — Under One Roof</h2>
         </div>
 
         <div class="services-grid">
@@ -82,7 +81,7 @@
               </svg>
             </div>
             <h3>Web Development</h3>
-            <p>Responsive, high-speed corporate websites and e-commerce stores built for conversion.</p>
+            <p>Responsive, SEO-optimized websites and e-commerce stores built for speed, conversions, and long-term growth.</p>
           </div>
 
           <!-- Mobile Apps -->
@@ -95,7 +94,7 @@
               </svg>
             </div>
             <h3>Mobile Apps</h3>
-            <p>Native-feel cross-platform apps using Flutter & React Native for iOS and Android.</p>
+            <p>Cross-platform mobile apps using Flutter & React Native native performance on both iOS and Android.</p>
           </div>
 
           <!-- Backend/API -->
@@ -109,8 +108,8 @@
               </svg>
             </div>
             <h3>Backend/API</h3>
-            <p>Robust, secure server-side architectures and third-party API integrations.</p>
-          </div>
+            <p>Secure, high-performance server-side systems and seamless third-party API integrations that scale with you.</p>
+          </div
 
           <!-- UI/UX Design -->
           <div class="service-card">
@@ -126,7 +125,7 @@
               </svg>
             </div>
             <h3>UI/UX Design</h3>
-            <p>Editorial-grade interfaces focused on accessibility and user delight.</p>
+            <p>Clean, intuitive interfaces crafted to engage users, reduce bounce rate, and make your brand impossible to ignore.</p>
           </div>
         </div>
       </div>
@@ -137,10 +136,10 @@
         <div class="portfolio-header">
           <div class="portfolio-title">
             <span class="badge">Portfolio</span>
-            <h2>Selected Works</h2>
+            <h2>Work That Speaks for Itself</h2>
           </div>
-          <a href="#" class="view-gallery">
-            View Gallery
+          <a href="projects" class="view-gallery">
+            View Full Portfolio
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
               stroke-linecap="round" stroke-linejoin="round">
               <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -154,12 +153,8 @@
           <!-- Project 1: Nexus -->
           <div class="swiper-slide project-card">
             <div class="project-image-container" style="background-color: #4A9B94;">
-              <svg viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="40" y="40" width="320" height="180" rx="12" fill="white" />
-                <rect x="60" y="60" width="80" height="10" rx="5" fill="#E5E7EB" />
-                <rect x="60" y="85" width="280" height="100" rx="8" fill="#F9FAFB" />
-                <rect x="250" y="60" width="40" height="10" rx="5" fill="#4A9B94" />
-              </svg>
+             <img src="./images/nexus.png" alt="Nexus Analytics Platform
+dashboard mockup">
             </div>
             <div class="tag-group">
               <span class="tag">Next.js</span>
@@ -167,20 +162,15 @@
             </div>
             <div class="project-info">
               <h3>Nexus Analytics Platform</h3>
-              <p>A real-time data visualization tool for enterprise supply chain management.</p>
+              <p>A real-timedata dashboard built for enterprise supply chain management  turning raw data into actionable insights.</p>
             </div>
           </div>
 
           <!-- Project 2: GrocerEase -->
           <div class="swiper-slide project-card">
             <div class="project-image-container" style="background-color: #F0F2EE;">
-              <svg viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="155" y="30" width="90" height="190" rx="14" fill="#1F2937" />
-                <rect x="162" y="40" width="76" height="170" rx="10" fill="white" />
-                <circle cx="200" cy="55" r="15" fill="#E5E7EB" />
-                <rect x="175" y="85" width="50" height="6" rx="3" fill="#E5E7EB" />
-                <rect x="175" y="100" width="30" height="6" rx="3" fill="#E5E7EB" />
-              </svg>
+              <img src="./images/mobile-apps.png" alt="GrocerEase mobile app
+interface mockup">
             </div>
             <div class="tag-group">
               <span class="tag">Flutter</span>
@@ -188,20 +178,15 @@
             </div>
             <div class="project-info">
               <h3>GrocerEase App</h3>
-              <p>Hyper-local delivery application with real-time tracking and offline mode.</p>
+              <p>A hyper-local grocery delivery app with live order tracking, offline capability, and a seamless checkout experience.</p>
             </div>
           </div>
 
           <!-- Project 3: Vogue -->
           <div class="swiper-slide project-card">
             <div class="project-image-container" style="background-color: #F9D6C6;">
-              <svg viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="70" y="60" width="260" height="150" rx="4" fill="#D1D5DB" />
-                <rect x="80" y="70" width="240" height="130" rx="2" fill="white" />
-                <rect x="60" y="210" width="280" height="8" rx="4" fill="#9CA3AF" />
-                <rect x="110" y="90" width="80" height="90" fill="#F9D6C6" opacity="0.4" />
-                <rect x="210" y="100" width="80" height="8" rx="2" fill="#E5E7EB" />
-              </svg>
+              <img src="./images/vogue.png" alt="Vogue Studio e-commerce
+storefront mockup">
             </div>
             <div class="tag-group">
               <span class="tag">Shopify</span>
@@ -212,37 +197,11 @@
               <p>Boutique e-commerce storefront with high-end editorial aesthetics.</p>
             </div>
           </div>
-
-          <!-- Project 4: Nexus (duplicate) -->
-          <div class="swiper-slide project-card">
-            <div class="project-image-container" style="background-color: #4A9B94;">
-              <svg viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="40" y="40" width="320" height="180" rx="12" fill="white" />
-                <rect x="60" y="60" width="80" height="10" rx="5" fill="#E5E7EB" />
-                <rect x="60" y="85" width="280" height="100" rx="8" fill="#F9FAFB" />
-                <rect x="250" y="60" width="40" height="10" rx="5" fill="#4A9B94" />
-              </svg>
-            </div>
-            <div class="tag-group">
-              <span class="tag">Next.js</span>
-              <span class="tag">Tailwind</span>
-            </div>
-            <div class="project-info">
-              <h3>Nexus Analytics Platform</h3>
-              <p>A real-time data visualization tool for enterprise supply chain management.</p>
-            </div>
-          </div>
-
-          <!-- Project 5: GrocerEase (duplicate) -->
+           <!-- Project 2: GrocerEase -->
           <div class="swiper-slide project-card">
             <div class="project-image-container" style="background-color: #F0F2EE;">
-              <svg viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="155" y="30" width="90" height="190" rx="14" fill="#1F2937" />
-                <rect x="162" y="40" width="76" height="170" rx="10" fill="white" />
-                <circle cx="200" cy="55" r="15" fill="#E5E7EB" />
-                <rect x="175" y="85" width="50" height="6" rx="3" fill="#E5E7EB" />
-                <rect x="175" y="100" width="30" height="6" rx="3" fill="#E5E7EB" />
-              </svg>
+              <img src="./images/mobile-apps.png" alt="GrocerEase mobile app
+interface mockup">
             </div>
             <div class="tag-group">
               <span class="tag">Flutter</span>
@@ -250,30 +209,15 @@
             </div>
             <div class="project-info">
               <h3>GrocerEase App</h3>
-              <p>Hyper-local delivery application with real-time tracking and offline mode.</p>
+              <p>A hyper-local grocery delivery app with live order tracking, offline capability, and a seamless checkout experience.</p>
             </div>
           </div>
 
-          <!-- Project 6: Vogue (duplicate) -->
-          <div class="swiper-slide project-card">
-            <div class="project-image-container" style="background-color: #F9D6C6;">
-              <svg viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="70" y="60" width="260" height="150" rx="4" fill="#D1D5DB" />
-                <rect x="80" y="70" width="240" height="130" rx="2" fill="white" />
-                <rect x="60" y="210" width="280" height="8" rx="4" fill="#9CA3AF" />
-                <rect x="110" y="90" width="80" height="90" fill="#F9D6C6" opacity="0.4" />
-                <rect x="210" y="100" width="80" height="8" rx="2" fill="#E5E7EB" />
-              </svg>
-            </div>
-            <div class="tag-group">
-              <span class="tag">Shopify</span>
-              <span class="tag">React</span>
-            </div>
-            <div class="project-info">
-              <h3>Vogue Studio Store</h3>
-              <p>Boutique e-commerce storefront with high-end editorial aesthetics.</p>
-            </div>
-          </div>
+        
+         
+
+         
+        
           </div>
           <!-- Pagination -->
           <div class="swiper-pagination"></div>
@@ -285,7 +229,7 @@
       <div class="fluid-container">
         <div class="dark-card-wrapper">
           <div class="price-content">
-            <h2>Engineering for the Next Billion Users</h2>
+            <h2>Scalable Web Solutions Built for Growth</h2>
 
             <div class="features-list-grid">
               <!-- Fast Delivery -->
@@ -297,7 +241,7 @@
                   </svg>
                 </div>
                 <h4>Fast Delivery</h4>
-                <p>MVP development in as little as 4 weeks.</p>
+                <p>Go live in as little as 4 weeks with a fully functional, production-ready website.</p>
               </div>
 
               <!-- Scalable Code -->
@@ -311,7 +255,7 @@
                   </svg>
                 </div>
                 <h4>Scalable Code</h4>
-                <p>Architected for 10x growth from day one.</p>
+                <p>Clean, maintainable architecture designed to grow with your business — no rewrites needed.</p>
               </div>
 
               <!-- Affordable -->
@@ -324,7 +268,7 @@
                   </svg>
                 </div>
                 <h4>Affordable</h4>
-                <p>Tiered pricing for every stage of growth.</p>
+                <p>Flexible, tiered pricing that works for bootstrapped startups and established local businesses alike.</p>
               </div>
 
               <!-- 24/7 Support -->
@@ -337,7 +281,7 @@
                   </svg>
                 </div>
                 <h4>24/7 Support</h4>
-                <p>Reliable maintenance and security updates.</p>
+                <p>Ongoing maintenance, security patches, and priority support so your site is always at its best.</p>
               </div>
             </div>
           </div>
@@ -383,20 +327,14 @@
 
     <section class="cta-section">
       <div class="fluid-container">
-        <h2>Let's build your project</h2>
-        <p>From conceptualization to deployment, we handle the heavy lifting while you focus on scaling your business.
+        <h2>Ready to Take Your Business Online?</h2>
+        <p>From strategy to launch, BhaivaTech handles every step  so you can focus on running your business, not building it.
         </p>
-        <a href="#" class="btn-contact-now">Contact Now</a>
+        <a href="contact" class="btn-contact-now">Contact Us Now</a>
       </div>
     </section>
-
-
-
-    
     <!--#include virtual="includes/footer.html" -->
-
   </div>
-
   <!-- Core Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="js/script.js"></script>

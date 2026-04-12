@@ -3,8 +3,19 @@
 
 <head>
   <!--#include virtual="includes/meta-tags.html" -->
-  <title>About DevArchitects | Precision Digital Engineering</title>
+  <title>About BhaivaTech | Web Development Partner for Growing Businesses</title>
+  <meta name="description" content="BhaivaTech is a web development startup helping small businesses build powerful, scalable websites — from frontend to backend to full deployment.">
 </head>
+<style>
+  .editorial-content h1 {margin: 15px 0 20px 0;}
+  .cta-section {padding: 0 0 100px; }
+@media (max-width:1360px){
+  .cta-section {padding: 0 0 60px;}
+}
+@media (max-width:480px){
+  .cta-section {padding: 0 0 40px;}
+}
+</style>
 
 <body>
   <div class="glow-bottom-left"></div>
@@ -17,13 +28,13 @@
       <div class="fluid-container">
         <div class="editorial-flex">
           <div class="editorial-content">
-            <span class="badge">Our Identity</span>
-            <h1>Architecting the future of <i>digital commerce</i> through precision code.</h1>
-            <p>At DevArchitects, we don't just build apps; we engineer digital ecosystems. We bridge the gap between complex technical requirements and intuitive user experiences, ensuring every line of code serves a strategic business purpose.</p>
+            <span class="badge">Who We Are</span>
+            <h1>Built from scratch. Built to scale. Built for you.</h1>
+            <p>BhaivaTech is a web development startup on a mission to give small businesses the digital backbone they deserve. We handle everything — frontend, backend, fullstack builds, and deployment — so you can focus on growing your business while we engineer the platform that powers it.</p>
           </div>
           <div class="editorial-image">
             <div class="image-card">
-              <img alt="Development team collaborating" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCleFBMyoxKPMbx6M4D9si1VpcmS_6qJ6kZ4pxBtRTLX0l_o6McYPXoeGarK4im_T8tOzDhirflKmIbmcl0dWulmXz4UMY7oSC_QrgVZwJanaAyZfwVLhRDXOGIUKNFa-hG7BPumbLZGz4kZlggZZxIW1BacOTldrQNj4eLbPHExvPO-hZsAfVlFb4GWuIJPfLaYuUsDzxfNw80s52M83XhFBKOHBtuLG7sSW4yYz2lHtybnRpLBqv7Me3rKUwYhNveFY_GeSmQ9jE" />
+              <img alt="BhaivaTech team collaborating on a web development project" src="./images/nexus.png" />
             </div>
           </div>
         </div>
@@ -39,35 +50,35 @@
               <div class="icon-box">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path></svg>
               </div>
-              <h2>Our Core Mission</h2>
-              <p class="mission-quote">"Helping small businesses grow digitally."</p>
+              <h2>Our Mission</h2>
+              <p class="mission-quote">"To help small businesses grow big — from scratch."</p>
               <div class="mission-divider"></div>
-              <p>We believe that enterprise-grade technology shouldn't be reserved for the giants. Our mission is to democratize high-performance web and mobile solutions for small businesses ready to scale.</p>
+              <p>We believe powerful web technology shouldn't be exclusive to large enterprises. BhaivaTech exists to level the playing field — giving startups and small businesses access to expert web development, full deployment, and ongoing support at every stage of their growth.</p>
             </div>
           </div>
           
           <div class="mission-points">
-            <h2>Why Precision Matters</h2>
+            <h2>Why Choose BhaivaTech</h2>
             <div class="points-list">
               <div class="point-item">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--whatsapp-green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
                 <div class="point-text">
-                  <h4>Bespoke Architecture</h4>
-                  <p>No templates. We build custom foundations tailored to your unique operational flow.</p>
+                  <h4>Custom Web Solutions</h4>
+                  <p>No copy-paste templates. Every website we build is designed around your specific business goals and user needs.</p>
                 </div>
               </div>
               <div class="point-item">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--whatsapp-green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
                 <div class="point-text">
-                  <h4>Scalable Performance</h4>
-                  <p>Our apps are built to grow from 100 to 1,000,000 users without missing a beat.</p>
+                  <h4>Scalable From Day One</h4>
+                  <p>Whether you're serving 50 customers or 50,000, our web architecture grows with your business — no performance trade-offs.</p>
                 </div>
               </div>
               <div class="point-item">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--whatsapp-green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
                 <div class="point-text">
-                  <h4>User-Centric Logic</h4>
-                  <p>Complexity simplified. We focus on making the advanced feel effortless for your customers.</p>
+                  <h4>End-to-End Delivery</h4>
+                  <p>From design to deployment, we manage the full development lifecycle so nothing falls through the cracks.</p>
                 </div>
               </div>
             </div>
@@ -79,33 +90,36 @@
     <!-- Values Section -->
     <section class="values-section">
       <div class="fluid-container">
-        <div class="values-header">
-          <span class="badge">The Process</span>
-          <h2>How we build excellence</h2>
-        </div>
-        <div class="values-flex">
-          <div class="value-card large dark">
-            <h3>Technical Mastery</h3>
-            <p>Our developers are architects first. We analyze the structural integrity of your idea before a single line of code is written.</p>
-          </div>
-          <div class="value-card small primary">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-            <div>
-              <h3>Velocity</h3>
-              <p>Rapid deployment without compromising the standards of modern engineering.</p>
+        <div class="values-header-main">
+          <span class="badge">Our Process</span>
+          <h2>How we build websites that work</h2>
+
+          <div class="values-flex">
+            <div class="value-card large dark">
+              <div class="text-content">
+                <h3>Technical Expertise</h3>
+                <p>Our developers are skilled across the full stack. Before writing a single line of code, we map out the right architecture for your goals.</p>
+              </div>
             </div>
-          </div>
-          <div class="value-card small light">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--whatsapp-green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-            <div>
-              <h3>Integrity</h3>
-              <p>Security-first mindsets ensure your user data remains a protected asset.</p>
+            <div class="value-card small primary">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              <div>
+                <h3>Fast Turnaround</h3>
+                <p>We ship quickly without cutting corners — rapid deployment built on solid engineering foundations.</p>
+              </div>
             </div>
-          </div>
-          <div class="value-card full-width">
-            <div class="text-content">
-              <h3>Partner-Focused Development</h3>
-              <p>We don't work for you; we work with you. Expect transparent communication and weekly sprint updates.</p>
+            <div class="value-card small light">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--whatsapp-green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              <div>
+                <h3>Secure & Reliable</h3>
+                <p>Security is built in, not bolted on. Your business data and your users' trust are always protected.</p>
+              </div>
+            </div>
+            <div class="value-card full-width">
+              <div class="text-content">
+                <h3>Your Growth, Our Priority</h3>
+                <p>We don't just deliver a website and disappear. We work alongside you as a long-term partner — with clear communication, honest timelines, and real accountability throughout every project.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -116,10 +130,10 @@
     <section class="cta-section">
       <div class="fluid-container">
         <div class="cta-card">
-          <h2>Ready to architect your success?</h2>
+          <h2>Ready to build something that scales?</h2>
           <div class="button-group">
-            <a href="contact.shtml" class="btn-primary">Start a Project</a>
-            <a href="projects.shtml" class="btn-secondary">View Portfolio</a>
+            <a href="contact.shtml" class="btn-primary">Let's Talk</a>
+            <!-- <a href="projects.shtml" class="btn-secondary">See Our Work</a> -->
           </div>
         </div>
       </div>
