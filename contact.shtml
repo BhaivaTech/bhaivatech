@@ -31,15 +31,15 @@
         <div class="contact-flex">
           <!-- Form -->
           <div class="contact-form-container">
-            <form action="#" class="contact-form">
+            <form action="contact-process.php" method="POST" id="contactForm" class="contact-form">
               <div class="form-row">
                 <div class="form-group">
                   <label for="name">Full Name</label>
-                  <input type="text" id="name" name="name" placeholder="e.g. Ravi Kumar">
+                  <input type="text" id="name" name="name" placeholder="e.g. Ravi Kumar" required>
                 </div>
                 <div class="form-group">
                   <label for="email">Email Address</label>
-                  <input type="email" id="email" name="email" placeholder="e.g. ravi@yourbusiness.com">
+                  <input type="email" id="email" name="email" placeholder="e.g. ravi@yourbusiness.com" required>
                 </div>
               </div>
               <div class="form-row">
@@ -54,8 +54,9 @@
               </div>
               <div class="form-group">
                 <label for="message">Project Brief</label>
-                <textarea id="message" rows="5" placeholder="Describe what you want to build — type of website, features, timeline, or any questions..."></textarea>
+                <textarea id="message" name="message" rows="5" placeholder="Describe what you want to build — type of website, features, timeline, or any questions..." required></textarea>
               </div>
+              <div id="form-response" class="form-response" style="margin-bottom: 20px; display: none;"></div>
               <button type="submit" class="btn-blue w-full">Send My Request →</button>
             </form>
           </div>

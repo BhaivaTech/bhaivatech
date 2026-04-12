@@ -1,0 +1,14 @@
+# Enable Server Side Includes (SSI)
+Options +Includes
+AddType text/html .shtml
+AddOutputFilter INCLUDES .shtml
+
+# If you also want SSI in .html files, uncomment the lines below:
+# AddType text/html .html
+# AddOutputFilter INCLUDES .html
+
+# Basic Security
+Options -Indexes
+
+# Error handling (optional)
+# ErrorDocument 404 /404.shtml
