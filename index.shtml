@@ -212,12 +212,6 @@ interface mockup">
               <p>A hyper-local grocery delivery app with live order tracking, offline capability, and a seamless checkout experience.</p>
             </div>
           </div>
-
-        
-         
-
-         
-        
           </div>
           <!-- Pagination -->
           <div class="swiper-pagination"></div>

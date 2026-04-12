@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sitemap - BhaivaTech</title>
+    <meta name="description" content="Sitemap for BhaivaTech. Find all pages and structure of our website.">
+    <!--#include virtual="includes/meta-tags.html" -->
+</head>
+
+<body>
+    <div class="glow-bottom-left"></div>
+
+    <div class="main-wrapper">
+        <!--#include virtual="includes/header.html"-->
+
+        <section class="about-hero-section" style="padding: 100px 0 60px;">
+            <div class="fluid-container flex-col">
+                <span class="badge">Navigation</span>
+                <h1>Sitemap</h1>
+                <p style="color: var(--text-muted); font-size: 18px;">Overview of all pages on BhaivaTech.</p>
+            </div>
+        </section>
+
+        <section class="sitemap-section" style="padding: 0 0 100px; min-height: 40vh;">
+            <div class="fluid-container" style="justify-content: center;">
+                <div class="dark-card-wrapper" style="background: var(--white); border: 1px solid #eee; padding: 40px; box-shadow: 0 10px 40px rgba(0,0,0,0.04); max-width: 800px; width: 100%;">
+                    <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 15px;">
+                        <li><a href="index.shtml" style="font-size: 18px; font-weight: 600; color: var(--primary-blue);">Home</a></li>
+                        <li><a href="about.shtml" style="font-size: 18px; font-weight: 600; color: var(--primary-blue);">About Us</a></li>
+                        <li><a href="services.shtml" style="font-size: 18px; font-weight: 600; color: var(--primary-blue);">Services</a></li>
+                        <li><a href="projects.shtml" style="font-size: 18px; font-weight: 600; color: var(--primary-blue);">Portfolio / Projects</a></li>
+                        <li><a href="contact.shtml" style="font-size: 18px; font-weight: 600; color: var(--primary-blue);">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!--#include virtual="includes/footer.html" -->
+    </div>
+    <!-- Core Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
