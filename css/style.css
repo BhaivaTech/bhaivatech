@@ -982,10 +982,6 @@ body.menu-open {
 }
 
 
-/* =========================================================================
-   Newly Converted Pages CSS using Flexbox
-   ========================================================================= */
-
 /* General Utilities */
 .flex-col {
 	flex-direction: column;
@@ -1409,4 +1405,154 @@ body.menu-open {
     background-color: #1e70e9;
     transform: translateY(-5px);
     box-shadow: 0 6px 20px rgba(0, 86, 210, 0.4);
+}
+
+/* Sitemap Page Styles */
+.sitemap-hero {
+    padding: 100px 0 ;
+    background: linear-gradient(180deg, rgba(235, 245, 255, 0.5) 0%, transparent 100%);
+}
+
+.sitemap-description {
+    color: var(--text-muted);
+   
+    max-width: 600px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.sitemap-content-wrapper {
+    padding: 35px 0 100px;
+}
+
+.sitemap-card {
+    background: var(--white);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 50px;
+    border-radius: 32px;
+    box-shadow: 0 20px 60px rgba(0, 86, 210, 0.05);
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.sitemap-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 30px 80px rgba(0, 86, 210, 0.1);
+}
+
+.sitemap-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.sitemap-item {
+    display: block;
+}
+
+.sitemap-link {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 24px;
+    border-radius: 16px;
+    color: var(--text-dark);
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    background: transparent;
+    border: 1px solid transparent;
+}
+
+.sitemap-link:hover {
+    background: rgba(0, 86, 210, 0.03);
+    color: var(--primary-blue);
+    border-color: rgba(0, 86, 210, 0.1);
+    padding-left: 32px;
+}
+
+.sitemap-link svg {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+    color: var(--primary-blue);
+}
+
+.sitemap-link:hover svg {
+    transform: translateX(4px);
+}
+
+/* Error Page Styles */
+.error-section {
+    padding: 100px 0;
+    text-align: center;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.error-content {
+	max-width: 600px;
+	width: 100%;
+	margin: auto;
+}
+.error-image {
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto 30px;
+    animation: float 6s ease-in-out infinite;
+    filter: drop-shadow(0 20px 40px rgba(0, 86, 210, 0.15));
+}
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+.error-content h1 {
+    font-size: 120px;
+    font-weight: 900;
+    color: var(--primary-blue);
+    margin-bottom: 0;
+    line-height: 1;
+    background: linear-gradient(135deg, var(--primary-blue) 0%, #1e70e9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.1;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    top: 20%;
+}
+.error-content h2 {
+  
+    font-weight: 800;
+    margin-bottom: 16px;
+    color: var(--text-dark);
+    letter-spacing: -1px;
+}
+.error-content p {
+    color: var(--text-muted);
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+.error-actions {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+.btn-outline {
+    border: 2px solid var(--text-dark);
+    color: var(--text-dark);
+    padding: 14px 32px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+.btn-outline:hover {
+    background: var(--text-dark);
+    color: var(--white);
 }

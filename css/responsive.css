@@ -1,4 +1,14 @@
 @media (max-width: 1360px) {
+  .error-section {
+    padding: 60px 0;
+}
+  .sitemap-hero {
+    padding: 60px 0 0 ;   
+}
+.sitemap-content-wrapper {
+    padding: 35px 0 60px;
+}
+
   h1 {
     font-size: 35px;
   }
@@ -309,6 +319,50 @@
 }
 
 @media (max-width:640px) {
+  .portfolio-header {
+	margin-bottom: 14px;
+}
+  .portfolio-title {
+	align-items: center;
+}
+  .portfolio-header {
+	
+	align-items: center;
+	
+	flex-direction: column;
+	gap: 7px;
+}
+  .pricing-cta-card {
+	width: 100%;
+}
+  .side-menu-nav li a svg {
+	width: 18px;
+	height: 18px;
+	
+}
+.side-menu-nav li a {
+	gap: 10px;
+}
+  .side-menu-nav li a {
+	font-size: 15px;
+
+}
+  .sitemap-link {
+	gap: 7px;
+}
+  .sitemap-link svg {
+	width: 15px;
+	height: 15px;
+}
+  .sitemap-link {
+	font-size: 15px;
+}
+  .sitemap-link {
+	padding: 10px 9px;
+}
+  .sitemap-card {
+	padding: 15px;
+}
 
   .services-section {
     padding: 60px 0;
@@ -327,17 +381,28 @@
   }
 
   .price-amount {
-    font-size: 40px;
-  }
+	font-size: 22px;
+}
 
   .form-row {
     flex-direction: column;
     gap: 0;
+
   }
 }
 
 
 @media (max-width: 480px) {
+   .error-section {
+    padding: 40px 0;
+}
+
+  .sitemap-content-wrapper {
+    padding: 20px 0 40px;
+}
+   .sitemap-hero {
+    padding: 40px 0 0;   
+}
   .form-row {
     gap: 8px;
     flex-direction: column;
@@ -404,7 +469,7 @@
   }
 
   .value-card {
-    padding: 25px;
+    padding:  0;
 
   }
 
@@ -659,17 +724,17 @@
     padding: 0 0 40px;
   }
 
-  .cta-section {
-    padding: 40px 0 40px;
-  }
+.cta-section {
+	padding: 28px 0 40px;
+}
 
   .main-footer {
     padding: 40px 0 0;
   }
 
-  .dark-card-wrapper {
-    padding: 40px 40px;
-  }
+ .dark-card-wrapper {
+	padding: 25px 25px;
+}
 
   .hero-content h1 {
     font-size: 22px;
@@ -739,3 +804,4 @@
     border-radius: 5px;
   }
 }
+/* Error Page Responsive Styles */

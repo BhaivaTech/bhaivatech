@@ -185,8 +185,7 @@ interface mockup">
           <!-- Project 3: Vogue -->
           <div class="swiper-slide project-card">
             <div class="project-image-container" style="background-color: #F9D6C6;">
-              <img src="./images/vogue.png" alt="Vogue Studio e-commerce
-storefront mockup">
+              <img src="./images/vogue.png" alt="Vogue Studio e-commerce storefront mockup">
             </div>
             <div class="tag-group">
               <span class="tag">Shopify</span>
@@ -200,8 +199,7 @@ storefront mockup">
            <!-- Project 2: GrocerEase -->
           <div class="swiper-slide project-card">
             <div class="project-image-container" style="background-color: #F0F2EE;">
-              <img src="./images/mobile-apps.png" alt="GrocerEase mobile app
-interface mockup">
+              <img src="./images/mobile-apps.png" alt="GrocerEase mobile app interface mockup">
             </div>
             <div class="tag-group">
               <span class="tag">Flutter</span>
