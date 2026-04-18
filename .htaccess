@@ -1,14 +1,91 @@
-# Enable Server Side Includes (SSI)
-Options +Includes
+# ==============================================================================
+# BHAIVATECH - PRODUCTION .HTACCESS CONFIGURATION
+# ==============================================================================
+
+# Enable Server Side Includes (SSI) and Disable Directory Browsing
+Options +Includes -Indexes
 AddType text/html .shtml
+AddHandler server-parsed .shtml
 AddOutputFilter INCLUDES .shtml
 
-# If you also want SSI in .html files, uncomment the lines below:
-# AddType text/html .html
-# AddOutputFilter INCLUDES .html
+# ==============================================================================
+# 1. URL REWRITES & REDIRECTS 
+# ==============================================================================
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # Force HTTPS and force non-www (bhaivatech.com instead of www.bhaivatech.com)
+    RewriteCond %{HTTPS} off [OR]
+    RewriteCond %{HTTP_HOST} ^www\. [NC]
+    # Match the host exactly to redirect properly
+    RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
+    RewriteRule ^ https://%1%{REQUEST_URI} [L,NE,R=301]
 
-# Basic Security
-Options -Indexes
+    # Remove .shtml from URLs (Allows domain.com/about instead of domain.com/about.shtml)
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}.shtml -f
+    RewriteRule ^(.+?)/?$ $1.shtml [L]
+    
+</IfModule>
 
-# Error handling
+# ==============================================================================
+# 2. SECURITY SETTINGS
+# ==============================================================================
+
+# Protect configuration & sensitive files from being viewed publicly
+<FilesMatch "^(config\.php|\.htaccess|\.htpasswd|.*\.md|.*\.log|content/.*)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order deny,allow
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+# Security Headers (Protects against XSS, clickjacking, and enforces SSL)
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-XSS-Protection "1; mode=block"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# ==============================================================================
+# 3. PERFORMANCE & CACHING
+# ==============================================================================
+
+# GZIP / Deflate Compression (Speeds up loading of CSS, JS, HTML)
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/plain text/html text/xml text/css application/xml application/xhtml+xml application/rss+xml application/javascript application/x-javascript image/svg+xml
+</IfModule>
+
+# Leverage Browser Caching (Cache static assets to improve returning load times)
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+    
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType application/pdf "access plus 1 month"
+    
+    ExpiresDefault "access plus 2 days"
+</IfModule>
+
+# Disable ETags (to rely fully on Cache-Control and Expires headers)
+FileETag None
+
+# ==============================================================================
+# 4. ERROR HANDLING
+# ==============================================================================
 ErrorDocument 404 /error.php
+ErrorDocument 403 /error.php
+ErrorDocument 500 /error.php
