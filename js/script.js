@@ -233,4 +233,84 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     setActiveLink();
 
+    // --- Quote Modal Handling ---
+    const quoteBtn = document.getElementById('quoteBtnModal');
+    const quoteModalOverlay = document.getElementById('quoteModalOverlay');
+    const quoteModalClose = document.getElementById('quoteModalClose');
+    const quoteFormModal = document.getElementById('quoteFormModal');
+    const quoteFormResponse = document.getElementById('quoteFormResponse');
+
+    const openQuoteModal = (e) => {
+        if (e) e.preventDefault();
+        if (quoteModalOverlay) {
+            quoteModalOverlay.classList.add('active');
+            document.body.classList.add('menu-open');
+        }
+    };
+
+    const closeQuoteModal = () => {
+        if (quoteModalOverlay) {
+            quoteModalOverlay.classList.remove('active');
+            if (sideMenu && !sideMenu.classList.contains('active')) {
+                document.body.classList.remove('menu-open');
+            }
+            if (quoteFormResponse) {
+                quoteFormResponse.style.display = 'none';
+            }
+        }
+    };
+
+    if (quoteBtn) quoteBtn.addEventListener('click', openQuoteModal);
+    if (quoteModalClose) quoteModalClose.addEventListener('click', closeQuoteModal);
+    if (quoteModalOverlay) {
+        quoteModalOverlay.addEventListener('click', (e) => {
+            if (e.target === quoteModalOverlay) closeQuoteModal();
+        });
+    }
+
+    if (quoteFormModal && quoteFormResponse) {
+        quoteFormModal.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const submitBtn = quoteFormModal.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Sending...';
+
+            try {
+                // Assuming similar backend script handling as contact form
+                const formData = new FormData(quoteFormModal);
+                const response = await fetch('contact-process.php', {
+                    method: 'POST',
+                    body: formData
+                });
+                const result = await response.json();
+                
+                if (result.status === 'success') {
+                    quoteFormResponse.textContent = result.message || 'Quote request sent successfully!';
+                    quoteFormResponse.style.backgroundColor = '#EBF5FF';
+                    quoteFormResponse.style.color = '#0056D2';
+                    quoteFormModal.reset();
+                    setTimeout(() => closeQuoteModal(), 3000);
+                } else {
+                    quoteFormResponse.textContent = result.message || 'Something went wrong. Please try again.';
+                    quoteFormResponse.style.backgroundColor = '#FEE2E2';
+                    quoteFormResponse.style.color = '#991B1B';
+                }
+            } catch (error) {
+                quoteFormResponse.textContent = 'Failed to send request. Please check your connection.';
+                quoteFormResponse.style.backgroundColor = '#FEE2E2';
+                quoteFormResponse.style.color = '#991B1B';
+            } finally {
+                quoteFormResponse.style.display = 'block';
+                quoteFormResponse.style.padding = '12px';
+                quoteFormResponse.style.borderRadius = '8px';
+                quoteFormResponse.style.fontSize = '14px';
+                quoteFormResponse.style.fontWeight = '500';
+                
+                submitBtn.disabled = false;
+                submitBtn.textContent = originalText;
+            }
+        });
+    }
+
 });

@@ -17,7 +17,7 @@
             <div class="fluid-container">
                 <div class="error-content">
                     <h1>404</h1>
-                    <!-- <img src="./images/error-404.png" alt="404 Error Illustration" class="error-image"> -->
+                    <!-- <img src="./images/error-404.webp" alt="404 Error Illustration" class="error-image"> -->
                     <h2>Oops! Page Not Found</h2>
                     <p>The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.</p>
                     <div class="error-actions">

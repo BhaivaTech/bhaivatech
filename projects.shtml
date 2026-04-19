@@ -35,7 +35,7 @@
           <!-- Featured Project -->
           <div class="project-card-large">
             <div class="project-img-box">
-              <img src="./images/web-app.png" alt="Vortex Analytics Engine — real-time data dashboard web application built by BhaivaTech">
+              <img src="./images/web-app.webp" alt="Vortex Analytics Engine — real-time data dashboard web application built by BhaivaTech">
             </div>
             <div class="project-details">
               <div class="tags">
@@ -54,7 +54,7 @@
           <!-- Small Project 1 -->
           <div class="project-card-small">
             <div class="project-img-box">
-              <img src="./images/mobile-apps.png" alt="Luxe Retail — mobile-first e-commerce web platform built by BhaivaTech">
+              <img src="./images/mobile-apps.webp" alt="Luxe Retail — mobile-first e-commerce web platform built by BhaivaTech">
             </div>
             <div class="project-details">
               <h3>Luxe Retail Web Platform</h3>
@@ -66,7 +66,7 @@
           <!-- Small Project 2 -->
           <div class="project-card-small">
             <div class="project-img-box">
-              <img src="./images/apex.png" alt="Apex Banking Core — fintech web infrastructure built with microservices by BhaivaTech">
+              <img src="./images/apex.webp" alt="Apex Banking Core — fintech web infrastructure built with microservices by BhaivaTech">
             </div>
             <div class="project-details">
               <h3>Apex Banking Core</h3>

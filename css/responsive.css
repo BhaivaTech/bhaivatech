@@ -1,4 +1,15 @@
 @media (max-width: 1360px) {
+  .quote-form input, .quote-form textarea {
+	padding: 7px 12px;
+	
+}
+.modal-header h3 {
+	font-size: 20px;
+
+}
+  .modal-content {
+	padding: 20px;
+}
   .error-section {
     padding: 60px 0;
 }
@@ -393,6 +404,15 @@
 
 
 @media (max-width: 480px) {
+  .quote-form .btn-blue {
+	padding: 12px;
+}
+  .quote-form input, .quote-form textarea {
+	font-size: 12px;
+}
+  .modal-header h3 {
+	font-size: 17px;
+}
    .error-section {
     padding: 40px 0;
 }
