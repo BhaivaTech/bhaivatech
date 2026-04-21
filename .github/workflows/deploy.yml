@@ -1,18 +1,14 @@
 name: Deploy Website
-
 on:
   push:
     branches:
-      - main   # change if your branch is master
-
+      - main
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-
       - name: Deploy to FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
@@ -21,4 +17,4 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           port: 21
           local-dir: ./
-          server-dir: ./public_html/
+          server-dir: ./
