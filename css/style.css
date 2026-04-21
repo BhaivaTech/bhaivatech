@@ -143,9 +143,13 @@ nav ul {
     gap: 32px;
 }
 
-nav ul li a {
+/* nav ul li a {
     font-weight: 500;
     color: var(--text-dark);
+} */
+nav ul li a {
+	font-weight: 500;
+	color: #090B0D;
 }
 
 nav ul li a:hover, nav ul li a.active {
