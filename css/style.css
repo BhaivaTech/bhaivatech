@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --primary-blue: #0056D2;
     --primary-blue-hover: #0046B0;
     --whatsapp-green: #008A5E;
@@ -628,7 +628,7 @@ body.menu-open {
     display: flex;
     align-items: center;
     gap: 80px;
-}
+} */
 
 .price-content {
     flex: 1.2;
