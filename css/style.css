@@ -112,12 +112,13 @@ select, input, textarea, button {
 header {
 	width: 100%;
 	padding: 6px 0;
-	background: rgba(168, 157, 157, 0.6);
+	background: rgba(255, 252, 252, 0.21);
 	backdrop-filter: blur(12px);
 	position: sticky;
 	top: 0;
 	z-index: 1000;
 	transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 16px;
 }
 
 header.scrolled {
