@@ -540,7 +540,7 @@ body.menu-open {
 
 .project-swiper {
 	width: 100%;
-	padding-bottom: 60px; /* Space for pagination */
+	
 }
 .project-swiper .swiper-slide {
 	height: auto;

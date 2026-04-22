@@ -132,7 +132,7 @@
         <div class="cta-card">
           <h2>Ready to build something that scales?</h2>
           <div class="button-group">
-            <a href="contact.shtml" class="btn-primary">Let's Talk</a>
+            <a href="contact" class="btn-primary">Let's Talk</a>
             <!-- <a href="projects.shtml" class="btn-secondary">See Our Work</a> -->
           </div>
         </div>
