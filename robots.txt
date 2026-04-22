@@ -1,0 +1,197 @@
+# ==============================================================
+# robots.txt for BhaivaTech (https://bhaivatech.com)
+# Last updated: April 2026
+# ==============================================================
+
+# ---------------------------------------------------------------
+# SECTION 1: Major Search Engine Crawlers — Full Access
+# ---------------------------------------------------------------
+
+User-agent: Googlebot
+Allow: /
+Allow: /images/
+Disallow: /*.php$
+Disallow: /sitemap_backups/
+Disallow: /sitemap_update.log
+Disallow: /content/
+Crawl-delay: 2
+
+User-agent: Googlebot-Image
+Allow: /images/
+
+User-agent: Googlebot-Video
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+Disallow: /*.php$
+Disallow: /sitemap_backups/
+Disallow: /content/
+Crawl-delay: 3
+
+User-agent: DuckDuckBot
+Allow: /
+Disallow: /*.php$
+Crawl-delay: 3
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 5
+
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 5
+
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 5
+
+# ---------------------------------------------------------------
+# SECTION 2: AI Search Retrieval Bots — Allow
+# (Helps BhaivaTech appear in ChatGPT, Perplexity, AI Overviews)
+# ---------------------------------------------------------------
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+# ---------------------------------------------------------------
+# SECTION 3: AI Training Bots — Block
+# (Protect content from being used for AI model training)
+# ---------------------------------------------------------------
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: Omgilibot
+Disallow: /
+
+User-agent: Diffbot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+# ---------------------------------------------------------------
+# SECTION 4: SEO Tools — Allow
+# ---------------------------------------------------------------
+
+User-agent: SemrushBot
+Allow: /
+
+User-agent: AhrefsBot
+Allow: /
+
+User-agent: Screaming Frog SEO Spider
+Allow: /
+
+# ---------------------------------------------------------------
+# SECTION 5: Block Spam & Bad Bots
+# ---------------------------------------------------------------
+
+User-agent: MegaIndex
+Disallow: /
+
+User-agent: SiteSnagger
+Disallow: /
+
+User-agent: WebCopier
+Disallow: /
+
+User-agent: HTTrack
+Disallow: /
+
+User-agent: WebReaper
+Disallow: /
+
+User-agent: EmailCollector
+Disallow: /
+
+User-agent: EmailSiphon
+Disallow: /
+
+User-agent: EmailWolf
+Disallow: /
+
+User-agent: ExtractorPro
+Disallow: /
+
+# ---------------------------------------------------------------
+# SECTION 6: Global Rules — All Bots
+# ---------------------------------------------------------------
+
+User-agent: *
+Allow: /
+Allow: /images/
+Allow: /css/
+Allow: /js/
+
+# Block all PHP scripts
+Disallow: /*.php$
+Disallow: /sitemam-update.php
+Disallow: /contact-process.php
+Disallow: /config.php
+Disallow: /error.php
+Disallow: /firefly-image-pro/
+
+# Block sensitive folders & files
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /cache/
+Disallow: /logs/
+Disallow: /backup/
+Disallow: /sitemap_backups/
+Disallow: /sitemap_update.log
+Disallow: /content/
+Disallow: /.git/
+Disallow: /.env
+Disallow: /node_modules/
+Disallow: /config/
+Disallow: /cgi-bin/
+Disallow: /includes/
+
+# Block sensitive file types
+Disallow: /*.log$
+Disallow: /*.sql$
+Disallow: /*.bak$
+Disallow: /*.env$
+Disallow: /*.config$
+
+# Allow sitemap explicitly
+Allow: /sitemap.xml
+Allow: /sitemap.shtml
+
+Crawl-delay: 5
+
+# ---------------------------------------------------------------
+# SECTION 7: Sitemaps
+# ---------------------------------------------------------------
+
+Sitemap: https://bhaivatech.com/sitemap.xml
