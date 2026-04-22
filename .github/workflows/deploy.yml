@@ -20,3 +20,12 @@ jobs:
           local-dir: ./
           server-dir: ./
           retry: 3
+          retry-min-timeout: 10000
+          retry-max-timeout: 60000
+          dangerous-clean-slate: false
+          timeout: 600000
+          passive: true
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
