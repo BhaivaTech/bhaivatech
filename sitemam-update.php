@@ -1,11 +1,9 @@
 <?php
 /**
  * =====================================================
- *  SITEMAP AUTO-UPDATER — LOCAL TEST (swaragh-live)
+ *  SITEMAP AUTO-UPDATER 
  * =====================================================
- *  TEST COPY: Paths point to swaragh-live-30-09-2025
- *  Run via browser:
- *    http://localhost/chethan/swaragh-live-30-09-2025/update_sitemap.php?key=swaragh2026auto
+ 
  * =====================================================
  */
 
@@ -65,8 +63,8 @@ if ($isWeb) {
       .b-same{background:#1e293b;color:#475569}
       .b-miss{background:#451a03;color:#fbbf24}
     </style></head><body>';
-    echo '<h1>🔄 Sitemap Auto-Updater</h1>';
-    echo '<div class="subtitle">⚠️ LOCAL TEST MODE &nbsp;·&nbsp; swaragh-live-30-09-2025 &nbsp;·&nbsp; ' . date('d M Y H:i:s') . ' IST</div>';
+    echo '<h1>🔄 Sitemap Auto-Updater BhaivaTech</h1>';
+    echo '<div class="subtitle"> &nbsp;·&nbsp; BhaivaTech &nbsp;·&nbsp; ' . date('d M Y H:i:s') . ' IST</div>';
 }
 
 // ─── HELPERS ──────────────────────────────────────────
