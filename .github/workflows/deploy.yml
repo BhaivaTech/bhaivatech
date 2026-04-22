@@ -19,3 +19,4 @@ jobs:
           port: 21
           local-dir: ./
           server-dir: ./
+          retry: 3
