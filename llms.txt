@@ -1,0 +1,64 @@
+# BhaivaTech
+
+> BhaivaTech is a software development company based in Bangalore, India, serving clients globally. We specialize in website development, web applications, frontend & backend development, mobile apps, UI/UX design, cloud deployment, and AWS hosting solutions.
+
+## About
+
+BhaivaTech helps startups and local businesses build fast, scalable, and affordable digital products. We offer end-to-end web and mobile development services starting at ₹4999, with a focus on clean code, modern design, and long-term growth.
+
+- Founded: 2026
+- Location: Bangalore, Karnataka, India
+- Service Areas: India, United States, United Kingdom, Australia
+- Contact: contact@bhaivatech.com
+- Phone: +91 82778 07904
+- Website: https://bhaivatech.com
+
+## Services
+
+- Website Development: Responsive, SEO-optimized websites and e-commerce stores
+- Web Application Development: Scalable, custom web apps for startups and businesses
+- Mobile App Development: Cross-platform apps using Flutter and React Native
+- Backend & API Development: Secure, high-performance server-side systems
+- UI/UX Design: Clean, intuitive interfaces for better user engagement
+- Cloud & AWS Deployment: Hosting, deployment, and infrastructure management
+- SEO & Digital Presence: Technical SEO, Google Business Profile, and online visibility
+
+## Pricing
+
+- Projects starting from ₹4999
+- Custom pricing based on project scope
+- Flexible, tiered pricing for startups and local businesses
+
+## Pages
+
+- [Home](https://bhaivatech.com/): Overview of services, portfolio, and pricing
+- [About](https://bhaivatech.com/about): Company background, team, and process
+- [Services](https://bhaivatech.com/services): Detailed list of all services offered
+- [Projects](https://bhaivatech.com/projects): Portfolio of completed work
+- [Contact](https://bhaivatech.com/contact): Get in touch or request a free quote
+- [Sitemap](https://bhaivatech.com/sitemap): Full site structure
+
+## Technology Stack
+
+- Frontend: HTML, CSS, JavaScript, React, Next.js, Tailwind CSS
+- Backend: Node.js, Express, PHP
+- Mobile: Flutter, React Native
+- Database: MySQL, MongoDB, Firebase
+- Cloud: AWS, Cloudflare
+- Deployment: GitHub Actions, FTP, cPanel
+
+## Target Audience
+
+- Indian startups looking for affordable web development
+- Local businesses wanting to establish online presence
+- Small and medium businesses across India
+- International clients seeking cost-effective development
+
+## Why BhaivaTech
+
+- Affordable pricing starting at ₹4999
+- Fast delivery — go live in as little as 4 weeks
+- Clean, scalable, maintainable code
+- SEO-optimized from day one
+- 24/7 support and ongoing maintenance
+- Based in Bangalore, serving clients globally
