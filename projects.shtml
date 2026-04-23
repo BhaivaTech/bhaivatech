@@ -16,7 +16,7 @@
     <!-- Projects Header -->
 
     <section class="projects-header-section">
-      <div class="fluid-container flex-col">
+      <div class="fluid-container flex-col" data-aos="fade-up">
         <span class="badge">Our Portfolio</span>
         <h1>Websites That Work as Hard as You Do</h1>
         <p>From pixel-perfect landing pages to complex enterprise web platforms, every project we ship is built for performance, scalability, and measurable results.</p>
@@ -33,7 +33,7 @@
         <div class="projects-flex">
           
           <!-- Featured Project -->
-          <div class="project-card-large">
+          <div class="project-card-large" data-aos="fade-up">
             <div class="project-img-box">
               <img src="./images/web-app.webp" alt="Vortex Analytics Engine — real-time data dashboard web application built by BhaivaTech">
             </div>
@@ -52,7 +52,7 @@
           </div>
 
           <!-- Small Project 1 -->
-          <div class="project-card-small">
+          <div class="project-card-small" data-aos="fade-up" data-aos-delay="100">
             <div class="project-img-box">
               <img src="./images/mobile-apps.webp" alt="Luxe Retail — mobile-first e-commerce web platform built by BhaivaTech">
             </div>
@@ -64,7 +64,7 @@
           </div>
 
           <!-- Small Project 2 -->
-          <div class="project-card-small">
+          <div class="project-card-small" data-aos="fade-up" data-aos-delay="200">
             <div class="project-img-box">
               <img src="./images/apex.webp" alt="Apex Banking Core — fintech web infrastructure built with microservices by BhaivaTech">
             </div>
@@ -82,7 +82,7 @@
     <!-- CTA Section -->
     <section class="cta-section">
       <div class="fluid-container">
-        <div class="cta-card">
+        <div class="cta-card" data-aos="zoom-in">
           <h2>Ready to Build Your Next High-Performance Website?</h2>
           <div class="button-group" style="justify-content: center;">
             <a href="contact" class="btn-primary">Start a Project</a>

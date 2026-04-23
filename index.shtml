@@ -18,7 +18,7 @@
 
     <section class="hero-section">
       <div class="fluid-container">
-        <div class="hero-content">
+        <div class="hero-content" data-aos="fade-right">
           <span class="badge">Expert Web Engineering in Bangalore</span>
           <h1>Affordable Web Development for Startups & Small Businesses in Bangalore</h1>
           <p>BhaivaTech is a Bangalore based software development company helping Indian startups and local businesses build fast, scalable websites and web applications tailored to your goals, built to fit your budget. No bloat. No delays.</p>
@@ -50,7 +50,7 @@
           </div>
         </div>
 
-        <div class="hero-image">
+        <div class="hero-image" data-aos="fade-left" data-aos-delay="200">
           <div class="image-card">
             <!-- SVG Placeholder for Hero Image -->
             <img src="./images/team-images.webp" alt="BhaivaTech development team
@@ -62,14 +62,14 @@ working on a web project">
 
     <section class="services-section">
       <div class="fluid-container">
-        <div class="services-header">
+        <div class="services-header" data-aos="fade-up">
           <span class="badge">Our Services</span>
           <h2>Everything Your Business Needs Online — Under One Roof</h2>
         </div>
 
         <div class="services-grid">
           <!-- Web Development -->
-          <div class="service-card">
+          <div class="service-card" data-aos="fade-up" data-aos-delay="100">
             <div class="icon-box">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                 stroke-linecap="round" stroke-linejoin="round">
@@ -97,7 +97,7 @@ working on a web project">
           </div> -->
 
           <!-- Backend/API -->
-          <div class="service-card">
+          <div class="service-card" data-aos="fade-up" data-aos-delay="200">
             <div class="icon-box">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                 stroke-linecap="round" stroke-linejoin="round">
@@ -111,7 +111,7 @@ working on a web project">
           </div>
 
           <!-- UI/UX Design -->
-          <div class="service-card">
+          <div class="service-card" data-aos="fade-up" data-aos-delay="300">
             <div class="icon-box">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                 stroke-linecap="round" stroke-linejoin="round">
@@ -129,7 +129,7 @@ working on a web project">
 
 
            <!-- Cloud & Hosting -->
-          <div class="service-card">
+          <div class="service-card" data-aos="fade-up" data-aos-delay="400">
             <div class="icon-box">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                 stroke-linecap="round" stroke-linejoin="round">
@@ -153,7 +153,7 @@ working on a web project">
 
     <section class="portfolio-section" id="portfolio">
       <div class="fluid-container">
-        <div class="portfolio-header">
+        <div class="portfolio-header" data-aos="fade-up">
           <div class="portfolio-title">
             <span class="badge">Portfolio</span>
             <h2>Work That Speaks for Itself</h2>
@@ -168,7 +168,7 @@ working on a web project">
           </a>
         </div>
 
-        <div class="swiper project-swiper">
+        <div class="swiper project-swiper" data-aos="fade-up" data-aos-delay="200">
           <div class="swiper-wrapper">
           <!-- Project 1: Nexus -->
           <div class="swiper-slide project-card">
@@ -224,7 +224,7 @@ dashboard mockup">
 
     <section class="pricing-section" id="pricing">
       <div class="fluid-container">
-        <div class="dark-card-wrapper">
+        <div class="dark-card-wrapper" data-aos="zoom-in">
           <div class="price-content">
             <h2>Scalable Web Solutions Built for Businesses Across Bangalore & India</h2>
 
@@ -323,7 +323,7 @@ dashboard mockup">
     </section>
 
     <section class="cta-section">
-      <div class="fluid-container">
+      <div class="fluid-container" data-aos="fade-up">
         <h2>Ready to Take Your Business Online in Bangalore?</h2>
         <p>From strategy to launch, BhaivaTech — your Bangalore web development partner — handles every step so you can focus on running your business, not building it.
         </p>
