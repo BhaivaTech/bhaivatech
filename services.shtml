@@ -15,6 +15,7 @@
 
   <div class="main-wrapper">
     <!--#include virtual="includes/header.html" -->
+    <main id="main-content">
 
     <!-- Services Header -->
     <section class="projects-header-section">
@@ -96,6 +97,7 @@
       </div>
     </section>
 
+    </main>
     <!--#include virtual="includes/footer.html" -->
   </div>
 

@@ -15,6 +15,7 @@
 
   <div class="main-wrapper">
     <!--#include virtual="includes/header.html"-->
+    <main id="main-content">
 
     <section class="hero-section">
       <div class="fluid-container">
@@ -363,6 +364,7 @@ dashboard mockup">
         </form>
       </div>
     </div>
+    </main>
 
     <!--#include virtual="includes/footer.html" -->
   </div>

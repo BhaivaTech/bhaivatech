@@ -22,6 +22,7 @@
 
   <div class="main-wrapper">
     <!--#include virtual="includes/header.html" -->
+    <main id="main-content">
 
     <!-- Hero Section: Editorial Intro -->
     <section class="about-hero-section">
@@ -146,6 +147,7 @@
       </div>
     </section>
 
+    </main>
     <!--#include virtual="includes/footer.html" -->
   </div>
 
