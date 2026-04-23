@@ -96,7 +96,7 @@ body.menu-open {overflow: hidden; }
 .portfolio-title {display: flex; flex-direction: column; align-items: flex-start; }
 .view-gallery {color: var(--primary-blue); font-weight: 600; font-size: 16px; gap: 8px; margin-bottom: 8px; }
 .view-gallery:hover {gap: 12px; }
-.project-swiper {width: 100%; }
+.project-swiper {width: 100%; padding-bottom: 60px;}
 .project-swiper .swiper-slide {height: auto; }
 .project-swiper .swiper-pagination-bullet-active {background: var(--primary-blue); }
 .project-card {display: flex; flex-direction: column; gap: 20px; transition: transform 0.3s ease; width: 100%; height: 100%; }
@@ -247,11 +247,11 @@ body.menu-open {overflow: hidden; }
 .whatsapp-card .quick-icon {background: #25D366; }
 .call-card .quick-icon {background: var(--primary-blue); }
 .quick-text h3 {font-size: 16px; font-weight: 700; color: var(--text-dark); margin-bottom: 4px; }
-.quick-text p {font-size: 14px; color: var(--text-muted); }
+.quick-text p {font-size: 16px; color: var(--text-muted); }
 .location-card {background: #E0E4F0; padding: 40px 30px; border-radius: 16px; }
 .location-info {display: flex; gap: 16px; }
 .location-text h4 {font-weight: 700; margin-bottom: 8px; }
-.location-text p {font-size: 14px; color: var(--text-muted); line-height: 1.6; }
+.location-text p {font-size: 16px; color: var(--text-muted); line-height: 1.6; }
 
 /* ----- Projects & Services Styles ----- */
 .projects-header-section, .services-header-section {padding: 100px 0 100px; }
