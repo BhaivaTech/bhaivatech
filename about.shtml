@@ -3,8 +3,8 @@
 
 <head>
   <!--#include virtual="includes/meta-tags.html" -->
-  <title>About BhaivaTech | Web Development Partner for Growing Businesses</title>
-  <meta name="description" content="BhaivaTech is a web development startup helping small businesses build powerful, scalable websites — from frontend to backend to full deployment.">
+  <title>About BhaivaTech | Web Development Company in Bangalore</title>
+  <meta name="description" content="BhaivaTech is a Bangalore-based web development company helping startups and small businesses build fast, scalable websites and apps. Learn about our mission, process, and team.">
 </head>
 <style>
   .editorial-content h1 {margin: 15px 0 20px 0;}
@@ -28,9 +28,9 @@
       <div class="fluid-container">
         <div class="editorial-flex">
           <div class="editorial-content">
-            <span class="badge">Who We Are</span>
-            <h1>Built from scratch. Built to scale. Built for you.</h1>
-            <p>BhaivaTech is a web development startup on a mission to give small businesses the digital backbone they deserve. We handle everything — frontend, backend, fullstack builds, and deployment — so you can focus on growing your business while we engineer the platform that powers it.</p>
+            <span class="badge">Who We Are — Bangalore's Affordable Dev Partner</span>
+            <h1>Built from Bangalore. Built to Scale. Built for You.</h1>
+            <p>BhaivaTech is a Bangalore-based software development company on a mission to give startups and small businesses the digital backbone they deserve. We handle everything — frontend, backend, fullstack builds, and deployment — so you can focus on growing your business while we engineer the platform that powers it.</p>
           </div>
           <div class="editorial-image">
             <div class="image-card">
@@ -51,9 +51,9 @@
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path></svg>
               </div>
               <h2>Our Mission</h2>
-              <p class="mission-quote">"To help small businesses grow big — from scratch."</p>
+              <p class="mission-quote">"To make powerful web technology accessible to every startup and small business in India."</p>
               <div class="mission-divider"></div>
-              <p>We believe powerful web technology shouldn't be exclusive to large enterprises. BhaivaTech exists to level the playing field — giving startups and small businesses access to expert web development, full deployment, and ongoing support at every stage of their growth.</p>
+              <p>We believe great software shouldn't be exclusive to large enterprises. BhaivaTech exists to level the playing field — giving startups and local businesses across Bangalore and India access to expert web development, full deployment, and ongoing support at every stage of their growth.</p>
             </div>
           </div>
           
@@ -64,14 +64,14 @@
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--whatsapp-green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
                 <div class="point-text">
                   <h4>Custom Web Solutions</h4>
-                  <p>No copy-paste templates. Every website we build is designed around your specific business goals and user needs.</p>
+                  <p>No copy-paste templates. Every website we build in Bangalore is designed around your specific business goals and user needs.</p>
                 </div>
               </div>
               <div class="point-item">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--whatsapp-green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
                 <div class="point-text">
                   <h4>Scalable From Day One</h4>
-                  <p>Whether you're serving 50 customers or 50,000, our web architecture grows with your business — no performance trade-offs.</p>
+                  <p>Whether you're serving 50 customers or 50,000, our architecture grows with your business — no performance trade-offs.</p>
                 </div>
               </div>
               <div class="point-item">
@@ -79,6 +79,13 @@
                 <div class="point-text">
                   <h4>End-to-End Delivery</h4>
                   <p>From design to deployment, we manage the full development lifecycle so nothing falls through the cracks.</p>
+                </div>
+              </div>
+              <div class="point-item">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--whatsapp-green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                <div class="point-text">
+                  <h4>Bangalore-Based, Globally Serving</h4>
+                  <p>We're rooted in Bangalore but serve clients across India, the US, UK, and Australia — with the same quality and commitment.</p>
                 </div>
               </div>
             </div>
@@ -92,7 +99,7 @@
       <div class="fluid-container">
         <div class="values-header-main">
           <span class="badge">Our Process</span>
-          <h2>How we build websites that work</h2>
+          <h2>How We Build Websites That Work — Our Process</h2>
 
           <div class="values-flex">
             <div class="value-card large dark">
