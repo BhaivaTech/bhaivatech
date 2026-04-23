@@ -37,12 +37,12 @@ if ($isWeb) {
     $providedKey = $_GET['key'] ?? '';
     if ($providedKey !== SECRET_KEY) {
         http_response_code(403);
-        die('403 Forbidden. Add ?key=swaragh2026auto to the URL.');
+        die('403 Forbidden. Add ?key=BhaivaTechauto2026 to the URL.');
     }
     header('Content-Type: text/html; charset=utf-8');
     echo '<!DOCTYPE html><html><head>
     <meta charset="utf-8">
-    <title>Sitemap Updater — LOCAL TEST · swaragh-live</title>
+    <title>Sitemap Updater — LOCAL TEST · BhaivaTech</title>
     <style>
       body{font-family:monospace;background:#0f172a;color:#e2e8f0;padding:30px;font-size:13px;line-height:1.6}
       h1{color:#38bdf8;margin-bottom:4px;font-size:18px}
