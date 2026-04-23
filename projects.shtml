@@ -5,6 +5,8 @@
   <!--#include virtual="includes/meta-tags.html" -->
   <title>Our Web Development Portfolio | BhaivaTech</title>
   <meta name="description" content="Explore BhaivaTech's portfolio of high-performance web apps and enterprise platforms — built to scale, designed to convert.">
+  <link rel="canonical" href="https://bhaivatech.com/projects" />
+
 </head>
 
 <body>

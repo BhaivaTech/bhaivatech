@@ -154,7 +154,7 @@ Allow: /js/
 
 # Block all PHP scripts
 Disallow: /*.php$
-Disallow: /sitemam-update.php
+Disallow: /sitemap-update.php
 Disallow: /contact-process.php
 Disallow: /config.php
 Disallow: /error.php

@@ -4,6 +4,8 @@
 <head>
   <title>Affordable Web Development Company in Bangalore | BhaivaTech</title>
   <meta name="description" content="BhaivaTech is a web development company in Bangalore offering website design, mobile apps, and backend development for startups and small businesses. Projects from ₹4999.">
+  <link rel="canonical" href="https://bhaivatech.com/" />
+
   <!--#include virtual="includes/meta-tags.html" -->
   <style>
       .cta-section p {margin: 12px 0 20px;}

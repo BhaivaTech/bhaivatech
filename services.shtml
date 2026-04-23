@@ -3,8 +3,10 @@
 
 <head>
   <!--#include virtual="includes/meta-tags.html" -->
-  <title>Our Services | Web Development, Mobile Apps & More | BhaivaTech Bangalore</title>
+  <title>Our Services | Web Development | BhaivaTech Bangalore</title>
   <meta name="description" content="From websites to mobile apps to backend systems — BhaivaTech in Bangalore builds it all. Honest pricing, clean code, and real support. See what we can do for you.">
+  <link rel="canonical" href="https://bhaivatech.com/services" />
+
   <style>
     .btn-primary {max-width: 202px;}
   </style>
