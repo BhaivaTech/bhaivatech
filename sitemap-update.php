@@ -1,11 +1,9 @@
 <?php
 /**
  * =====================================================
- *  SITEMAP AUTO-UPDATER — LOCAL TEST (swaragh-live)
+ *  SITEMAP AUTO-UPDATER 
  * =====================================================
- *  TEST COPY: Paths point to swaragh-live-30-09-2025
- *  Run via browser:
- *    http://localhost/chethan/swaragh-live-30-09-2025/update_sitemap.php?key=swaragh2026auto
+ 
  * =====================================================
  */
 
@@ -39,12 +37,12 @@ if ($isWeb) {
     $providedKey = $_GET['key'] ?? '';
     if ($providedKey !== SECRET_KEY) {
         http_response_code(403);
-        die('403 Forbidden. Add ?key=swaragh2026auto to the URL.');
+        die('403 Forbidden. Add ?key=BhaivaTechauto2026 to the URL.');
     }
     header('Content-Type: text/html; charset=utf-8');
     echo '<!DOCTYPE html><html><head>
     <meta charset="utf-8">
-    <title>Sitemap Updater — LOCAL TEST · swaragh-live</title>
+    <title>Sitemap Updater — LOCAL TEST · BhaivaTech</title>
     <style>
       body{font-family:monospace;background:#0f172a;color:#e2e8f0;padding:30px;font-size:13px;line-height:1.6}
       h1{color:#38bdf8;margin-bottom:4px;font-size:18px}
@@ -65,8 +63,8 @@ if ($isWeb) {
       .b-same{background:#1e293b;color:#475569}
       .b-miss{background:#451a03;color:#fbbf24}
     </style></head><body>';
-    echo '<h1>🔄 Sitemap Auto-Updater</h1>';
-    echo '<div class="subtitle">⚠️ LOCAL TEST MODE &nbsp;·&nbsp; swaragh-live-30-09-2025 &nbsp;·&nbsp; ' . date('d M Y H:i:s') . ' IST</div>';
+    echo '<h1>🔄 Sitemap Auto-Updater BhaivaTech</h1>';
+    echo '<div class="subtitle"> &nbsp;·&nbsp; BhaivaTech &nbsp;·&nbsp; ' . date('d M Y H:i:s') . ' IST</div>';
 }
 
 // ─── HELPERS ──────────────────────────────────────────

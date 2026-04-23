@@ -1,5 +1,19 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    // --- Initialize AOS ---
+    if (typeof AOS !== 'undefined') {
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100,
+        });
+
+        // Refresh AOS after all images and layout elements are fully loaded
+        window.addEventListener('load', () => {
+            AOS.refresh();
+        });
+    }
+
     // --- Hero Animation ---
     const heroTitle = document.querySelector('.hero-section h1');
     if (heroTitle) {

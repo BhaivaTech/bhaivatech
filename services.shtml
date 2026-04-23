@@ -3,8 +3,10 @@
 
 <head>
   <!--#include virtual="includes/meta-tags.html" -->
-  <title>Web Development & Design Services | BhaivaTech</title>
-  <meta name="description" content="BhaivaTech delivers expert web development, UI/UX design, mobile apps, and backend API solutions built to scale. Let's build something remarkable.">
+  <title>Our Services | Web Development | BhaivaTech Bangalore</title>
+  <meta name="description" content="From websites to mobile apps to backend systems — BhaivaTech in Bangalore builds it all. Honest pricing, clean code, and real support. See what we can do for you.">
+  <link rel="canonical" href="https://bhaivatech.com/services" />
+
   <style>
     .btn-primary {max-width: 202px;}
   </style>
@@ -15,13 +17,14 @@
 
   <div class="main-wrapper">
     <!--#include virtual="includes/header.html" -->
+    <main id="main-content">
 
     <!-- Services Header -->
     <section class="projects-header-section">
-      <div class="fluid-container flex-col">
-       <span class="badge">Our Expertise</span>
-          <h1>Web Solutions Engineered to Perform.</h1>
-        <p>From pixel-perfect interfaces to bulletproof back ends — BhaivaTech builds scalable digital products that rank, convert, and grow with your business.</p>
+      <div class="fluid-container flex-col" data-aos="fade-up">
+       <span class="badge">What We Do</span>
+          <h1>Here's How We Can Help Your Business Grow Online</h1>
+        <p>We don't offer a hundred services we're mediocre at. We focus on what we're genuinely good at — building websites, apps, and digital systems that work well and last long. Based in Bangalore, we've helped startups and local businesses across India get online the right way.</p>
       </div>
     </section>
 
@@ -32,39 +35,49 @@
       <div class="fluid-container">
         <div class="services-flex">
           
-          <div class="service-box large">
+          <div class="service-box large" data-aos="fade-right">
             <div class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2v20"></path></svg></div>
-            <h3>Web Development</h3>
-            <p>We engineer high-performance web platforms built for growth from enterprise SaaS dashboards to SEO-optimized marketing sites. Every line of code is written with scalability, speed, and search visibility in mind.</p>
+            <h3>Website Development</h3>
+            <p>Need a website that actually brings in customers? We build fast, mobile-friendly, SEO-optimized websites that look great and load even faster. Whether it's a simple business website or a full e-commerce store — we've got you covered.</p>
             <ul class="service-features">
-              <li>Responsive, Mobile-First Architecture</li>
-              <li>Next.js & React 18 Powered Apps</li>
-              <li>Custom E-Commerce Solutions</li>
-              <li>Core Web Vitals & Performance Optimization</li>
+              <li>Works perfectly on mobile, tablet, and desktop</li>
+              <li>Built with Next.js, React, or plain HTML/CSS — whatever fits best</li>
+              <li>SEO-ready from day one so Google can find you</li>
+              <li>Fast loading speeds that don't frustrate your visitors</li>
             </ul>
           </div>
 
-          <div class="service-box small bg-blue">
+          <div class="service-box small bg-blue" data-aos="fade-up" data-aos-delay="100">
             <div class="icon-box inverted"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h4l3-9 5 18 3-9h5"></path></svg></div>
             <h3>UI/UX Design</h3>
-            <p>Interfaces that don't just look good — they convert. We craft research-driven user experiences that reduce friction, build trust, and keep users coming back.</p>
+            <p>First impressions matter. We design interfaces that feel natural to use — so your visitors don't get confused, don't bounce, and actually take action. Clean, simple, and built around how real people think.</p>
           </div>
 
-          <div class="service-box small">
+          <div class="service-box small" data-aos="fade-left" data-aos-delay="200">
             <div class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg></div>
             <h3>Mobile App Development</h3>
-            <p>Cross-platform apps built for real-world performance. Whether it's Flutter or React Native, we deliver smooth, fast, and retention-focused mobile experiences on iOS and Android.</p>
+            <p>Got an app idea? Let's build it. We create cross-platform mobile apps using Flutter and React Native that work smoothly on both Android and iOS. One codebase, two platforms, half the cost.</p>
             <div class="tech-stack text-left" style="margin-top: 20px;">
-              <span>Flutter</span><span>React Native</span><span>iOS/Android</span>
+              <span>Flutter · React Native · iOS & Android</span>
             </div>
           </div>
 
-          <div class="service-box full text-left">
+          <div class="service-box full text-left" data-aos="fade-up" data-aos-delay="300">
             <div class="flex-row" style="display: flex; gap: 40px; align-items:flex-start;">
               <div class="text-side" style="flex:1;">
                 <div class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg></div>
-                <h3>Backend & APIs</h3>
-                <p>Secure, scalable server architecture and custom REST/GraphQL APIs that power complex business logic, third-party integrations, and high-volume data workflows — built to handle growth without breaking a sweat.</p>
+                <h3>Backend & API Development</h3>
+                <p>The stuff users don't see but can't live without. We build secure, reliable backends and APIs that power your app — from user authentication to payment processing to third-party integrations. Solid under the hood so nothing breaks when traffic spikes.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-box full text-left" data-aos="fade-up" data-aos-delay="400">
+            <div class="flex-row" style="display: flex; gap: 40px; align-items:flex-start;">
+              <div class="text-side" style="flex:1;">
+                <div class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg></div>
+                <h3>Cloud & Hosting</h3>
+                <p>Not sure where to host your website or how to set it up? We handle everything — AWS deployment, cPanel hosting, domain setup, SSL certificates, and ongoing server management. Your site stays fast, secure, and online. Always.</p>
               </div>
             </div>
           </div>
@@ -76,15 +89,17 @@
     <!-- CTA Section -->
     <section class="cta-section">
       <div class="fluid-container">
-        <div class="cta-card">
-          <h2>Have a project in mind? Let's build it right.</h2>
+        <div class="cta-card" data-aos="zoom-in">
+          <h2>Not sure which service you need?</h2>
+          <p style="margin-bottom: 30px;">That's completely fine — most of our clients aren't sure either when they first reach out. Just tell us what you're trying to build or fix, and we'll figure out the best approach together. No jargon, no pressure.</p>
           <div class="button-group" style="justify-content:center;">
-            <a href="contact.shtml" class="btn-primary">Start Your Project</a>
+            <a href="contact" class="btn-primary">Let's Talk About Your Project →</a>
           </div>
         </div>
       </div>
     </section>
 
+    </main>
     <!--#include virtual="includes/footer.html" -->
   </div>
 

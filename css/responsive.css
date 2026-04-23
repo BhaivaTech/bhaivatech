@@ -1,827 +1,209 @@
-@media (max-width: 1360px) {
-  .quote-form input, .quote-form textarea {
-	padding: 7px 12px;
-	
+@media (max-width: 1360px) {  .quote-form input, .quote-form textarea {padding: 7px 12px; }
+  .modal-header h3 {font-size: 20px; }
+  .modal-content {padding: 20px; }
+  .error-section {padding: 60px 0; }
+  .sitemap-hero {padding: 60px 0 0; }
+  .sitemap-content-wrapper {padding: 35px 0 60px; }
+  h1 {font-size: 35px; }
+  .hero-content h1 {font-size: 35px; }
+  .contact-flex {margin-bottom: 60px; }
+  .projects-header-section, .services-header-section {padding: 60px 0 60px; }
+  .projects-list-section, .services-detail-section {padding: 60px 0 60px; }
+  .cta-section {padding: 60px 0; }
+  .about-hero-section {padding: 60px 0 60px; }
+  .mission-section {padding: 60px 0; }
+  .values-section {padding: 60px 0; }
+  .hero-section {padding: 60px 0; }
+  .services-section {padding: 0 0 60px; }
+  .portfolio-section {padding: 60px 0; }
+  .pricing-section {padding: 0 0 60px; }
+  .main-footer {padding: 60px 0 0; }
+  #pricing {padding: 60px 0 0; }
+  .dark-card-wrapper {padding: 60px 60px; }
+  h2 {font-size: 35px; }
+  .price-content h2 {margin-bottom: 25px; }
+  .feature-item {gap: 5px; }
+  .icon-box {margin-bottom: 8px; }
+  .price-amount {font-size: 40px; }
+  .pricing-cta-card {padding: 28px; }
 }
-.modal-header h3 {
-	font-size: 20px;
-
+@media (max-width: 1200px) {  .image-card {max-width: 370px; }
 }
-  .modal-content {
-	padding: 20px;
+@media (max-width: 1080px) {  /* Show hamburger, hide desktop nav & CTA */ .hamburger {display: flex; }
+  nav {display: none; }
+  .header-cta {display: none; }
+  .services-grid {justify-content: center !important; }
+  .mission-divider {margin: 18px 0; }
+  .mission-divider {height: 1px; background-color: #eee; margin: 18px 0; }
+  .mission-card {padding: 25px; }
+  .points-list {gap: 17px; }
+  .points-list {margin-top: 16px; }
+  .mission-flex {align-items: start; flex-direction: column; gap: 35px; }
+  h1 {font-size: 30px; }
+  h2 {font-size: 28px; }
 }
-  .error-section {
-    padding: 60px 0;
+@media (max-width: 1024px) {  .footer-grid {grid-template-columns: repeat(2, 1fr); gap: 40px; }
+  .dark-card-wrapper {flex-direction: column; padding: 60px 40px; gap: 60px; }
+  .features-list-grid {gap: 30px; }
+  .services-header {margin-bottom: 30px; }
+  .portfolio-header {margin-bottom: 30px; }
+  .cta-section p {margin-bottom: 24px; }
+  .btn-contact-now {padding: 12px 20px; }
+  .dark-card-wrapper {gap: 40px; }
+  .pricing-cta-card {width: 75%; }
 }
-  .sitemap-hero {
-    padding: 60px 0 0 ;   
+@media (max-width: 992px) {  .hero-section .fluid-container {flex-direction: column; text-align: center; gap: 22px; }
+  .hero-content {align-items: center; }
+  .hero-image {justify-content: center; }
+  .hero-content p {font-size: 16px; margin-bottom: 20px; }
+  .hero-content h1 {margin-bottom: 7px; }
+  .badge {margin-bottom: 15px; }
 }
-.sitemap-content-wrapper {
-    padding: 35px 0 60px;
+@media (max-width: 920px) {  .project-details {padding: 27px; }
+  .editorial-content h1 {margin: 15px 0 14px 0; }
+  .editorial-image {display: none; }
 }
-
-  h1 {
-    font-size: 35px;
-  }
-
-  .hero-content h1 {
-    font-size: 35px;
-  }
-
-  .contact-flex {
-    margin-bottom: 60px;
-  }
-
-  .projects-header-section,
-  .services-header-section {
-    padding: 60px 0 60px;
-  }
-
-  .projects-list-section,
-  .services-detail-section {
-    padding: 60px 0 60px;
-  }
-
-  .cta-section {
-    padding: 60px 0;
-  }
-
-  .about-hero-section {
-    padding: 60px 0 60px;
-  }
-
-  .mission-section {
-    padding: 60px 0;
-  }
-
-  .values-section {
-    padding: 60px 0;
-  }
-
-  .hero-section {
-    padding: 60px 0;
-  }
-
-  .services-section {
-    padding: 0 0 60px;
-  }
-
-  .portfolio-section {
-    padding: 60px 0;
-  }
-
-  .pricing-section {
-    padding: 0 0 60px;
-  }
-
-  .main-footer {
-    padding: 60px 0 0;
-  }
-
-  #pricing {
-    padding: 60px 0 0;
-  }
-
-  .dark-card-wrapper {
-    padding: 60px 60px;
-  }
-
-  h2 {
-    font-size: 35px;
-  }
-
-  .price-content h2 {
-    margin-bottom: 25px;
-  }
-
-  .feature-item {
-    gap: 5px;
-  }
-
-  .icon-box {
-    margin-bottom: 8px;
-  }
-
-  .price-amount {
-    font-size: 40px;
-  }
-
-  .pricing-cta-card {
-    padding: 28px;
-  }
+@media (max-width: 776px) {  .project-card-small {flex: 1 1 100%; }
+  .project-card-large {flex-wrap: wrap; flex-direction: column; }
+  .value-card.small {flex: 1 1 0; }
+  .values-flex {flex-direction: column; }
+  .quick-card {	padding: 37px 10px;}
 }
-
-@media (max-width: 1200px) {
-  .image-card {
-    max-width: 370px;
-
-  }
+@media (max-width:700px) {  .service-features {gap: 7px; margin-top: 13px; flex-direction: column; }
+  .footer-grid {gap: 30px; flex-direction: column; }
+  .footer-col h4 {margin-bottom: 10px; }
+  .footer-links li {margin-bottom: 6px; }
+  .social-icon {width: 30px; height: 30px; }
+  .main-footer {padding: 20px 0 0; }
+  .footer-description {margin: 5px 0 10px; }
+  .footer-grid {padding: 0 0 22px; }
 }
-
-@media (max-width: 1080px) {
-
-  /* Show hamburger, hide desktop nav & CTA */
-  .hamburger {
-    display: flex;
-  }
-
-  nav {
+@media (max-width:640px) {  .portfolio-header {margin-bottom: 14px; }
+  .portfolio-title {align-items: center; }
+  .portfolio-header {align-items: center; flex-direction: column; gap: 7px; }
+  .pricing-cta-card {width: 100%; }
+  .side-menu-nav li a svg {width: 18px; height: 18px; }
+  .side-menu-nav li a {gap: 10px; }
+  .side-menu-nav li a {font-size: 15px; }
+  .sitemap-link {gap: 7px; }
+  .sitemap-link svg {width: 15px; height: 15px; }
+  .sitemap-link {font-size: 15px; }
+  .sitemap-link {padding: 10px 9px; }
+  .sitemap-card {padding: 15px; }
+  .services-section {padding: 60px 0; }
+  .footer-grid {grid-template-columns: 1fr; }
+  .cta-section {padding: 80px 0; }
+  .features-list-grid {grid-template-columns: 1fr; }
+  .price-amount {font-size: 22px; }
+  .form-row {flex-direction: column; gap: 0; }
+}
+@media (max-width: 480px) {  
+  .location-card svg{
     display: none;
   }
-
-  .header-cta {
-    display: none;
-  }
-
-  .services-grid {
-    justify-content: center !important;
-  }
-
-  .mission-divider {
-    margin: 18px 0;
-  }
-
-  .mission-divider {
-    height: 1px;
-    background-color: #eee;
-    margin: 18px 0;
-  }
-
-  .mission-card {
-    padding: 25px;
-  }
-
-  .points-list {
-    gap: 17px;
-  }
-
-
-  .points-list {
-
-    margin-top: 16px;
-  }
-
-  .mission-flex {
-    align-items: start;
-    flex-direction: column;
-    gap: 35px;
-  }
-
-  h1 {
-    font-size: 30px;
-  }
-
-  h2 {
-    font-size: 28px;
-  }
-}
-
-
-
-
-
-@media (max-width: 1024px) {
-  .footer-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-  }
-
-  .dark-card-wrapper {
-    flex-direction: column;
-    padding: 60px 40px;
-    gap: 60px;
-  }
-
-  .features-list-grid {
-    gap: 30px;
-  }
-
-
-
-  .services-header {
-    margin-bottom: 30px;
-  }
-
-  .portfolio-header {
-    margin-bottom: 30px;
-  }
-
-  .cta-section p {
-    margin-bottom: 24px;
-  }
-
-  .btn-contact-now {
-    padding: 12px 20px;
-  }
-
-  .dark-card-wrapper {
-    gap: 40px;
-  }
-
-  .pricing-cta-card {
-    width: 75%;
-  }
-
-
-}
-
-@media (max-width: 992px) {
-
-  .hero-section .fluid-container {
-    flex-direction: column;
-    text-align: center;
-    gap: 22px;
-  }
-
-  .hero-content {
-    align-items: center;
-  }
-
-  .hero-image {
-    justify-content: center;
-  }
-
-  .hero-content p {
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
-
-  .hero-content h1 {
-    margin-bottom: 7px;
-  }
-
-  .badge {
-    margin-bottom: 15px;
-  }
-}
-
-@media (max-width: 920px) {
-  .project-details {
-    padding: 27px;
-
-  }
-
-  .editorial-content h1 {
-    margin: 15px 0 14px 0;
-  }
-
-  .editorial-image {
-
-    display: none;
-  }
-}
-
-
-@media (max-width: 776px) {
-  .project-card-small {
-    flex: 1 1 100%;
-  }
-
-  .project-card-large {
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-
-  .value-card.small {
-    flex: 1 1 0;
-  }
-
-  .values-flex {
-    flex-direction: column;
-  }
-}
-
-@media (max-width:700px) {
-  .service-features {
-    gap: 7px;
-    margin-top: 13px;
-    flex-direction: column;
-  }
-
-  .footer-grid {
-    gap: 30px;
-    flex-direction: column;
-  }
-
-  .footer-col h4 {
-    margin-bottom: 10px;
-  }
-
-  .footer-links li {
-    margin-bottom: 6px;
-  }
-
-  .social-icon {
-    width: 30px;
-    height: 30px;
-  }
-
-  .main-footer {
-    padding: 20px 0 0;
-  }
-
-  .footer-description {
-    margin: 5px 0 10px;
-  }
-
-  .footer-grid {
-    padding: 0 0 22px;
-  }
-}
-
-@media (max-width:640px) {
-  .portfolio-header {
-	margin-bottom: 14px;
-}
-  .portfolio-title {
-	align-items: center;
-}
-  .portfolio-header {
-	
-	align-items: center;
-	
-	flex-direction: column;
-	gap: 7px;
-}
-  .pricing-cta-card {
-	width: 100%;
-}
-  .side-menu-nav li a svg {
-	width: 18px;
-	height: 18px;
-	
-}
-.side-menu-nav li a {
-	gap: 10px;
-}
-  .side-menu-nav li a {
-	font-size: 15px;
-
-}
-  .sitemap-link {
-	gap: 7px;
-}
-  .sitemap-link svg {
-	width: 15px;
-	height: 15px;
-}
-  .sitemap-link {
-	font-size: 15px;
-}
-  .sitemap-link {
-	padding: 10px 9px;
-}
-  .sitemap-card {
-	padding: 15px;
-}
-
-  .services-section {
-    padding: 60px 0;
-  }
-
-  .footer-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .cta-section {
-    padding: 80px 0;
-  }
-
-  .features-list-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .price-amount {
-	font-size: 22px;
-}
-
-  .form-row {
-    flex-direction: column;
-    gap: 0;
-
-  }
-}
-
-
-@media (max-width: 480px) {
-  .quote-form .btn-blue {
-	padding: 12px;
-}
-  .quote-form input, .quote-form textarea {
-	font-size: 12px;
-}
-  .modal-header h3 {
-	font-size: 17px;
-}
-   .error-section {
-    padding: 40px 0;
-}
-
-  .sitemap-content-wrapper {
-    padding: 20px 0 40px;
-}
-   .sitemap-hero {
-    padding: 40px 0 0;   
-}
-  .form-row {
-    gap: 8px;
-    flex-direction: column;
-    margin-bottom: 0;
-  }
-
-  .flex-col {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .projects-header-section h1,
-  .projects-header-section p {
-    text-align: center;
-  }
-
-  .service-box {
-    padding: 20px;
-
-  }
-
-  .project-details {
-    flex: 1 1 0;
-
-  }
-
-  .view-study {
-    margin-top: 16px;
-
-  }
-
-  .tech-stack span {
-    font-size: 12px;
-
-  }
-
-  .project-details p {
-
-    margin-bottom: 17px;
-  }
-
-  .tags {
-    margin-bottom: 10px;
-  }
-
-  .project-details {
-    padding: 25px 20px;
-
-
-  }
-
-  .project-details h3 {
-    font-size: 19px;
-  }
-
-  .cta-card {
-
-    padding: 25px 20px;
-
-  }
-
-  .value-card h3 {
-    font-size: 19px;
-  }
-
-  .value-card {
-    padding:  0;
-
-  }
-
-  .values-header-main p {
-    margin: 0 0 22px;
-
-  }
-
-  .point-text h4 {
-    font-size: 17px;
-  }
-
-  .point-item svg {
-    width: 35px !important;
-    position: relative;
-    top: 5px;
-  }
-
-  .point-item {
-    gap: 10px;
-  }
-
-  .points-list {
-    gap: 12px;
-
-  }
-
-  .points-list {
-    margin-top: 15px;
-  }
-
-  .mission-flex {
-    gap: 35px;
-  }
-
-  .mission-divider {
-    margin: 12px 0;
-  }
-
-  .icon-box {
-    width: 40px;
-    height: 40px;
-  }
-
-  .mission-quote {
-    font-size: 15px;
-  }
-
-  .mission-card {
-    padding: 20px;
-  }
-
-  .editorial-image {
-    display: none;
-  }
-
-  .editorial-content h1 {
-    margin: 0 0 8px 0;
-  }
-
-  .editorial-content h1,
-  .editorial-content p {
-    text-align: center;
-  }
-
-  select,
-  input,
-  textarea,
-  button {
-    font-size: 12px;
-
-  }
-.value-card.small.primary, .value-card.small.light, .value-card.full-width {
-	padding: 25px 20px;
-	
-}
-.value-card h3 {
-
-	margin-bottom: 0;
-}
-.btn-primary {
-	padding: 10px 32px;
-	max-width: 155px;
-
-}
-  p {
-    font-size: 16px;
-  }
-
-  .footer-col span {
-    font-size: 17px !important;
-  }
-
-  .quick-text h3 {
-    font-size: 17px;
-  }
-
-  .fluid-container {
-    padding: 0 15px;
-
-  }
-
-  .badge {
-
-    margin: 0 auto 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 230px;
-
-  }
-
-  .projects-header-section h1,
-  .projects-header-section p {
-    text-align: center;
-  }
-
-  h1 {
-    font-size: 22px;
-  }
-
-  .quick-icon {
-    width: 40px;
-    height: 40px;
-  }
-
-  svg {
-    width: 20px;
-    height: 20px;
-  }
-
   .quick-card {
-    padding: 12px;
-  }
-
+	padding: 37px 23px;
+}
+  .whatsapp-card .quick-icon {display: none;}
+  .call-card .quick-icon {display: none;}
+  .quote-form .btn-blue {padding: 12px; }
+  .quote-form input, .quote-form textarea {font-size: 12px; }
+  .modal-header h3 {font-size: 17px; }
+  .error-section {padding: 40px 0; }
+  .sitemap-content-wrapper {padding: 20px 0 40px; }
+  .sitemap-hero {padding: 40px 0 0; }
+  .form-row {gap: 8px; flex-direction: column; margin-bottom: 0; }
+  .flex-col {flex-direction: column; align-items: center; }
+  .projects-header-section h1, .projects-header-section p {text-align: center; }
+  .service-box {padding: 20px; }
+  .project-details {flex: 1 1 0; }
+  .view-study {margin-top: 16px; }
+  .tech-stack span {font-size: 12px; }
+  .project-details p {margin-bottom: 17px; }
+  .tags {margin-bottom: 10px; }
+  .project-details {padding: 25px 20px; }
+  .project-details h3 {font-size: 19px; }
+  .cta-card {padding: 25px 20px; }
+  .value-card h3 {font-size: 19px; }
+  .value-card {padding: 0; }
+  .values-header-main p {margin: 0 0 22px; }
+  .point-text h4 {font-size: 17px; }
+  .point-item svg {width: 35px !important; position: relative; top: 5px; }
+  .point-item {gap: 10px; }
+  .points-list {gap: 12px; }
+  .points-list {margin-top: 15px; }
+  .mission-flex {gap: 35px; }
+  .mission-divider {margin: 12px 0; }
+  .icon-box {width: 40px; height: 40px; }
+  .mission-quote {font-size: 15px; }
+  .mission-card {padding: 20px; }
+  .editorial-image {display: none; }
+  .editorial-content h1 {margin: 0 0 8px 0; }
+  .editorial-content h1, .editorial-content p {text-align: center; }
+  select, input, textarea, button {font-size: 12px; }
+  .value-card.small.primary, .value-card.small.light, .value-card.full-width {padding: 25px 20px; }
+  .value-card h3 {margin-bottom: 0; }
+  .btn-primary {padding: 10px 32px; max-width: 155px; }
+  p {font-size: 16px; }
+  .footer-col span {font-size: 17px !important; }
+  .quick-text h3 {font-size: 17px; }
+  .fluid-container {padding: 0 15px; }
+  .badge {margin: 0 auto 10px; display: flex; justify-content: center; align-items: center; width: 100%; max-width: 230px; }
+  .projects-header-section h1, .projects-header-section p {text-align: center; }
+  h1 {font-size: 22px; }
+  .quick-icon {width: 40px; height: 40px; }
+  svg {width: 20px; height: 20px; }
+  .quick-card {
+	padding: 30px;
+}
   .location-card {
-    padding: 12px;
-  }
-
-  .contact-flex {
-    margin-bottom: 40px;
-  }
-
-  .contact-form-container {
-    padding: 30px 20px;
-  }
-
-  .cta-section {
-    padding: 0 0 40px;
-  }
-
-  .projects-header-section,
-  .services-header-section {
-    padding: 40px 0 40px;
-  }
-
-  .projects-list-section,
-  .services-detail-section {
-    padding: 40px 0 40px;
-  }
-
-  .cta-section {
-    padding: 40px 0;
-  }
-
-  .about-hero-section {
-    padding: 40px 0 40px;
-  }
-
-  .mission-section {
-    padding: 40px 0;
-  }
-
-  .values-section {
-    padding: 40px 0;
-  }
-
-  .hero-section {
-    padding: 40px 0;
-  }
-
-  .services-section {
-    padding: 0 0 40px;
-  }
-
-  .portfolio-section {
-    padding: 40px 0;
-  }
-
-  .pricing-section {
-    padding: 0 0 40px;
-  }
-
-  .main-footer {
-    padding: 40px 0 0;
-  }
-
-  #pricing {
-    padding: 40px 0 0;
-  }
-
-  .dark-card-wrapper {
-    padding: 40px 40px;
-  }
-
-  .about-hero-section {
-    padding: 40px 0 40px;
-  }
-
-  .feature-item h4 {
-    font-size: 17px;
-  }
-
-  .price-amount {
-    margin-bottom: 22px;
-  }
-
-  .check-list {
-    margin-bottom: 30px;
-  }
-
-  .pricing-cta-card span {
-    margin-bottom: 5px;
-  }
-
-  .pricing-cta-card p.starts {
-    margin-bottom: 2px;
-  }
-
-  .portfolio-section {
-    padding: 40px 0 26px;
-  }
-
-  .hero-section {
-    padding: 40px 0;
-  }
-
-  .hero-section {
-    padding: 40px 0;
-  }
-
-  .services-section {
-    padding: 0 0 40px;
-  }
-
-  .portfolio-section {
-    padding: 40px 0;
-  }
-
-  .pricing-section {
-    padding: 0 0 40px;
-  }
-
-.cta-section {
-	padding: 28px 0 40px;
+	padding: 30px;
 }
-
-  .main-footer {
-    padding: 40px 0 0;
-  }
-
- .dark-card-wrapper {
-	padding: 25px 25px;
+  .contact-flex {margin-bottom: 40px; }
+  .contact-form-container {padding: 30px 20px; }
+  .cta-section {padding: 0 0 40px; }
+  .projects-header-section, .services-header-section {padding: 40px 0 40px; }
+  .projects-list-section, .services-detail-section {padding: 40px 0 40px; }
+  .cta-section {padding: 40px 0; }
+  .about-hero-section {padding: 40px 0 40px; }
+  .mission-section {padding: 40px 0; }
+  .values-section {padding: 40px 0; }
+  .hero-section {padding: 40px 0; }
+  .services-section {padding: 0 0 40px; }
+  .portfolio-section {padding: 40px 0; }
+  .pricing-section {padding: 0 0 40px; }
+  .main-footer {padding: 40px 0 0; }
+  #pricing {padding: 40px 0 0; }
+  .dark-card-wrapper {padding: 40px 40px; }
+  .about-hero-section {padding: 40px 0 40px; }
+  .feature-item h4 {font-size: 17px; }
+  .price-amount {margin-bottom: 22px; }
+  .check-list {margin-bottom: 30px; }
+  .pricing-cta-card span {margin-bottom: 5px; }
+  .pricing-cta-card p.starts {margin-bottom: 2px; }
+  .portfolio-section {padding: 40px 0 26px; }
+  .hero-section {padding: 40px 0; }
+  .hero-section {padding: 40px 0; }
+  .services-section {padding: 0 0 40px; }
+  .portfolio-section {padding: 40px 0; }
+  .pricing-section {padding: 0 0 40px; }
+  .cta-section {padding: 28px 0 40px; }
+  .main-footer {padding: 40px 0 0; }
+  .dark-card-wrapper {padding: 25px 25px; }
+  .hero-content h1 {font-size: 22px; }
+  a {font-size: 15px; }
+  h2 {font-size: 21px; }
+  .services-header {margin-bottom: 20px; }
+  .service-card h3 {font-size: 18px; margin-bottom: 7px; }
+  .service-card {padding: 20px 20px; }
+  .service-card p {line-height: 1.3; }
+  .service-card {max-width: 320px; }
 }
-
-  .hero-content h1 {
-    font-size: 22px;
-  }
-
-  a {
-    font-size: 15px;
-  }
-
-  h2 {
-    font-size: 21px;
-  }
-
-  .services-header {
-    margin-bottom: 20px;
-  }
-
-  .service-card h3 {
-    font-size: 18px;
-    margin-bottom: 7px;
-  }
-
-  .service-card {
-    padding: 20px 20px;
-  }
-
-  .service-card p {
-    line-height: 1.3;
-  }
+@media (max-width: 420px) {  .location-info svg {width: 23px; height: 23px; }
+  .location-info {gap: 12px; }
+  .location-text h4 {font-size: 15px; }
+  .quick-text h3 {font-size: 15px; }
+  .quick-card {gap: 8px; }
+  svg {width: 16px; height: 16px; }
+  .quick-icon {width: 26px; height: 26px; border-radius: 5px; }
 }
-
-@media (max-width: 420px) {
-  .location-info svg {
-
-    width: 23px;
-    height: 23px;
-
-  }
-
-  .location-info {
-    gap: 12px;
-  }
-
-  .location-text h4 {
-
-    font-size: 15px;
-  }
-
-  .quick-text h3 {
-    font-size: 15px;
-  }
-
-  .quick-card {
-
-    gap: 8px;
-
-  }
-
-  svg {
-    width: 16px;
-    height: 16px;
-  }
-
-  .quick-icon {
-    width: 26px;
-    height: 26px;
-    border-radius: 5px;
-  }
-}
-/* Error Page Responsive Styles */

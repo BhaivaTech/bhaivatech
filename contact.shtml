@@ -3,8 +3,10 @@
 
 <head>
   <!--#include virtual="includes/meta-tags.html" -->
-  <title>Contact BhaivaTech | Start Your Web Project Today</title>
-  <meta name="description" content="Reach out to BhaivaTech to discuss your website or web app project. Fast responses, transparent pricing, and expert web developers ready to help.">
+  <title>Contact BhaivaTech | Get a Free Quote for Your Web Project</title>
+  <meta name="description" content="Got a project in mind? Reach out to BhaivaTech in Bangalore — we reply within 24 hours. Get a free quote for your website, app, or web development project.">
+  <link rel="canonical" href="https://bhaivatech.com/contact" />
+
 </head>
 
 <body>
@@ -12,13 +14,14 @@
 
   <div class="main-wrapper">
     <!--#include virtual="includes/header.html" -->
+    <main id="main-content">
 
     <!-- Contact Header -->
      <section class="projects-header-section">
-      <div class="fluid-container flex-col">
-        <span class="badge">Get in Touch</span>
-        <h1>Let's Build Your Next Web Project Together.</h1>
-        <p>Have a project in mind? Whether it's a business website, e-commerce store, or custom web application — our team is ready to hear your idea and get to work.</p>
+      <div class="fluid-container flex-col" data-aos="fade-up">
+        <span class="badge">Let's Talk</span>
+        <h1>Got a Project in Mind? We'd Love to Hear About It.</h1>
+        <p>No lengthy forms, no sales calls, no corporate nonsense. Just tell us what you're thinking — even if it's just a rough idea — and we'll get back to you within 24 hours with honest advice and a clear quote. We're based in Bangalore and always happy to chat.</p>
       </div>
     </section>
     <!-- Contact Form & Info -->
@@ -26,62 +29,67 @@
       <div class="fluid-container">
         <div class="contact-flex">
           <!-- Form -->
-          <div class="contact-form-container">
+          <div class="contact-form-container" data-aos="fade-right">
             <form action="contact-process.php" method="POST" id="contactForm" class="contact-form">
               <div class="form-row">
                 <div class="form-group">
-                  <label for="name">Full Name</label>
+                  <label for="name">What's your name?</label>
                   <input type="text" id="name" name="name" placeholder="e.g. Ravi Kumar" required>
                 </div>
                 <div class="form-group">
-                  <label for="email">Email Address</label>
+                  <label for="email">Your email</label>
                   <input type="email" id="email" name="email" placeholder="e.g. ravi@yourbusiness.com" required>
                 </div>
               </div>
               <div class="form-row">
                 <div class="form-group">
-                  <label for="phone">Phone Number</label>
+                  <label for="phone">Phone (optional)</label>
                   <input type="tel" id="phone" name="phone" placeholder="e.g. +91 98765 43210">
                 </div>
                 <div class="form-group">
-                  <label for="address">Location</label>
+                  <label for="address">Where are you based?</label>
                   <input type="text" id="address" name="address" placeholder="e.g. HSR Layout, Bangalore">
                 </div>
               </div>
               <div class="form-group">
-                <label for="message">Project Brief</label>
+                <label for="message">Tell us about your project</label>
                 <textarea id="message" name="message" rows="5" placeholder="Describe what you want to build — type of website, features, timeline, or any questions..." required></textarea>
               </div>
               <div id="form-response" class="form-response" style="margin-bottom: 20px; display: none;"></div>
-              <button type="submit" class="btn-blue w-full">Send My Request →</button>
+              <button type="submit" class="btn-blue w-full">Send It Over →</button>
+              <div style="font-size: 13px; color: var(--text-light); text-align: center; margin-top: 15px;">
+                🔒 We don't spam. We don't share your details. We just build great websites.
+              </div>
             </form>
           </div>
 
           <!-- Info -->
-          <div class="contact-info-container">
+          <div class="contact-info-container" data-aos="fade-left">
             <div class="quick-cards">
               <a href="https://wa.me/918277807904" class="quick-card whatsapp-card">
                 <div class="quick-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.937 3.659 1.431 5.623 1.432h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></div>
                 <div class="quick-text">
-                  <h3>WhatsApp Us</h3>
-                  <p>Get a reply within hours — no waiting, no calls needed.</p>
+                  <h3>Chat on WhatsApp</h3>
+                  <p>Prefer messaging? So do we. Drop us a WhatsApp and we'll reply within a few hours — no waiting, no hold music.</p>
                 </div>
               </a>
               <a href="tel:+918277807904" class="quick-card call-card">
                 <div class="quick-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></div>
                 <div class="quick-text">
-                  <h3>Call Direct</h3>
-                  <p>Mon–Sat, 9:00 AM – 6:00 PM IST</p>
+                  <h3>Give Us a Call</h3>
+                  <p>Old school? That works too. Call us Monday to Saturday, 9 AM to 6 PM IST. We're real people, not a call centre.</p>
                 </div>
               </a>
             </div>
             
             <div class="location-card">
               <div class="location-info">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary-blue)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--primary-blue)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
                 <div class="location-text">
                   <h4>Our Office</h4>
-                  <p>Bangalore</p>
+                  <p>We're based in Bangalore, Karnataka, India. We work with clients across India, the US, UK, and Australia — fully remote, fully reliable.</p>
+                  <a href="mailto:contact@bhaivatech.com" style="display:block; margin-top:5px; color:inherit; text-decoration:none;">contact@bhaivatech.com</a>
+                  <a href="tel:+918277807904" style="display:block; margin-top:2px; color:inherit; text-decoration:none;">+91 82778 07904</a>
                 </div>
               </div>
             </div>
@@ -90,6 +98,7 @@
       </div>
     </section>
 
+    </main>
     <!--#include virtual="includes/footer.html" -->
   </div>
 
