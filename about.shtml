@@ -4,7 +4,7 @@
 <head>
   <!--#include virtual="includes/meta-tags.html" -->
   <title>About BhaivaTech | Web Development Company in Bangalore</title>
-  <meta name="description" content="BhaivaTech is a Bangalore-based web development company helping startups and small businesses build fast, scalable websites and apps. Learn about our mission, process, and team.">
+  <meta name="description" content="We're a small but passionate web development team from Bangalore. We help startups and local businesses get online without breaking the bank. Say hi!">
 </head>
 <style>
   .editorial-content h1 {margin: 15px 0 20px 0;}
@@ -28,9 +28,9 @@
       <div class="fluid-container">
         <div class="editorial-flex" data-aos="fade-up">
           <div class="editorial-content">
-            <span class="badge">Who We Are — Bangalore's Affordable Dev Partner</span>
-            <h1>Built from Bangalore. Built to Scale. Built for You.</h1>
-            <p>BhaivaTech is a Bangalore-based software development company on a mission to give startups and small businesses the digital backbone they deserve. We handle everything — frontend, backend, fullstack builds, and deployment — so you can focus on growing your business while we engineer the platform that powers it.</p>
+            <span class="badge">A little about us</span>
+            <h1>We're BhaivaTech — A Web Dev Team from Bangalore That Actually Cares</h1>
+            <p>We started BhaivaTech because we saw too many small businesses and startups struggling to get a decent website without paying agency-level prices. So we decided to fix that. We're a Bangalore-based team of developers and designers who love building things that actually work — no fluff, no bloat, just clean code and honest work.</p>
           </div>
           <div class="editorial-image">
             <div class="image-card">
@@ -51,9 +51,8 @@
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path></svg>
               </div>
               <h2>Our Mission</h2>
-              <p class="mission-quote">"To make powerful web technology accessible to every startup and small business in India."</p>
               <div class="mission-divider"></div>
-              <p>We believe great software shouldn't be exclusive to large enterprises. BhaivaTech exists to level the playing field — giving startups and local businesses across Bangalore and India access to expert web development, full deployment, and ongoing support at every stage of their growth.</p>
+              <p>We want every small business owner — whether you're running a local store in Bangalore or launching a startup from your bedroom — to have access to a great website without needing a big budget. That's it. That's why we exist.</p>
             </div>
           </div>
           
@@ -63,29 +62,29 @@
               <div class="point-item" data-aos="fade-up" data-aos-delay="100">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--whatsapp-green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
                 <div class="point-text">
-                  <h4>Custom Web Solutions</h4>
-                  <p>No copy-paste templates. Every website we build in Bangalore is designed around your specific business goals and user needs.</p>
+                  <h4>We actually listen</h4>
+                  <p>Before we write a single line of code, we sit down and understand your business, your customers, and what you actually need. No assumptions.</p>
                 </div>
               </div>
               <div class="point-item" data-aos="fade-up" data-aos-delay="200">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--whatsapp-green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
                 <div class="point-text">
-                  <h4>Scalable From Day One</h4>
-                  <p>Whether you're serving 50 customers or 50,000, our architecture grows with your business — no performance trade-offs.</p>
+                  <h4>We don't disappear after launch</h4>
+                  <p>A lot of agencies hand over the keys and vanish. We stay in touch, fix issues, and grow with you as your business grows.</p>
                 </div>
               </div>
               <div class="point-item" data-aos="fade-up" data-aos-delay="300">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--whatsapp-green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
                 <div class="point-text">
-                  <h4>End-to-End Delivery</h4>
-                  <p>From design to deployment, we manage the full development lifecycle so nothing falls through the cracks.</p>
+                  <h4>We keep it simple and affordable</h4>
+                  <p>No hidden charges. No confusing jargon. Just straightforward pricing and honest timelines — starting from ₹4999.</p>
                 </div>
               </div>
               <div class="point-item" data-aos="fade-up" data-aos-delay="400">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--whatsapp-green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
                 <div class="point-text">
-                  <h4>Bangalore-Based, Globally Serving</h4>
-                  <p>We're rooted in Bangalore but serve clients across India, the US, UK, and Australia — with the same quality and commitment.</p>
+                  <h4>We're local — we get it</h4>
+                  <p>Being based in Bangalore means we understand the Indian market, local business challenges, and what your customers expect. That makes a real difference.</p>
                 </div>
               </div>
             </div>
@@ -99,33 +98,33 @@
       <div class="fluid-container">
         <div class="values-header-main" data-aos="fade-up">
           <span class="badge">Our Process</span>
-          <h2>How We Build Websites That Work — Our Process</h2>
+          <h2>Here's How We Work</h2>
 
           <div class="values-flex">
             <div class="value-card large dark" data-aos="zoom-in" data-aos-delay="100">
               <div class="text-content">
-                <h3>Technical Expertise</h3>
-                <p>Our developers are skilled across the full stack. Before writing a single line of code, we map out the right architecture for your goals.</p>
+                <h3>We start by listening</h3>
+                <p>Tell us your idea, your budget, your timeline. We'll figure out the best approach together — no pressure, no sales pitch.</p>
               </div>
             </div>
             <div class="value-card small primary" data-aos="fade-up" data-aos-delay="200">
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
               <div>
-                <h3>Fast Turnaround</h3>
-                <p>We ship quickly without cutting corners — rapid deployment built on solid engineering foundations.</p>
+                <h3>We plan before we build</h3>
+                <p>No jumping straight into code. We map out the architecture, design, and tech stack so there are zero surprises later.</p>
               </div>
             </div>
             <div class="value-card small light" data-aos="fade-up" data-aos-delay="300">
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--whatsapp-green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
               <div>
-                <h3>Secure & Reliable</h3>
-                <p>Security is built in, not bolted on. Your business data and your users' trust are always protected.</p>
+                <h3>We build fast, but never sloppy</h3>
+                <p>Speed matters, but so does quality. We move quickly and keep you updated at every step so you always know where things stand.</p>
               </div>
             </div>
             <div class="value-card full-width" data-aos="fade-up" data-aos-delay="400">
               <div class="text-content">
-                <h3>Your Growth, Our Priority</h3>
-                <p>We don't just deliver a website and disappear. We work alongside you as a long-term partner — with clear communication, honest timelines, and real accountability throughout every project.</p>
+                <h3>We launch — and we stick around</h3>
+                <p>Going live is just the beginning. We're here for fixes, updates, and whatever comes next. You're not on your own after launch.</p>
               </div>
             </div>
           </div>
@@ -137,9 +136,10 @@
     <section class="cta-section">
       <div class="fluid-container">
         <div class="cta-card" data-aos="zoom-in">
-          <h2>Ready to build something that scales?</h2>
-          <div class="button-group">
-            <a href="contact" class="btn-primary">Let's Talk</a>
+          <h2>Want to work with us?</h2>
+          <p style="margin-bottom: 30px;">We'd love to hear about your project — big or small. Drop us a message and we'll get back to you within 24 hours. No sales pitch, promise.</p>
+          <div class="button-group" style="justify-content:center;">
+            <a href="contact" class="btn-primary">Let's Talk →</a>
             <!-- <a href="projects.shtml" class="btn-secondary">See Our Work</a> -->
           </div>
         </div>
