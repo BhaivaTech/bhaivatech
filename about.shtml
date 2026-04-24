@@ -20,6 +20,40 @@
   }
   </script>
 
+  <!-- Schema: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Why choose BhaivaTech for web development in Bangalore?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We are a local Bangalore-based team that actually listens to your needs, builds fast and affordable websites starting from ₹4999, and provides ongoing support long after your website goes live."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you work with startups and small businesses?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, our core mission is to help startups and small businesses get online without breaking the bank. We offer straightforward pricing and honest timelines tailored for smaller budgets."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the process for building a website with BhaivaTech?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We start by listening to your idea, mapping out the architecture and design, building the project quickly but carefully, and staying around for fixes and updates after launch."
+        }
+      }
+    ]
+  }
+  </script>
+
 </head>
 <style>
   .editorial-content h1 {
