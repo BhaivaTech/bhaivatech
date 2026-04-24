@@ -7,6 +7,18 @@
   <meta name="description" content="Got a project in mind? Reach out to BhaivaTech in Bangalore — we reply within 24 hours. Get a free quote for your website, app, or web development project.">
   <link rel="canonical" href="https://bhaivatech.com/contact" />
 
+  <!-- Schema: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://bhaivatech.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://bhaivatech.com/contact" }
+    ]
+  }
+  </script>
+
 </head>
 
 <body>

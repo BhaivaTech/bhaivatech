@@ -8,6 +8,17 @@
   <link rel="canonical" href="https://bhaivatech.com/" />
 
   <!--#include virtual="includes/meta-tags.html" -->
+
+  <!-- Schema: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://bhaivatech.com/" }
+    ]
+  }
+  </script>
   <style>
     .cta-section p {color: #000;}
     .cta-section p {margin: 12px 0 20px;}
