@@ -41,22 +41,110 @@
 <meta property="twitter:image" content="https://bhaivatech.com/images/og-image.jpg">
 
 <meta name="google-site-verification" content="4cPLbKH_8ymwvGiT418iwSo6NVClMiAPZoCJckAxWGw" />
+<meta name="robots" content="max-image-preview:large">
 
+<!-- Schema: Organization (Brand Identity + Knowledge Panel) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "BhaivaTech",
+  "alternateName": "Bhaiva Tech",
+  "url": "https://bhaivatech.com",
+  "logo": "https://bhaivatech.com/images/logo/header-logo.png",
+  "image": "https://bhaivatech.com/images/og-image.jpg",
+  "description": "Affordable web development company in Bangalore building fast, scalable websites for startups and small businesses. Projects from ₹4999.",
+  "email": "contact@bhaivatech.com",
+  "telephone": "+918277807904",
+  "foundingDate": "2026",
+  "foundingLocation": {
+    "@type": "Place",
+    "name": "Bangalore, Karnataka, India"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Bangalore",
+    "addressRegion": "Karnataka",
+    "postalCode": "560000",
+    "addressCountry": "IN"
+  },
+  "areaServed": [
+    { "@type": "Country", "name": "India" },
+    { "@type": "Country", "name": "United States" },
+    { "@type": "Country", "name": "United Kingdom" },
+    { "@type": "Country", "name": "Australia" }
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/company/bhaivatech",
+    "https://www.instagram.com/bhaivatech",
+    "https://x.com/bhaivatech",
+    "https://github.com/bhaivatech"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+918277807904",
+    "contactType": "customer service",
+    "availableLanguage": ["English", "Hindi", "Kannada"],
+    "areaServed": "IN"
+  }
+}
+</script>
+
+<!-- Schema: ProfessionalService (Local Business Branding) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   "name": "BhaivaTech",
+  "image": "https://bhaivatech.com/images/logo/header-logo.png",
   "url": "https://bhaivatech.com",
   "telephone": "+918277807904",
   "email": "contact@bhaivatech.com",
+  "priceRange": "₹₹",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Bangalore",
     "addressRegion": "Karnataka",
+    "postalCode": "560064",
     "addressCountry": "IN"
   },
-  "areaServed": ["IN", "US", "GB", "AU"],
-  "priceRange": "₹₹"
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 12.9716,
+    "longitude": 77.5946
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    "opens": "09:00",
+    "closes": "18:00"
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Bangalore" },
+    { "@type": "State", "name": "Karnataka" },
+    { "@type": "Country", "name": "India" }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Web Development Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Website Development" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "UI/UX Design" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mobile App Development" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Backend & API Development" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cloud & Hosting" } }
+    ]
+  }
+}
+</script>
+
+<!-- Schema: WebSite (Site Name + Branding in Search) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "BhaivaTech",
+  "alternateName": "Bhaiva Tech",
+  "url": "https://bhaivatech.com"
 }
 </script>

@@ -7,6 +7,68 @@
   <meta name="description" content="From websites to mobile apps to backend systems — BhaivaTech in Bangalore builds it all. Honest pricing, clean code, and real support. See what we can do for you.">
   <link rel="canonical" href="https://bhaivatech.com/services" />
 
+  <!-- Schema: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://bhaivatech.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://bhaivatech.com/services" }
+    ]
+  }
+  </script>
+
+  <!-- Schema: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How much does a website cost at BhaivaTech?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our web development projects start at ₹4999. Final pricing depends on the scope, features, and complexity of your project. We offer flexible, tiered pricing for startups and local businesses."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does it take to build a website?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most projects go live in as little as 4 weeks with a fully functional, production-ready website. Complex web applications may take longer depending on the requirements."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What technologies does BhaivaTech use?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We use modern technologies including React, Next.js, Tailwind CSS, Node.js, Express, Flutter, React Native, MySQL, MongoDB, Firebase, and AWS for cloud deployment."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you provide support after the website is launched?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we offer ongoing maintenance, security patches, and 24/7 priority support so your website is always at its best. We don't disappear after launch."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does BhaivaTech work with clients outside Bangalore?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. While we're based in Bangalore, we work with clients across India, the US, UK, and Australia — fully remote and fully reliable."
+        }
+      }
+    ]
+  }
+  </script>
+
   <style>
     .btn-primary {max-width: 202px;}
   </style>
