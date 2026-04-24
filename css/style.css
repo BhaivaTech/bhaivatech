@@ -14,13 +14,25 @@ a {text-decoration: none !important; display: flex; align-items: center; font-si
 select, input, textarea, button {width: 100%; border: none; outline: none; background: transparent; cursor: pointer; font-size: 13px; font-family: inherit; display: flex; }
 
 /* main structures */ 
-
+.logo-group a img {
+	width: 100%;
+	max-width: 300px;transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
 .main-wrapper {width: 100%; display: flex; flex-direction: column; }
 .fluid-container {width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 40px; display: flex; }
 .inner-wrapper {width: 100%; display: flex; flex-direction: column; }
-header {width: 100%; padding: 6px 0; background: rgba(255, 252, 252, 0.21); backdrop-filter: blur(12px); position: sticky; top: 0; z-index: 1000; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 16px; }
-header.scrolled {padding: 0; background: rgba(255, 255, 255, 0.95); box-shadow: 0 4px 30px rgba(0, 86, 210, 0.08); }
+header {width: 100%; padding: 12px 0; background: rgba(255, 252, 252, 0.21); backdrop-filter: blur(12px); position: sticky; top: 0; z-index: 1000; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 16px; }
+/* header.scrolled {padding: 0; background: rgba(255, 255, 255, 0.95); box-shadow: 0 4px 30px rgba(0, 86, 210, 0.08); } */
 header .fluid-container {justify-content: space-between; align-items: center; }
+header.scrolled {
+	padding: 8px 0;
+	background: rgba(255, 255, 255, 0.95);
+	box-shadow: 0 4px 30px rgba(0, 86, 210, 0.08);
+}
+header.scrolled .logo-group a img {
+	width: 100%;
+	max-width: 250px;
+}
 .logo {font-size: 24px; font-weight: 700; color: var(--primary-blue); letter-spacing: -0.5px; }
 nav ul {display: flex; gap: 32px; }
  nav ul li a {font-weight: 500; color: #090B0D; }

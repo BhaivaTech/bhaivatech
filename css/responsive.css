@@ -78,7 +78,12 @@
   .footer-description {margin: 5px 0 10px; }
   .footer-grid {padding: 0 0 22px; }
 }
-@media (max-width:640px) {  .portfolio-header {margin-bottom: 14px; }
+@media (max-width:640px) {  
+  .logo-group a img {max-width: 200px;}
+  header.scrolled .logo-group a img {
+	max-width: 150px;
+}
+  .portfolio-header {margin-bottom: 14px; }
   .portfolio-title {align-items: center; }
   .portfolio-header {align-items: center; flex-direction: column; gap: 7px; }
   .pricing-cta-card {width: 100%; }
@@ -98,12 +103,11 @@
   .form-row {flex-direction: column; gap: 0; }
 }
 @media (max-width: 480px) {  
-  .location-card svg{
-    display: none;
-  }
-  .quick-card {
-	padding: 37px 23px;
-}
+  header {padding: 10px 0;}
+  .logo-group a img {max-width: 150px;}
+  header.scrolled .logo-group a img {max-width: 120px;}
+  .location-card svg{ display: none;}
+  .quick-card {padding: 37px 23px;}
   .whatsapp-card .quick-icon {display: none;}
   .call-card .quick-icon {display: none;}
   .quote-form .btn-blue {padding: 12px; }
