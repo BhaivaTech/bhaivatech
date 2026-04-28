@@ -14,18 +14,25 @@ AddOutputFilter INCLUDES .shtml
 <IfModule mod_rewrite.c>
     RewriteEngine On
     
-    # Force HTTPS and force non-www (bhaivatech.com instead of www.bhaivatech.com)
-    RewriteCond %{HTTPS} off [OR]
-    RewriteCond %{HTTP_HOST} ^www\. [NC]
-    # Match the host exactly to redirect properly
-    RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
-    RewriteRule ^ https://%1%{REQUEST_URI} [L,NE,R=301]
+    # Force HTTPS
+    RewriteCond %{HTTPS} off
+    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-    # Remove .shtml from URLs (Allows domain.com/about instead of domain.com/about.shtml)
-    RewriteCond %{REQUEST_FILENAME} !-d
+    # Force non-www (Redirect www.bhaivatech.com to bhaivatech.com)
+    RewriteCond %{HTTP_HOST} ^www\.bhaivatech\.com [NC]
+    RewriteRule ^(.*)$ https://bhaivatech.com/$1 [L,R=301]
+
+    # Redirect /index and /index.shtml to root /
+    RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index(\.shtml)?\ HTTP/
+    RewriteRule ^index(\.shtml)?$ https://bhaivatech.com/ [L,R=301]
+
+    # Redirect .shtml to non-extension version (External Redirect)
+    RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /(.+)\.shtml\ HTTP/
+    RewriteRule ^(.+)\.shtml$ https://bhaivatech.com/$1 [L,R=301]
+
+    # Remove .shtml from URLs (Internal Rewrite)
     RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}.shtml -f
-    RewriteRule ^(.+?)/?$ $1.shtml [L]
+    RewriteRule ^([^.]+)$ $1.shtml [L]
     
 </IfModule>
 
