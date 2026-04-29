@@ -3,10 +3,10 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 use PHPMailer\PHPMailer\SMTP;
 
-require __DIR__ . '/config.php';
-require __DIR__ . '/includes/PHPMailer/Exception.php';
-require __DIR__ . '/includes/PHPMailer/PHPMailer.php';
-require __DIR__ . '/includes/PHPMailer/SMTP.php';
+require __DIR__ . '/../config.php';
+require __DIR__ . '/PHPMailer/Exception.php';
+require __DIR__ . '/PHPMailer/PHPMailer.php';
+require __DIR__ . '/PHPMailer/SMTP.php';
 
 /**
  * Sends an email via PHPMailer using SMTP settings from config.php

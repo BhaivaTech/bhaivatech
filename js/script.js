@@ -164,7 +164,12 @@ document.addEventListener('DOMContentLoaded', () => {
             submitBtn.textContent = 'Sending...';
             
             try {
+                // reCAPTCHA v3 execution
+                const token = await grecaptcha.execute('6LfRFM8sAAAAAPlDVY7eNtS3vPHVZcPVFUdJscyY', {action: 'contact_form'});
+                
                 const formData = new FormData(contactForm);
+                formData.append('g-recaptcha-response', token);
+                
                 const response = await fetch('contact-process.php', {
                     method: 'POST',
                     body: formData
@@ -287,12 +292,44 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             const submitBtn = quoteFormModal.querySelector('button[type="submit"]');
             const originalText = submitBtn.textContent;
+
+            // Validation
+            const name = quoteFormModal.name.value.trim();
+            const email = quoteFormModal.email.value.trim();
+            const message = quoteFormModal.message.value.trim();
+
+            if (!name || !email || !message) {
+                quoteFormResponse.textContent = 'Please fill in all required fields.';
+                quoteFormResponse.style.backgroundColor = '#FEE2E2';
+                quoteFormResponse.style.color = '#991B1B';
+                quoteFormResponse.style.display = 'block';
+                quoteFormResponse.style.padding = '12px';
+                quoteFormResponse.style.borderRadius = '8px';
+                return;
+            }
+
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                quoteFormResponse.textContent = 'Please enter a valid email address.';
+                quoteFormResponse.style.backgroundColor = '#FEE2E2';
+                quoteFormResponse.style.color = '#991B1B';
+                quoteFormResponse.style.display = 'block';
+                quoteFormResponse.style.padding = '12px';
+                quoteFormResponse.style.borderRadius = '8px';
+                return;
+            }
+
             submitBtn.disabled = true;
             submitBtn.textContent = 'Sending...';
 
             try {
+                // reCAPTCHA v3 execution
+                const token = await grecaptcha.execute('6LfRFM8sAAAAAPlDVY7eNtS3vPHVZcPVFUdJscyY', {action: 'quote_modal'});
+                
                 // Assuming similar backend script handling as contact form
                 const formData = new FormData(quoteFormModal);
+                formData.append('g-recaptcha-response', token);
+                
                 const response = await fetch('contact-process.php', {
                     method: 'POST',
                     body: formData

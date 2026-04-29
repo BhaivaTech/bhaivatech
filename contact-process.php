@@ -8,6 +8,25 @@ if ($_SERVER["REQUEST_METHOD"] !== "POST") {
     exit;
 }
 
+// reCAPTCHA verification
+$recaptchaSecret = "6LfRFM8sAAAAAMXrxJYQrjy3mYNU1UBBmYNVp-uL";
+$recaptchaResponse = $_POST['g-recaptcha-response'];
+
+if (empty($recaptchaResponse)) {
+    http_response_code(400);
+    echo json_encode(["status" => "error", "message" => "Security verification failed."]);
+    exit;
+}
+
+$verifyResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret=' . $recaptchaSecret . '&response=' . $recaptchaResponse);
+$responseData = json_decode($verifyResponse);
+
+if (!$responseData->success || $responseData->score < 0.5) {
+    http_response_code(400);
+    echo json_encode(["status" => "error", "message" => "Security check failed. Please try again."]);
+    exit;
+}
+
 // 1. Collect and sanitize input
 $name = strip_tags(trim($_POST["name"]));
 $name = str_replace(["\r", "\n"], [" ", " "], $name);
