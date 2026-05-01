@@ -7,6 +7,15 @@
   <meta name="description"
     content="We're a small but passionate web development team from Bangalore. We help startups and local businesses get online without breaking the bank. Say hi!">
   <link rel="canonical" href="https://bhaivatech.com/about" />
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bhaivatech.com/about">
+  <meta property="og:title" content="About BhaivaTech | Web Development Company in Bangalore">
+  <meta property="og:description" content="We're a team of engineers in Bangalore dedicated to building high-performance websites for startups. Learn about our story, values, and why we care about your growth.">
+  <meta property="og:image" content="https://bhaivatech.com/images/og-image.png">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="About BhaivaTech | Web Development Company in Bangalore">
+  <meta property="twitter:description" content="We're a team of engineers in Bangalore dedicated to building high-performance websites for startups. Learn about our story, values, and why we care about your growth.">
+  <meta property="twitter:image" content="https://bhaivatech.com/images/og-image.png">
 
   <!-- Schema: BreadcrumbList -->
   <script type="application/ld+json">

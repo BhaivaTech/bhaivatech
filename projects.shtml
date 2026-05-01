@@ -6,6 +6,15 @@
   <title>Our Web Development Portfolio | BhaivaTech</title>
   <meta name="description" content="Explore BhaivaTech's portfolio of high-performance web apps and enterprise platforms — built to scale, designed to convert.">
   <link rel="canonical" href="https://bhaivatech.com/projects" />
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bhaivatech.com/projects">
+  <meta property="og:title" content="Our Web Development Portfolio | BhaivaTech">
+  <meta property="og:description" content="Explore BhaivaTech's portfolio of high-performance web apps and enterprise platforms — built to scale, designed to convert.">
+  <meta property="og:image" content="https://bhaivatech.com/images/og-image.png">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Our Web Development Portfolio | BhaivaTech">
+  <meta property="twitter:description" content="Explore BhaivaTech's portfolio of high-performance web apps and enterprise platforms — built to scale, designed to convert.">
+  <meta property="twitter:image" content="https://bhaivatech.com/images/og-image.png">
 
   <!-- Schema: BreadcrumbList -->
   <script type="application/ld+json">

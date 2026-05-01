@@ -6,6 +6,15 @@
   <title>Contact BhaivaTech | Get a Free Quote for Your Web Project</title>
   <meta name="description" content="Got a project in mind? Reach out to BhaivaTech in Bangalore — we reply within 24 hours. Get a free quote for your website, app, or web development project.">
   <link rel="canonical" href="https://bhaivatech.com/contact" />
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bhaivatech.com/contact">
+  <meta property="og:title" content="Contact BhaivaTech | Get a Free Quote for Your Web Project">
+  <meta property="og:description" content="Ready to start your project? Get in touch with BhaivaTech for a free consultation and quote. We're here to help you build something great.">
+  <meta property="og:image" content="https://bhaivatech.com/images/og-image.png">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Contact BhaivaTech | Get a Free Quote for Your Web Project">
+  <meta property="twitter:description" content="Ready to start your project? Get in touch with BhaivaTech for a free consultation and quote. We're here to help you build something great.">
+  <meta property="twitter:image" content="https://bhaivatech.com/images/og-image.png">
 
   <!-- Schema: BreadcrumbList -->
   <script type="application/ld+json">

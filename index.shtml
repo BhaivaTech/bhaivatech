@@ -6,6 +6,15 @@
   <meta name="description"
     content="BhaivaTech is a web development company in Bangalore offering website design, mobile apps, and backend development for startups and small businesses. Projects from ₹4999.">
   <link rel="canonical" href="https://bhaivatech.com/" />
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bhaivatech.com/">
+  <meta property="og:title" content="BhaivaTech | Affordable Web Development in Bangalore">
+  <meta property="og:description" content="Expert web engineering for startups & small businesses. Websites from ₹4999. Fast, simple, and scalable.">
+  <meta property="og:image" content="https://bhaivatech.com/images/og-image.png">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="BhaivaTech | Affordable Web Development in Bangalore">
+  <meta property="twitter:description" content="Expert web engineering for startups & small businesses. Websites from ₹4999. Fast, simple, and scalable.">
+  <meta property="twitter:image" content="https://bhaivatech.com/images/og-image.png">
 
   <!--#include virtual="includes/meta-tags.html" -->
 

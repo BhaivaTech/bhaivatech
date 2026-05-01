@@ -6,6 +6,15 @@
   <title>Our Services | Web Development | BhaivaTech Bangalore</title>
   <meta name="description" content="From websites to mobile apps to backend systems — BhaivaTech in Bangalore builds it all. Honest pricing, clean code, and real support. See what we can do for you.">
   <link rel="canonical" href="https://bhaivatech.com/services" />
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bhaivatech.com/services">
+  <meta property="og:title" content="Our Services | Web Development | BhaivaTech Bangalore">
+  <meta property="og:description" content="From websites to mobile apps to backend systems — BhaivaTech in Bangalore builds it all. Honest pricing, clean code, and real support. See what we can do for you.">
+  <meta property="og:image" content="https://bhaivatech.com/images/og-image.png">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Our Services | Web Development | BhaivaTech Bangalore">
+  <meta property="twitter:description" content="From websites to mobile apps to backend systems — BhaivaTech in Bangalore builds it all. Honest pricing, clean code, and real support. See what we can do for you.">
+  <meta property="twitter:image" content="https://bhaivatech.com/images/og-image.png">
 
   <!-- Schema: BreadcrumbList -->
   <script type="application/ld+json">

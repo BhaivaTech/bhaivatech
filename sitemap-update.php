@@ -23,7 +23,8 @@ $URL_MAP_OVERRIDES = [
     '/about'             => 'about.shtml',
     '/services'          => 'services.shtml',
     '/contact'           => 'contact.shtml',
-    '/project'         => 'project.shtml',
+    '/projects'          => 'projects.shtml',
+    '/sitemap'           => 'sitemap.shtml',
     // add all your pages here
 ];
 
