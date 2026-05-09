@@ -346,7 +346,14 @@ dashboard mockup">
                     stroke-linecap="round" stroke-linejoin="round">
                     <polyline points="20 6 9 17 4 12"></polyline>
                   </svg>
-                  Free Domain (1yr)
+                  Free Hosting(1yr)
+                </div>
+                <div class="check-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#22C55E" stroke-width="3"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  3 Months Technical Support
                 </div>
               </div>
 
