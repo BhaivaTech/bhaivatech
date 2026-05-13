@@ -173,6 +173,32 @@ Deployment secrets are stored in **GitHub Secrets** (Settings → Secrets and va
 
 ---
 
+## SEO & URL Handling
+
+The `.htaccess` handles all URL normalization in this order:
+
+1. **HTTPS + non-www** — Combined into a single 301 redirect (eliminates multi-hop chains)
+2. **`/index` and `/index.shtml`** — Redirect to `/`
+3. **`.shtml` extension** — Stripped via 301 redirect (e.g., `/about.shtml` → `/about`)
+4. **Trailing slash** — Removed via 301 redirect (e.g., `/about/` → `/about`)
+5. **Internal rewrite** — Clean URLs internally resolve to `.shtml` files
+
+### Redirect behavior
+
+| Request | Result |
+|---------|--------|
+| `http://www.bhaivatech.com/about.shtml` | → `https://bhaivatech.com/about.shtml` → `/about` (2 hops max) |
+| `http://bhaivatech.com/services` | → `https://bhaivatech.com/services` (1 hop) |
+| `https://bhaivatech.com/contact/` | → `https://bhaivatech.com/contact` (1 hop) |
+
+### Internal linking rules
+
+- Logo and home links must use `href="/"` — never `href="index"`
+- Nav links use relative paths without extensions: `about`, `services`, `projects`, `contact`
+- Never link to `.shtml` URLs from any page
+
+---
+
 ## Contact
 
 **BhaivaTech**
