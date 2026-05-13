@@ -5,6 +5,7 @@
     <title>Sitemap - BhaivaTech</title>
     <meta name="description" content="Sitemap for BhaivaTech. Find all pages and structure of our website.">
     <link rel="canonical" href="https://bhaivatech.com/sitemap" />
+    <meta name="robots" content="noindex, follow">
     <!--#include virtual="includes/meta-tags.html" -->
    
 </head>
