@@ -59,19 +59,20 @@
           <!-- Featured Project -->
           <div class="project-card-large" data-aos="fade-up">
             <div class="project-img-box">
-              <img src="./images/web-app.webp" alt="Vortex Analytics Engine — real-time data dashboard web application built by BhaivaTech">
+              <img src="./images/pkg-classic.jpg" alt="Construction House">
             </div>
             <div class="project-details">
               <div class="tags">
-                <span class="tag">Web App</span>
-                <span class="tag enterprise">Enterprise</span>
+                <span class="tag">Website</span>
+                <span class="tag enterprise">Construction</span>
               </div>
-              <h3>Vortex Analytics Engine</h3>
-              <p>A real-time data processing platform handling millions of events per second — with an editorial-grade dashboard that turns raw data into decisions.</p>
+              <h3>Construction House</h3>
+              <p>Where architectural excellence meets structural strength creating landmark spaces with precision construction, modern design, and trusted project execution. Built with a premium digital experience focused on showcasing projects, services, and brand credibility through a modern responsive interface.</p>
+              <p>The platform highlights the company’s expertise through elegant project showcases, service sections, client focused presentation, and a refined user experience — helping establish a strong online presence for a modern construction brand.</p>
               <div class="tech-stack">
-                <span>Next.js</span><span>TypeScript</span><span>Rust</span><span>AWS</span>
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
               </div>
-              <a href="#" class="view-study">View Case Study →</a>
+              <a href="https://squareftgroup.com/" class="view-study">Visit Website</a>
             </div>
           </div>
 

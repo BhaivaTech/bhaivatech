@@ -9,6 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] !== "POST") {
 }
 
 // reCAPTCHA verification
+
 $recaptchaSecret = "6LfRFM8sAAAAAMXrxJYQrjy3mYNU1UBBmYNVp-uL";
 $recaptchaResponse = $_POST['g-recaptcha-response'];
 
@@ -17,6 +18,7 @@ if (empty($recaptchaResponse)) {
     echo json_encode(["status" => "error", "message" => "Security verification failed."]);
     exit;
 }
+
 
 $verifyResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret=' . $recaptchaSecret . '&response=' . $recaptchaResponse);
 $responseData = json_decode($verifyResponse);

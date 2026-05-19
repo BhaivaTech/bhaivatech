@@ -190,7 +190,7 @@ working on a web project">
               <h2>Work That Speaks for Itself</h2>
             </div>
             <a href="projects" class="view-gallery">
-              View Full Portfolio
+              View All Projects
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                 stroke-linecap="round" stroke-linejoin="round">
                 <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -219,18 +219,18 @@ dashboard mockup">
               </div>
 
 
-              <!-- Project 3: Vogue -->
+              <!-- Project 3: Construction House -->
               <div class="swiper-slide project-card">
-                <div class="project-image-container" style="background-color: #F9D6C6;">
-                  <img src="./images/vogue.webp" alt="Vogue Studio e-commerce storefront mockup">
+                <div class="project-image-container" style="background-color: #E8E3DF;">
+                  <img src="./images/pkg-classic.jpg" alt="Construction House mockup">
                 </div>
                 <div class="tag-group">
-                  <span class="tag">Shopify</span>
-                  <span class="tag">React</span>
+                  <span class="tag">Website</span>
+                  <span class="tag">Construction</span>
                 </div>
                 <div class="project-info">
-                  <h3>Vogue Studio Store</h3>
-                  <p>Boutique e-commerce storefront with high-end editorial aesthetics.</p>
+                  <h3>Construction House</h3>
+                  <p>Where architectural excellence meets structural strength creating landmark spaces with precision construction, modern design, and trusted project execution.</p>
                 </div>
               </div>
               <!-- Project 2: GrocerEase -->
