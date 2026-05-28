@@ -187,7 +187,8 @@ working on a web project">
           <div class="portfolio-header" data-aos="fade-up">
             <div class="portfolio-title">
               <span class="badge">Portfolio</span>
-              <h2>Work That Speaks for Itself</h2>
+              <h2>Real Projects, Built for Real Enquiries</h2>
+              <p>We replaced generic placeholders with live, niche-focused builds that show how BhaivaTech adapts design language for wellness, fitness, and local business lead generation.</p>
             </div>
             <a href="projects" class="view-gallery">
               View All Projects
@@ -199,58 +200,90 @@ working on a web project">
             </a>
           </div>
 
-          <div class="swiper project-swiper" data-aos="fade-up" data-aos-delay="200">
-            <div class="swiper-wrapper">
-              <!-- Project 1: Nexus -->
-              <div class="swiper-slide project-card">
-                <div class="project-image-container" style="background-color: #4A9B94;">
-                  <img src="./images/nexus.webp" alt="Nexus Analytics Platform
-dashboard mockup">
+          <div class="portfolio-grid-clean" data-aos="fade-up" data-aos-delay="150">
+            <article class="portfolio-proof-card portfolio-proof-card--featured">
+              <div class="portfolio-proof-media">
+                <span class="portfolio-proof-badge">Featured Demo</span>
+                <img src="./images/portfolio-yogasparsh.webp" alt="Yogasparsh Yoga & Fitness website preview designed by BhaivaTech">
+              </div>
+              <div class="portfolio-proof-content">
+                <div class="portfolio-meta">
+                  <span>Wellness Website</span>
+                  <span>Responsive UI</span>
+                  <span>Lead Capture</span>
                 </div>
-                <div class="tag-group">
-                  <span class="tag">Next.js</span>
-                  <span class="tag">Tailwind</span>
-                </div>
-                <div class="project-info">
-                  <h3>Nexus Analytics Platform</h3>
-                  <p>A real-timedata dashboard built for enterprise supply chain management turning raw data into
-                    actionable insights.</p>
+                <h3>Yogasparsh Yoga &amp; Fitness</h3>
+                <p class="portfolio-proof-summary">A calm, premium yoga studio website with a soft editorial layout, trust-building content flow, and a polished enquiry journey tailored for wellness brands.</p>
+                <ul class="portfolio-proof-list">
+                  <li>Warm ivory-and-sage visual system matched to the studio’s calm brand.</li>
+                  <li>Clear schedule, services, and contact pathways for local enquiries.</li>
+                  <li>Balanced desktop and mobile layouts for a refined first impression.</li>
+                </ul>
+                <div class="portfolio-proof-footer">
+                  <span class="portfolio-note">Live demo • wellness / yoga niche</span>
+                  <a href="https://demo.bhaivatech.com/yoga/" target="_blank" rel="noopener" class="portfolio-link">View Live
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M7 17L17 7"></path>
+                      <path d="M8 7h9v9"></path>
+                    </svg>
+                  </a>
                 </div>
               </div>
+            </article>
 
+            <article class="portfolio-proof-card">
+              <div class="portfolio-proof-media">
+                <img src="./images/portfolio-fit-warrior.webp" alt="Fit or Fight premium fitness center website preview by BhaivaTech">
+              </div>
+              <div class="portfolio-proof-content">
+                <div class="portfolio-meta">
+                  <span>Gym Website</span>
+                  <span>Bold Branding</span>
+                </div>
+                <h3>Fit or Fight — Warrior Concept</h3>
+                <p class="portfolio-proof-summary">A black-and-red gym landing page that uses cinematic hero visuals and sharp conversion cues to position the brand as an elite training destination.</p>
+                <ul class="portfolio-proof-list">
+                  <li>High-contrast hero with disciplined typography and powerful imagery.</li>
+                  <li>Membership-focused sections, offers, and proof-led content blocks.</li>
+                </ul>
+                <div class="portfolio-proof-footer">
+                  <span class="portfolio-note">Live demo • fitness / lead-gen</span>
+                  <a href="https://fitorfight.bhaivatech.com/fit-1/" target="_blank" rel="noopener" class="portfolio-link">View Live
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M7 17L17 7"></path>
+                      <path d="M8 7h9v9"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </article>
 
-              <!-- Project 3: Construction House -->
-              <div class="swiper-slide project-card">
-                <div class="project-image-container" style="background-color: #E8E3DF;">
-                  <img src="./images/pkg-classic.jpg" alt="Construction House mockup">
+            <article class="portfolio-proof-card">
+              <div class="portfolio-proof-media">
+                <img src="./images/portfolio-fit-future.webp" alt="Fit or Fight Yelahanka futuristic gym website preview by BhaivaTech">
+              </div>
+              <div class="portfolio-proof-content">
+                <div class="portfolio-meta">
+                  <span>Local Business</span>
+                  <span>Futuristic UI</span>
                 </div>
-                <div class="tag-group">
-                  <span class="tag">Website</span>
-                  <span class="tag">Construction</span>
-                </div>
-                <div class="project-info">
-                  <h3>Construction House</h3>
-                  <p>Where architectural excellence meets structural strength creating landmark spaces with precision construction, modern design, and trusted project execution.</p>
+                <h3>Fit or Fight — Future Arena</h3>
+                <p class="portfolio-proof-summary">A more futuristic fitness concept built with dark industrial styling, tactical copy, and a stronger visual narrative around local gym discovery and trial bookings.</p>
+                <ul class="portfolio-proof-list">
+                  <li>Orange-red accents and cinematic equipment imagery for instant positioning.</li>
+                  <li>Structured services, testimonials, and enquiry modules for conversions.</li>
+                </ul>
+                <div class="portfolio-proof-footer">
+                  <span class="portfolio-note">Live demo • Yelahanka fitness</span>
+                  <a href="https://fitorfight.bhaivatech.com/fit-2/" target="_blank" rel="noopener" class="portfolio-link">View Live
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M7 17L17 7"></path>
+                      <path d="M8 7h9v9"></path>
+                    </svg>
+                  </a>
                 </div>
               </div>
-              <!-- Project 2: GrocerEase -->
-              <div class="swiper-slide project-card">
-                <div class="project-image-container" style="background-color: #F0F2EE;">
-                  <img src="./images/mobile-apps.webp" alt="GrocerEase mobile app interface mockup">
-                </div>
-                <div class="tag-group">
-                  <span class="tag">Flutter</span>
-                  <span class="tag">Firebase</span>
-                </div>
-                <div class="project-info">
-                  <h3>GrocerEase App</h3>
-                  <p>A hyper-local grocery delivery app with live order tracking, offline capability, and a seamless
-                    checkout experience.</p>
-                </div>
-              </div>
-            </div>
-            <!-- Pagination -->
-            <div class="swiper-pagination"></div>
+            </article>
           </div>
         </div>
       </section>
@@ -357,7 +390,7 @@ dashboard mockup">
                 </div>
               </div>
 
-              <a href="#" class="btn-start">
+              <a href="contact" class="btn-start">
                 Start Your Journey
               </a>
             </div>

@@ -41,9 +41,9 @@
 
     <section class="projects-header-section">
       <div class="fluid-container flex-col" data-aos="fade-up">
-        <span class="badge">Our Portfolio</span>
-        <h1>Websites That Work as Hard as You Do</h1>
-        <p>From pixel-perfect landing pages to complex enterprise web platforms, every project we ship is built for performance, scalability, and measurable results.</p>
+        <span class="badge">Selected Work</span>
+        <h1>Live Website Demos Built Around Brand Fit &amp; Enquiries</h1>
+        <p>These portfolio entries focus on real, industry-specific web experiences — from calm wellness storytelling to high-energy local gym landing pages — all designed to look sharp, load cleanly, and convert across mobile and desktop.</p>
       </div>
     </section>
 
@@ -52,54 +52,144 @@
     
 
     <!-- Projects Grid -->
-    <section class="projects-list-section">
+    <section class="projects-proof-section">
       <div class="fluid-container">
-        <div class="projects-flex">
-          
-          <!-- Featured Project -->
-          <div class="project-card-large" data-aos="fade-up">
-            <div class="project-img-box">
-              <img src="./images/pkg-classic.jpg" alt="Construction House">
+        <div class="projects-proof-intro" data-aos="fade-up">
+          <div class="projects-proof-copy">
+            <span class="badge">Responsive Portfolio</span>
+            <h2>Three Distinct Brand Directions, One Clean Delivery Standard</h2>
+            <p>Each project below is presented with a focused summary, core deliverables, and a live link so prospects can quickly understand the range of BhaivaTech’s frontend design, conversion thinking, and responsive execution.</p>
+          </div>
+          <a href="https://wa.me/12028808873?text=Hi%20BhaivaTech%2C%20I%27d%20like%20to%20discuss%20a%20website%20project." class="view-gallery btn-green">Discuss Your Project</a>
+        </div>
+
+        <div class="projects-trust-strip" data-aos="fade-up" data-aos-delay="100">
+          <div class="trust-pill">
+            <strong>3</strong>
+            <span>Live portfolio demos with niche-specific UI direction and clear enquiry flows.</span>
+          </div>
+          <div class="trust-pill">
+            <strong>100%</strong>
+            <span>Responsive-first card layouts, clear CTA hierarchy, and screenshot-led proof.</span>
+          </div>
+          <div class="trust-pill">
+            <strong>Fast</strong>
+            <span>Designed to help local brands launch polished marketing websites without clutter.</span>
+          </div>
+        </div>
+
+        <div class="portfolio-grid-clean" data-aos="fade-up" data-aos-delay="150">
+          <article class="portfolio-proof-card portfolio-proof-card--featured">
+            <div class="portfolio-proof-media">
+              <span class="portfolio-proof-badge">Featured Wellness Build</span>
+              <img src="./images/portfolio-yogasparsh.webp" alt="Yogasparsh Yoga & Fitness website portfolio preview by BhaivaTech">
             </div>
-            <div class="project-details">
-              <div class="tags">
-                <span class="tag">Website</span>
-                <span class="tag enterprise">Construction</span>
+            <div class="portfolio-proof-content">
+              <div class="portfolio-meta">
+                <span>Yoga Studio</span>
+                <span>Wellness Website</span>
+                <span>Lead Capture</span>
               </div>
-              <h3>Construction House</h3>
-              <p>Where architectural excellence meets structural strength creating landmark spaces with precision construction, modern design, and trusted project execution. Built with a premium digital experience focused on showcasing projects, services, and brand credibility through a modern responsive interface.</p>
-              <p>The platform highlights the company’s expertise through elegant project showcases, service sections, client focused presentation, and a refined user experience — helping establish a strong online presence for a modern construction brand.</p>
-              <div class="tech-stack">
-                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              <h3>Yogasparsh Yoga &amp; Fitness</h3>
+              <p class="portfolio-proof-summary">A serene wellness website designed with soft editorial pacing, warm neutrals, and a calming enquiry journey that reflects the tone of a boutique yoga studio.</p>
+              <ul class="portfolio-proof-list">
+                <li>Luxury wellness styling with earthy greens, warm whites, and breathing room.</li>
+                <li>Class discovery, contact prompts, and trust-focused sections tuned for local leads.</li>
+                <li>Responsive layouts that preserve the premium tone on every screen size.</li>
+              </ul>
+              <div class="portfolio-chip-row">
+                <span>UI Design</span>
+                <span>Responsive Frontend</span>
+                <span>Brand Positioning</span>
               </div>
-              <a href="https://squareftgroup.com/" class="view-study">Visit Website</a>
+              <div class="portfolio-proof-footer">
+                <span class="portfolio-note">Ideal for yoga studios, wellness spaces, and service-led lifestyle brands.</span>
+                <a href="https://demo.bhaivatech.com/yoga/" target="_blank" rel="noopener" class="portfolio-link">View Live Demo
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7"></path>
+                    <path d="M8 7h9v9"></path>
+                  </svg>
+                </a>
+              </div>
             </div>
-          </div>
+          </article>
 
-          <!-- Small Project 1 -->
-          <div class="project-card-small" data-aos="fade-up" data-aos-delay="100">
-            <div class="project-img-box">
-              <img src="./images/mobile-apps.webp" alt="Luxe Retail — mobile-first e-commerce web platform built by BhaivaTech">
+          <article class="portfolio-proof-card">
+            <div class="portfolio-proof-media">
+              <img src="./images/portfolio-fit-warrior.webp" alt="Fit or Fight premium gym website preview by BhaivaTech">
             </div>
-            <div class="project-details">
-              <h3>Luxe Retail Web Platform</h3>
-              <p>A high-conversion e-commerce storefront with a seamless checkout experience, built for speed and mobile-first users.</p>
-              <div class="tech-stack"><span>React</span><span>Firebase</span></div>
+            <div class="portfolio-proof-content">
+              <div class="portfolio-meta">
+                <span>Fitness Brand</span>
+                <span>Gym Landing Page</span>
+              </div>
+              <h3>Fit or Fight — Warrior Concept</h3>
+              <p class="portfolio-proof-summary">A premium black-and-red gym landing page crafted to feel cinematic, aggressive, and conversion-ready from the first scroll.</p>
+              <ul class="portfolio-proof-list">
+                <li>Hero-first storytelling with powerful imagery and sharp red action cues.</li>
+                <li>Offers, trainers, and social proof sections structured for fast decision-making.</li>
+              </ul>
+              <div class="portfolio-chip-row">
+                <span>Conversion Layout</span>
+                <span>Membership CTA</span>
+              </div>
+              <div class="portfolio-proof-footer">
+                <span class="portfolio-note">Best fit for bold gym, boxing, and transformation-led brands.</span>
+                <a href="https://fitorfight.bhaivatech.com/fit-1/" target="_blank" rel="noopener" class="portfolio-link">View Live Demo
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7"></path>
+                    <path d="M8 7h9v9"></path>
+                  </svg>
+                </a>
+              </div>
             </div>
-          </div>
+          </article>
 
-          <!-- Small Project 2 -->
-          <div class="project-card-small" data-aos="fade-up" data-aos-delay="200">
-            <div class="project-img-box">
-              <img src="./images/apex.webp" alt="Apex Banking Core — fintech web infrastructure built with microservices by BhaivaTech">
+          <article class="portfolio-proof-card">
+            <div class="portfolio-proof-media">
+              <img src="./images/portfolio-fit-future.webp" alt="Fit or Fight Yelahanka futuristic gym website preview by BhaivaTech">
             </div>
-            <div class="project-details">
-              <h3>Apex Banking Core</h3>
-              <p>A microservices-based web infrastructure for a decentralized fintech platform — secure, auditable, and built to handle scale from day one.</p>
-              <div class="tech-stack"><span>Go</span><span>Kubernetes</span></div>
+            <div class="portfolio-proof-content">
+              <div class="portfolio-meta">
+                <span>Local Gym</span>
+                <span>Futuristic UI</span>
+              </div>
+              <h3>Fit or Fight — Future Arena</h3>
+              <p class="portfolio-proof-summary">A darker, more tactical variation that leans into LED-lit fitness visuals, local discovery, and a futuristic gym-brand feel.</p>
+              <ul class="portfolio-proof-list">
+                <li>Industrial visual language with strong orange-red highlights and atmosphere.</li>
+                <li>Clear service, trainer, testimonial, and contact modules for local traffic.</li>
+              </ul>
+              <div class="portfolio-chip-row">
+                <span>Local Business UI</span>
+                <span>Trial Booking Flow</span>
+              </div>
+              <div class="portfolio-proof-footer">
+                <span class="portfolio-note">Built for local fitness brands that want a modern, high-intensity identity.</span>
+                <a href="https://fitorfight.bhaivatech.com/fit-2/" target="_blank" rel="noopener" class="portfolio-link">View Live Demo
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7"></path>
+                    <path d="M8 7h9v9"></path>
+                  </svg>
+                </a>
+              </div>
             </div>
-          </div>
+          </article>
+        </div>
 
+        <div class="projects-process-grid" data-aos="fade-up" data-aos-delay="220">
+          <div class="process-mini-card">
+            <h4>Brand-Matched Direction</h4>
+            <p>We shape each website around the business category, visual tone, and audience expectations instead of forcing the same layout on every brand.</p>
+          </div>
+          <div class="process-mini-card">
+            <h4>Responsive by Default</h4>
+            <p>Project cards, imagery, and CTA flows are designed to stay clean across large desktops, tablets, and mobile devices without awkward stacking.</p>
+          </div>
+          <div class="process-mini-card">
+            <h4>Built for Enquiries</h4>
+            <p>Each concept keeps the next step obvious — whether that means a WhatsApp enquiry, a booking CTA, or a contact-first landing page flow.</p>
+          </div>
         </div>
       </div>
     </section>

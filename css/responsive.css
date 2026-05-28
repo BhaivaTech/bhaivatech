@@ -47,6 +47,9 @@
   .features-list-grid {gap: 30px; }
   .services-header {margin-bottom: 30px; }
   .portfolio-header {margin-bottom: 30px; }
+  .portfolio-grid-clean {grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .portfolio-proof-card--featured {grid-column: span 2; }
+  .projects-trust-strip, .projects-process-grid {grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .cta-section p {margin-bottom: 24px; }
   .btn-contact-now {padding: 12px 20px; }
   .dark-card-wrapper {gap: 40px; }
@@ -62,12 +65,17 @@
 @media (max-width: 920px) {  .project-details {padding: 27px; }
   .editorial-content h1 {margin: 15px 0 14px 0; }
   .editorial-image {display: none; }
+  .projects-proof-intro {flex-direction: column; align-items: flex-start; }
 }
 @media (max-width: 776px) {  .project-card-small {flex: 1 1 100%; }
   .project-card-large {flex-wrap: wrap; flex-direction: column; }
   .value-card.small {flex: 1 1 0; }
   .values-flex {flex-direction: column; }
   .quick-card {	padding: 37px 10px;}
+  .portfolio-grid-clean {grid-template-columns: 1fr; }
+  .portfolio-proof-card--featured {grid-column: span 1; }
+  .portfolio-proof-footer {flex-direction: column; align-items: flex-start; }
+  .projects-trust-strip, .projects-process-grid {grid-template-columns: 1fr; }
 }
 @media (max-width:700px) {  .service-features {gap: 7px; margin-top: 13px; flex-direction: column; }
   .footer-grid {gap: 30px; flex-direction: column; }
@@ -89,6 +97,10 @@
   .portfolio-header {margin-bottom: 14px; }
   .portfolio-title {align-items: center; }
   .portfolio-header {align-items: center; flex-direction: column; gap: 7px; }
+  .portfolio-title p, .projects-proof-copy p {text-align: center; }
+  .projects-proof-intro {align-items: center; }
+  .trust-pill strong {font-size: 22px; }
+  .portfolio-proof-content {padding: 20px; }
   .pricing-cta-card {width: 100%; }
   .side-menu-nav li a svg {width: 18px; height: 18px; }
   .side-menu-nav li a {gap: 10px; }

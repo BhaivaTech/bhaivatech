@@ -105,21 +105,46 @@ html.menu-open, body.menu-open {overflow: hidden !important; }
 /* Portfolio Section */
  .portfolio-section {padding: 100px 0; background-color: var(--white); }
 .portfolio-section .fluid-container {flex-direction: column; }
-.portfolio-header {display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 60px; }
-.portfolio-title {display: flex; flex-direction: column; align-items: flex-start; }
+.portfolio-header {display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: 44px; }
+.portfolio-title {display: flex; flex-direction: column; align-items: flex-start; max-width: 760px; }
+.portfolio-title p {color: var(--text-muted); line-height: 1.6; margin-top: 14px; max-width: 680px; }
 .view-gallery {color: var(--primary-blue); font-weight: 600; font-size: 16px; gap: 8px; margin-bottom: 8px; }
 .view-gallery:hover {gap: 12px; }
-.project-swiper {width: 100%; }
-.project-swiper .swiper-slide {height: auto; }
-.project-swiper .swiper-pagination-bullet-active {background: var(--primary-blue); }
-.project-card {display: flex; flex-direction: column; gap: 20px; transition: transform 0.3s ease; width: 100%; height: 100%; }
-.project-image-container {width: 100%; aspect-ratio: 1.6; border-radius: 24px; display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative; }
-.project-image-container img {width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; }
-.project-card:hover .project-image-container img {transform: scale(1.05); }
-.project-image-container svg {width: 100%; height: auto; max-height: 85%; filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.15)); transition: transform 0.3s ease; }
-.project-card:hover .project-image-container svg {transform: scale(1.05); }
-.tag-group {display: flex; gap: 8px; }
-.tag {font-size: 11px; font-weight: 700; color: #4B5563; background: #F3F4F6; padding: 4px 12px; border-radius: 6px; text-transform: uppercase; letter-spacing: 0.5px; }
+.portfolio-grid-clean {display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; width: 100%; }
+.portfolio-proof-card {background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%); border: 1px solid #E5EDF5; border-radius: 28px; overflow: hidden; box-shadow: 0 14px 35px rgba(31, 41, 55, 0.06); display: flex; flex-direction: column; min-width: 0; transition: transform 0.35s ease, box-shadow 0.35s ease; }
+.portfolio-proof-card:hover {transform: translateY(-8px); box-shadow: 0 20px 50px rgba(0, 86, 210, 0.12); }
+.portfolio-proof-card--featured {grid-column: span 2; }
+.portfolio-proof-media {position: relative; aspect-ratio: 16 / 9; overflow: hidden; background: #F3F4F6; }
+.portfolio-proof-media img {width: 100%; height: 100%; object-fit: cover; transition: transform 0.45s ease; }
+.portfolio-proof-card:hover .portfolio-proof-media img {transform: scale(1.04); }
+.portfolio-proof-badge {position: absolute; top: 18px; left: 18px; background: rgba(15, 23, 42, 0.86); color: var(--white); padding: 8px 14px; border-radius: 999px; font-size: 11px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; }
+.portfolio-proof-content {padding: 24px; display: flex; flex-direction: column; gap: 16px; height: 100%; }
+.portfolio-meta {display: flex; flex-wrap: wrap; gap: 8px; }
+.portfolio-meta span, .portfolio-chip-row span, .tag-group span, .tech-stack span, .tags .tag {font-size: 11px; font-weight: 700; color: #4B5563; background: #F3F4F6; padding: 5px 12px; border-radius: 999px; text-transform: uppercase; letter-spacing: 0.5px; }
+.portfolio-proof-card h3 {font-size: 26px; font-weight: 700; color: var(--text-dark); letter-spacing: -0.7px; line-height: 1.15; }
+.portfolio-proof-summary {font-size: 16px; color: var(--text-muted); line-height: 1.65; }
+.portfolio-proof-list {display: flex; flex-direction: column; gap: 10px; }
+.portfolio-proof-list li {font-size: 15px; color: var(--text-dark); line-height: 1.5; padding-left: 18px; position: relative; }
+.portfolio-proof-list li::before {content: ''; position: absolute; left: 0; top: 10px; width: 7px; height: 7px; border-radius: 50%; background: var(--primary-blue); }
+.portfolio-chip-row {display: flex; flex-wrap: wrap; gap: 8px; }
+.portfolio-proof-footer {display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-top: auto; padding-top: 4px; }
+.portfolio-note {font-size: 14px; color: var(--text-muted); }
+.portfolio-link {color: var(--primary-blue); font-weight: 700; gap: 8px; }
+.portfolio-link:hover {gap: 12px; }
+.btn-green.view-gallery {color: var(--white); margin-bottom: 0; }
+.projects-proof-section {padding: 0 0 100px; }
+.projects-proof-section .fluid-container {flex-direction: column; }
+.projects-proof-intro {display: flex; justify-content: space-between; align-items: flex-end; gap: 28px; margin-bottom: 36px; }
+.projects-proof-copy {max-width: 760px; }
+.projects-proof-copy p {margin-top: 14px; color: var(--text-muted); line-height: 1.7; }
+.projects-trust-strip {display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; width: 100%; margin-bottom: 32px; }
+.trust-pill {background: #f5f9ff; border: 1px solid #dce8f8; border-radius: 22px; padding: 18px 22px; display: flex; flex-direction: column; gap: 6px; }
+.trust-pill strong {font-size: 26px; color: var(--text-dark); letter-spacing: -0.6px; }
+.trust-pill span {font-size: 14px; color: var(--text-muted); line-height: 1.5; }
+.projects-process-grid {display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; width: 100%; margin-top: 34px; }
+.process-mini-card {background: var(--white); border: 1px solid #E5EDF5; border-radius: 22px; padding: 24px; box-shadow: 0 10px 24px rgba(31, 41, 55, 0.04); }
+.process-mini-card h4 {font-size: 19px; margin-bottom: 10px; color: var(--text-dark); }
+.process-mini-card p {font-size: 15px; color: var(--text-muted); line-height: 1.6; }
 .project-info h3 {font-size: 24px; font-weight: 700; color: var(--text-dark); margin-bottom: 8px; letter-spacing: -0.5px; }
 .project-info p {font-size: 16px; color: var(--text-muted); line-height: 1.5; margin: 0; }
 #pricing {padding: 100px 0 0; }
