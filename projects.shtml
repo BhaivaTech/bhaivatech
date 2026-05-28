@@ -43,7 +43,7 @@
       <div class="fluid-container flex-col" data-aos="fade-up">
         <span class="badge">Selected Work</span>
         <h1>Live Website Demos Built Around Brand Fit &amp; Enquiries</h1>
-        <p>These portfolio entries focus on real, industry-specific web experiences — from calm wellness storytelling to high-energy local gym landing pages — all designed to look sharp, load cleanly, and convert across mobile and desktop.</p>
+        <p>These portfolio entries showcase real, industry-specific web experiences — from calm wellness storytelling to high-energy local gym landing pages — built to reflect each brand clearly and help prospects understand BhaivaTech’s work.</p>
       </div>
     </section>
 
@@ -56,9 +56,9 @@
       <div class="fluid-container">
         <div class="projects-proof-intro" data-aos="fade-up">
           <div class="projects-proof-copy">
-            <span class="badge">Responsive Portfolio</span>
-            <h2>Three Distinct Brand Directions, One Clean Delivery Standard</h2>
-            <p>Each project below is presented with a focused summary, core deliverables, and a live link so prospects can quickly understand the range of BhaivaTech’s frontend design, conversion thinking, and responsive execution.</p>
+            <span class="badge">Project Portfolio</span>
+            <h2>Three Distinct Brand Directions, One Clear Portfolio Showcase</h2>
+            <p>Each project below includes a focused summary, key deliverables, and a live link so prospects can quickly review the quality, style, and business intent behind BhaivaTech’s work.</p>
           </div>
           <a href="https://wa.me/12028808873?text=Hi%20BhaivaTech%2C%20I%27d%20like%20to%20discuss%20a%20website%20project." class="view-gallery btn-green">Discuss Your Project</a>
         </div>
@@ -70,7 +70,7 @@
           </div>
           <div class="trust-pill">
             <strong>100%</strong>
-            <span>Responsive-first card layouts, clear CTA hierarchy, and screenshot-led proof.</span>
+            <span>Portfolio cards with clear CTA hierarchy, focused summaries, and screenshot-led proof.</span>
           </div>
           <div class="trust-pill">
             <strong>Fast</strong>
@@ -95,11 +95,11 @@
               <ul class="portfolio-proof-list">
                 <li>Luxury wellness styling with earthy greens, warm whites, and breathing room.</li>
                 <li>Class discovery, contact prompts, and trust-focused sections tuned for local leads.</li>
-                <li>Responsive layouts that preserve the premium tone on every screen size.</li>
+                <li>Premium brand presentation shaped for boutique wellness enquiries.</li>
               </ul>
               <div class="portfolio-chip-row">
                 <span>UI Design</span>
-                <span>Responsive Frontend</span>
+                <span>Frontend Build</span>
                 <span>Brand Positioning</span>
               </div>
               <div class="portfolio-proof-footer">
@@ -183,8 +183,8 @@
             <p>We shape each website around the business category, visual tone, and audience expectations instead of forcing the same layout on every brand.</p>
           </div>
           <div class="process-mini-card">
-            <h4>Responsive by Default</h4>
-            <p>Project cards, imagery, and CTA flows are designed to stay clean across large desktops, tablets, and mobile devices without awkward stacking.</p>
+            <h4>Clear Portfolio Presentation</h4>
+            <p>Project cards, imagery, and CTA flows are arranged to keep each demo easy to scan and each next step easy to understand.</p>
           </div>
           <div class="process-mini-card">
             <h4>Built for Enquiries</h4>

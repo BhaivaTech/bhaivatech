@@ -66,16 +66,29 @@
   .editorial-content h1 {margin: 15px 0 14px 0; }
   .editorial-image {display: none; }
   .projects-proof-intro {flex-direction: column; align-items: flex-start; }
+  .projects-proof-intro .view-gallery {margin-bottom: 0; }
 }
 @media (max-width: 776px) {  .project-card-small {flex: 1 1 100%; }
   .project-card-large {flex-wrap: wrap; flex-direction: column; }
   .value-card.small {flex: 1 1 0; }
   .values-flex {flex-direction: column; }
   .quick-card {	padding: 37px 10px;}
+  .projects-proof-section {padding: 0 0 72px; }
+  .projects-proof-intro {margin-bottom: 24px; gap: 18px; }
+  .projects-proof-copy, .projects-proof-intro .view-gallery {width: 100%; max-width: 100%; }
+  .projects-proof-intro .view-gallery {margin-bottom: 0; }
   .portfolio-grid-clean {grid-template-columns: 1fr; }
   .portfolio-proof-card--featured {grid-column: span 1; }
+  .portfolio-proof-card {border-radius: 24px; }
+  .portfolio-proof-media {aspect-ratio: 4 / 3; }
+  .portfolio-proof-content {padding: 22px; gap: 14px; }
+  .portfolio-proof-card h3 {font-size: 22px; }
+  .portfolio-proof-summary, .portfolio-proof-list li, .process-mini-card p {font-size: 15px; }
+  .portfolio-note {max-width: none; }
   .portfolio-proof-footer {flex-direction: column; align-items: flex-start; }
+  .portfolio-link {width: 100%; justify-content: center; padding: 12px 16px; border-radius: 12px; background: #EBF5FF; }
   .projects-trust-strip, .projects-process-grid {grid-template-columns: 1fr; }
+  .projects-process-grid {margin-top: 28px; gap: 16px; }
 }
 @media (max-width:700px) {  .service-features {gap: 7px; margin-top: 13px; flex-direction: column; }
   .footer-grid {gap: 30px; flex-direction: column; }
@@ -99,8 +112,16 @@
   .portfolio-header {align-items: center; flex-direction: column; gap: 7px; }
   .portfolio-title p, .projects-proof-copy p {text-align: center; }
   .projects-proof-intro {align-items: center; }
+  .projects-proof-copy h2, .projects-process-grid h4 {text-align: center; }
   .trust-pill strong {font-size: 22px; }
   .portfolio-proof-content {padding: 20px; }
+  .portfolio-proof-badge {top: 14px; left: 14px; font-size: 10px; padding: 7px 12px; }
+  .portfolio-proof-summary, .portfolio-proof-list li, .portfolio-note, .trust-pill span, .process-mini-card p {font-size: 14px; }
+  .portfolio-proof-list {gap: 8px; }
+  .portfolio-proof-list li::before {top: 9px; }
+  .portfolio-meta span, .portfolio-chip-row span {font-size: 10px; padding: 5px 10px; }
+  .view-gallery.btn-green, .portfolio-link {width: 100%; }
+  .trust-pill, .process-mini-card {padding: 20px; }
   .pricing-cta-card {width: 100%; }
   .side-menu-nav li a svg {width: 18px; height: 18px; }
   .side-menu-nav li a {gap: 10px; }
@@ -134,6 +155,17 @@
   .form-row {gap: 8px; flex-direction: column; margin-bottom: 0; }
   .flex-col {flex-direction: column; align-items: center; }
   .projects-header-section h1, .projects-header-section p {text-align: center; }
+  .projects-proof-section {padding: 0 0 56px; }
+  .projects-proof-intro {gap: 16px; margin-bottom: 20px; }
+  .projects-trust-strip {gap: 14px; margin-bottom: 24px; }
+  .portfolio-grid-clean {gap: 18px; }
+  .portfolio-proof-card {border-radius: 20px; }
+  .portfolio-proof-media {aspect-ratio: 5 / 4; }
+  .portfolio-proof-content {padding: 18px; gap: 12px; }
+  .portfolio-proof-card h3 {font-size: 20px; }
+  .portfolio-proof-footer {gap: 12px; }
+  .portfolio-link {padding: 11px 14px; }
+  .projects-process-grid {margin-top: 24px; }
   .service-box {padding: 20px; }
   .project-details {flex: 1 1 0; }
   .view-study {margin-top: 16px; }
