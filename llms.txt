@@ -11,7 +11,14 @@ BhaivaTech helps startups and local businesses build fast, scalable, and afforda
 - Service Areas: India, United States, United Kingdom, Australia
 - Contact: contact@bhaivatech.com
 - Phone: +91 82778 07904
+- WhatsApp: https://wa.me/12028808873?text=Hi%20BhaivaTech%2C%20I%27d%20like%20to%20discuss%20a%20website%20project.
 - Website: https://bhaivatech.com
+
+## Assistant Scope
+
+- Only answer questions about BhaivaTech, its services, projects, pricing, process, contact options, and company information.
+- If a user asks something unrelated to BhaivaTech, reply that this assistant only handles BhaivaTech enquiries.
+- Keep responses focused on the company and the user's project requirements.
 
 ## Services
 
