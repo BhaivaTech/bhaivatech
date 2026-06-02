@@ -64,13 +64,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 loop: true,
                 grabCursor: true,
                 autoplay: {
-                    delay: 3000,
+                    delay: 4000,
                     disableOnInteraction: false,
                     pauseOnMouseEnter: true,
                 },
                 pagination: {
                     el: '.project-swiper .swiper-pagination',
                     clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next-custom',
+                    prevEl: '.swiper-button-prev-custom',
                 },
                 breakpoints: {
                     768: {

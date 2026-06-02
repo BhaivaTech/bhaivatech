@@ -15,19 +15,27 @@ AddOutputFilter INCLUDES .shtml
     RewriteEngine On
     
     # Force HTTPS + non-www in ONE hop (eliminates redirect chains)
+    RewriteCond %{HTTP_HOST} !^localhost [NC]
+    RewriteCond %{HTTP_HOST} !^127\.0\.0\.1
     RewriteCond %{HTTPS} off [OR]
     RewriteCond %{HTTP_HOST} ^www\. [NC]
     RewriteRule ^(.*)$ https://bhaivatech.com/$1 [L,R=301]
 
     # Redirect /index and /index.shtml to root /
+    RewriteCond %{HTTP_HOST} !^localhost [NC]
+    RewriteCond %{HTTP_HOST} !^127\.0\.0\.1
     RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index(\.shtml)?\ HTTP/
     RewriteRule ^index(\.shtml)?$ https://bhaivatech.com/ [L,R=301]
 
     # Redirect .shtml to non-extension version (External Redirect)
+    RewriteCond %{HTTP_HOST} !^localhost [NC]
+    RewriteCond %{HTTP_HOST} !^127\.0\.0\.1
     RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /(.+)\.shtml\ HTTP/
     RewriteRule ^(.+)\.shtml$ https://bhaivatech.com/$1 [L,R=301]
 
     # Remove trailing slash (fixes 404s on /about/, /services/, etc.)
+    RewriteCond %{HTTP_HOST} !^localhost [NC]
+    RewriteCond %{HTTP_HOST} !^127\.0\.0\.1
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_URI} (.+)/$
     RewriteRule ^(.+)/$ https://bhaivatech.com/$1 [L,R=301]
