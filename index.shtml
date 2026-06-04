@@ -200,90 +200,216 @@ working on a web project">
             </a>
           </div>
 
-          <div class="portfolio-grid-clean" data-aos="fade-up" data-aos-delay="150">
-            <article class="portfolio-proof-card portfolio-proof-card--featured">
-              <div class="portfolio-proof-media">
-                <span class="portfolio-proof-badge">Featured Demo</span>
-                <img src="./images/portfolio-yogasparsh.webp" alt="Yogasparsh Yoga & Fitness website preview designed by BhaivaTech">
+          <div class="swiper project-swiper" data-aos="fade-up" data-aos-delay="150">
+            <div class="swiper-wrapper">
+              <!-- Slide 1: Yogasparsh -->
+              <div class="swiper-slide">
+                <article class="portfolio-proof-card portfolio-proof-card--wellness">
+                  <div class="portfolio-proof-media">
+                    <div class="portfolio-browser-bar">
+                      <div class="browser-dots">
+                        <span class="dot dot-red"></span>
+                        <span class="dot dot-yellow"></span>
+                        <span class="dot dot-green"></span>
+                      </div>
+                      <div class="browser-address">demo.bhaivatech.com/yoga/</div>
+                    </div>
+                    <img src="./images/portfolio-yogasparsh.webp" alt="Yogasparsh Yoga & Fitness website preview designed by BhaivaTech">
+                  </div>
+                  <div class="portfolio-proof-content">
+                    <div class="portfolio-meta">
+                      <span>Wellness Website</span>
+                      <span>Responsive UI</span>
+                    </div>
+                    <h3>Yogasparsh Yoga &amp; Fitness</h3>
+                    <p class="portfolio-proof-summary">A calm, premium yoga studio website with a soft editorial layout, trust-building content flow, and a polished enquiry journey tailored for wellness brands.</p>
+                    <ul class="portfolio-proof-list">
+                      <li>
+                        <svg class="portfolio-list-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                          <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <span>Warm ivory-and-sage visual system matched to the studio's calm brand.</span>
+                      </li>
+                      <li>
+                        <svg class="portfolio-list-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                          <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <span>Clear schedules, services, and local contact pathways.</span>
+                      </li>
+                    </ul>
+                    <div class="portfolio-proof-footer">
+                      <span class="portfolio-note">Live demo • wellness / yoga</span>
+                      <a href="https://demo.bhaivatech.com/yoga/" target="_blank" rel="noopener" class="portfolio-link">
+                        <span>View Live</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M7 17L17 7"></path>
+                          <path d="M8 7h9v9"></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </article>
               </div>
-              <div class="portfolio-proof-content">
-                <div class="portfolio-meta">
-                  <span>Wellness Website</span>
-                  <span>Responsive UI</span>
-                  <span>Lead Capture</span>
-                </div>
-                <h3>Yogasparsh Yoga &amp; Fitness</h3>
-                <p class="portfolio-proof-summary">A calm, premium yoga studio website with a soft editorial layout, trust-building content flow, and a polished enquiry journey tailored for wellness brands.</p>
-                <ul class="portfolio-proof-list">
-                  <li>Warm ivory-and-sage visual system matched to the studio’s calm brand.</li>
-                  <li>Clear schedule, services, and contact pathways for local enquiries.</li>
-                  <li>Balanced desktop and mobile layouts for a refined first impression.</li>
-                </ul>
-                <div class="portfolio-proof-footer">
-                  <span class="portfolio-note">Live demo • wellness / yoga niche</span>
-                  <a href="https://demo.bhaivatech.com/yoga/" target="_blank" rel="noopener" class="portfolio-link">View Live
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M7 17L17 7"></path>
-                      <path d="M8 7h9v9"></path>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </article>
 
-            <article class="portfolio-proof-card">
-              <div class="portfolio-proof-media">
-                <img src="./images/portfolio-fit-warrior.webp" alt="Fit or Fight premium fitness center website preview by BhaivaTech">
+              <!-- Slide 2: Fit or Fight Warrior -->
+              <div class="swiper-slide">
+                <article class="portfolio-proof-card portfolio-proof-card--warrior">
+                  <div class="portfolio-proof-media">
+                    <div class="portfolio-browser-bar">
+                      <div class="browser-dots">
+                        <span class="dot dot-red"></span>
+                        <span class="dot dot-yellow"></span>
+                        <span class="dot dot-green"></span>
+                      </div>
+                      <div class="browser-address">fitorfight.bhaivatech.com/fit-1/</div>
+                    </div>
+                    <img src="./images/portfolio-fit-warrior.webp" alt="Fit or Fight premium fitness center website preview by BhaivaTech">
+                  </div>
+                  <div class="portfolio-proof-content">
+                    <div class="portfolio-meta">
+                      <span>Gym Website</span>
+                      <span>Bold Branding</span>
+                    </div>
+                    <h3>Fit or Fight — Warrior</h3>
+                    <p class="portfolio-proof-summary">A black-and-red gym landing page that uses cinematic hero visuals and sharp conversion cues to position the brand as an elite training destination.</p>
+                    <ul class="portfolio-proof-list">
+                      <li>
+                        <svg class="portfolio-list-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                          <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <span>High-contrast hero with disciplined typography and powerful imagery.</span>
+                      </li>
+                      <li>
+                        <svg class="portfolio-list-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                          <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <span>Membership-focused sections, offers, and proof-led blocks.</span>
+                      </li>
+                    </ul>
+                    <div class="portfolio-proof-footer">
+                      <span class="portfolio-note">Live demo • fitness / lead-gen</span>
+                      <a href="https://fitorfight.bhaivatech.com/fit-1/" target="_blank" rel="noopener" class="portfolio-link">
+                        <span>View Live</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M7 17L17 7"></path>
+                          <path d="M8 7h9v9"></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </article>
               </div>
-              <div class="portfolio-proof-content">
-                <div class="portfolio-meta">
-                  <span>Gym Website</span>
-                  <span>Bold Branding</span>
-                </div>
-                <h3>Fit or Fight — Warrior Concept</h3>
-                <p class="portfolio-proof-summary">A black-and-red gym landing page that uses cinematic hero visuals and sharp conversion cues to position the brand as an elite training destination.</p>
-                <ul class="portfolio-proof-list">
-                  <li>High-contrast hero with disciplined typography and powerful imagery.</li>
-                  <li>Membership-focused sections, offers, and proof-led content blocks.</li>
-                </ul>
-                <div class="portfolio-proof-footer">
-                  <span class="portfolio-note">Live demo • fitness / lead-gen</span>
-                  <a href="https://fitorfight.bhaivatech.com/fit-1/" target="_blank" rel="noopener" class="portfolio-link">View Live
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M7 17L17 7"></path>
-                      <path d="M8 7h9v9"></path>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </article>
 
-            <article class="portfolio-proof-card">
-              <div class="portfolio-proof-media">
-                <img src="./images/portfolio-fit-future.webp" alt="Fit or Fight Yelahanka futuristic gym website preview by BhaivaTech">
+              <!-- Slide 3: Fit or Fight Future -->
+              <div class="swiper-slide">
+                <article class="portfolio-proof-card portfolio-proof-card--future">
+                  <div class="portfolio-proof-media">
+                    <div class="portfolio-browser-bar">
+                      <div class="browser-dots">
+                        <span class="dot dot-red"></span>
+                        <span class="dot dot-yellow"></span>
+                        <span class="dot dot-green"></span>
+                      </div>
+                      <div class="browser-address">fitorfight.bhaivatech.com/fit-2/</div>
+                    </div>
+                    <img src="./images/portfolio-fit-future.webp" alt="Fit or Fight futuristic gym website preview by BhaivaTech">
+                  </div>
+                  <div class="portfolio-proof-content">
+                    <div class="portfolio-meta">
+                      <span>Local Business</span>
+                      <span>Futuristic UI</span>
+                    </div>
+                    <h3>Fit or Fight — Future</h3>
+                    <p class="portfolio-proof-summary">A more futuristic fitness concept built with dark industrial styling, tactical copy, and a stronger visual narrative around local gym discovery.</p>
+                    <ul class="portfolio-proof-list">
+                      <li>
+                        <svg class="portfolio-list-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                          <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <span>Orange-red accents and cinematic equipment imagery for positioning.</span>
+                      </li>
+                      <li>
+                        <svg class="portfolio-list-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                          <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <span>Structured services, testimonials, and booking modules.</span>
+                      </li>
+                    </ul>
+                    <div class="portfolio-proof-footer">
+                      <span class="portfolio-note">Live demo • Yelahanka fitness</span>
+                      <a href="https://fitorfight.bhaivatech.com/fit-2/" target="_blank" rel="noopener" class="portfolio-link">
+                        <span>View Live</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M7 17L17 7"></path>
+                          <path d="M8 7h9v9"></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </article>
               </div>
-              <div class="portfolio-proof-content">
-                <div class="portfolio-meta">
-                  <span>Local Business</span>
-                  <span>Futuristic UI</span>
-                </div>
-                <h3>Fit or Fight — Future Arena</h3>
-                <p class="portfolio-proof-summary">A more futuristic fitness concept built with dark industrial styling, tactical copy, and a stronger visual narrative around local gym discovery and trial bookings.</p>
-                <ul class="portfolio-proof-list">
-                  <li>Orange-red accents and cinematic equipment imagery for instant positioning.</li>
-                  <li>Structured services, testimonials, and enquiry modules for conversions.</li>
-                </ul>
-                <div class="portfolio-proof-footer">
-                  <span class="portfolio-note">Live demo • Yelahanka fitness</span>
-                  <a href="https://fitorfight.bhaivatech.com/fit-2/" target="_blank" rel="noopener" class="portfolio-link">View Live
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M7 17L17 7"></path>
-                      <path d="M8 7h9v9"></path>
-                    </svg>
-                  </a>
-                </div>
+
+              <!-- Slide 4: Square Feet Group -->
+              <div class="swiper-slide">
+                <article class="portfolio-proof-card portfolio-proof-card--squarefeet">
+                  <div class="portfolio-proof-media">
+                    <div class="portfolio-browser-bar">
+                      <div class="browser-dots">
+                        <span class="dot dot-red"></span>
+                        <span class="dot dot-yellow"></span>
+                        <span class="dot dot-green"></span>
+                      </div>
+                      <div class="browser-address">www.squareftgroup.com</div>
+                    </div>
+                    <img src="./images/pkg-classic.jpg" alt="Square Feet Group construction website designed by BhaivaTech">
+                  </div>
+                  <div class="portfolio-proof-content">
+                    <div class="portfolio-meta">
+                      <span>Real Estate</span>
+                      <span>Corporate Portal</span>
+                    </div>
+                    <h3>Square Feet Group</h3>
+                    <p class="portfolio-proof-summary">A clean, high-performance corporate platform presenting project showcases, service credentials, and active property developments.</p>
+                    <ul class="portfolio-proof-list">
+                      <li>
+                        <svg class="portfolio-list-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                          <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <span>Modern architectural showcases and structural capabilities display.</span>
+                      </li>
+                      <li>
+                        <svg class="portfolio-list-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                          <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <span>Strategic conversion sections designed to convert traffic into real estate leads.</span>
+                      </li>
+                    </ul>
+                    <div class="portfolio-proof-footer">
+                      <span class="portfolio-note">Live site • construction / real estate</span>
+                      <a href="https://squareftgroup.com/" target="_blank" rel="noopener" class="portfolio-link">
+                        <span>View Live</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M7 17L17 7"></path>
+                          <path d="M8 7h9v9"></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </article>
               </div>
-            </article>
+            </div>
+
+            <!-- Carousel UI indicators -->
+            <div class="swiper-pagination"></div>
+            
+            <div class="swiper-nav-container">
+              <button class="swiper-button-prev-custom" aria-label="Previous Project">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+              </button>
+              <button class="swiper-button-next-custom" aria-label="Next Project">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </button>
+            </div>
           </div>
         </div>
       </section>
