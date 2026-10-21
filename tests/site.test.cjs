@@ -63,6 +63,17 @@ test('all relevant WhatsApp targets use the approved number and omit the old tar
   }
 });
 
+test('footer call icon and visible phone link use the approved telephone destination', () => {
+  const footer = read('includes/footer.html').replace(/<!--[\s\S]*?-->/g, '');
+  const anchors = [...footer.matchAll(/<a\b[^>]*>/gi)].map((match) => match[0]);
+  const callIcons = anchors.filter((anchor) => /\baria-label=["']Call BhaivaTech["']/i.test(anchor));
+  assert.equal(callIcons.length, 1, 'footer should contain exactly one call icon');
+  assert.equal(callIcons[0].match(/\bhref=["']([^"']+)["']/i)?.[1], 'tel:+918277807904');
+  const phoneTargets = anchors.map((anchor) => anchor.match(/\bhref=["'](tel:[^"']+)["']/i)?.[1]).filter(Boolean);
+  assert.equal(phoneTargets.length, 2, 'footer should retain the call icon and visible phone link');
+  assert.ok(phoneTargets.every((target) => target === 'tel:+918277807904'));
+});
+
 test('.htaccess enables SSI, DirectoryIndex, and extensionless route rewrites', () => {
   const htaccess = read('.htaccess');
   assert.match(htaccess, /^\s*Options\s+\+Includes\s+-Indexes\s*$/m);
