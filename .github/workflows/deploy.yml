@@ -41,6 +41,9 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Test routes and WhatsApp source contracts
+        run: node --test tests/site.test.cjs
+
       - name: Install minification tools
         run: npm install -g uglify-js clean-css-cli
 
@@ -64,11 +67,21 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: built-site
+          include-hidden-files: true
+          if-no-files-found: error
+          # Explicit site-only allowlist: include .htaccess, not other dotfiles.
           path: |
-            .
-            !.git
-            !.github
-            !node_modules
+            .htaccess
+            *.shtml
+            *.php
+            css/
+            js/
+            images/
+            includes/
+            llms.txt
+            robots.txt
+            sitemap.xml
+            site.webmanifest
 
   # ─── CD: runs only on merge to main, only if check passed ──────
   deploy:
@@ -83,6 +96,13 @@ jobs:
         with:
           name: built-site
 
+      - name: Verify route configuration in deployment artifact
+        run: |
+          test -s .htaccess
+          for page in index about services projects contact; do
+            test -s "$page.shtml" || exit 1
+          done
+
       - name: Deploy to FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
@@ -93,14 +113,8 @@ jobs:
           port: 21
           local-dir: ./
           server-dir: ./
-          retry: 3
-          retry-min-timeout: 10000
-          retry-max-timeout: 60000
           dangerous-clean-slate: false
           timeout: 600000
-          passive: true
-          include: |
-            .htaccess
           exclude: |
             **/.git*
             **/.git*/**
