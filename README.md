@@ -205,3 +205,9 @@ The `.htaccess` handles all URL normalization in this order:
 📧 contact@bhaivatech.com
 🌐 bhaivatech.com
 📍 Bangalore, India
+
+---
+
+## Deployment note - 2026-10-21
+
+bhaivatech.com serves this repo's company site from `main`. The property site lives at homes.bhaivatech.com (repo: BhaivaTech/real-estate).
