@@ -108,7 +108,7 @@
           
           <div class="service-box large" data-aos="fade-right">
             <div class="icon-box"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2v20"></path></svg></div>
-            <h3>Website Development</h3>
+            <h3><a href="/services/website-development/">Website Development</a></h3>
             <p>Need a website that actually brings in customers? We build fast, mobile-friendly, SEO-optimized websites that look great and load even faster. Whether it's a simple business website or a full e-commerce store — we've got you covered.</p>
             <ul class="service-features">
               <li>Works perfectly on mobile, tablet, and desktop</li>

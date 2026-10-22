@@ -113,3 +113,59 @@ test('header and footer navigation link to all four extensionless routes', () =>
     }
   }
 });
+
+const servicePage = 'website-development.shtml';
+const serviceUrl = 'https://bhaivatech.com/services/website-development/';
+const serviceTitle = 'Website Development Company in Bangalore | Bhaivatech';
+const serviceDescription = 'Bhaivatech builds clear, mobile-friendly websites for small businesses and startups in Bangalore. Discuss your website scope, redesign or e-commerce idea.';
+const serviceWhatsApp = 'https://wa.me/918277807904?text=Hi%20BhaivaTech%2C%20I%27d%20like%20to%20discuss%20a%20website%20project.';
+
+test('website-development page preserves approved metadata and one H1', () => {
+  const html = read(servicePage);
+  assert.equal(html.match(/<title>([^<]+)<\/title>/)?.[1], serviceTitle);
+  assert.ok(html.includes(`<meta name="description" content="${serviceDescription}">`));
+  assert.ok(html.includes(`<link rel="canonical" href="${serviceUrl}">`));
+  assert.equal((html.match(/<h1\b/g) || []).length, 1);
+  assert.match(html, /<h1>Website development for Bangalore businesses<\/h1>/);
+  assert.doesNotMatch(html, /noindex|application\/ld\+json|<form\b/i);
+});
+
+test('website-development page preserves approved human-tone paragraphs and contact payloads', () => {
+  const html = read(servicePage);
+  for (const copy of [
+    'A good business website should explain what you offer and make the next step clear.',
+    'Bhaivatech lists Next.js, React and plain HTML/CSS among its options. The right fit depends on the website’s requirements.',
+    'Bhaivatech lists AWS deployment, cPanel hosting, domain setup, SSL certificates and server management among its services. Ask the proposal to specify which apply, who owns the accounts and what renewals cost.',
+  ]) assert.ok(html.includes(copy), `Missing approved wording: ${copy}`);
+  const calls = [...html.matchAll(/href="(tel:[^"]+)"/g)].map(m => m[1]);
+  assert.equal(calls.length, 2);
+  assert.ok(calls.every(target => target === 'tel:+918277807904'));
+  const chats = [...html.matchAll(/href="(https:\/\/wa\.me\/[^\"]+)"/g)].map(m => m[1]);
+  assert.equal(chats.length, 2);
+  assert.ok(chats.every(target => target === serviceWhatsApp));
+  for (const route of ['contact', 'projects']) assert.ok(html.includes(`href="https://bhaivatech.com/${route}"`));
+  assert.ok(html.includes('href="/services"'));
+});
+
+test('website-development page excludes editorial notes and preserves honest portfolio labels', () => {
+  const html = read(servicePage);
+  assert.doesNotMatch(html, /owner-confirmed|approval checklist|proposed workflow for approval|Do not submit|These labels must remain|Do not add client logos|This page should not imply|What this page is for|Internal-link and implementation/i);
+  assert.match(html, /Yogasparsh Yoga &amp; Fitness and both Fit or Fight concepts as <strong>live demos<\/strong>/);
+  assert.match(html, /Square Feet Group as a <strong>live site<\/strong>/);
+  assert.match(html, /A practical proposed process/);
+});
+
+test('website-development page reuses root-resolved assets and is included by existing artifact allowlist', () => {
+  const html = read(servicePage);
+  assert.match(html, /<base href="\/">/);
+  for (const file of ['includes/header.html', 'includes/footer.html']) assert.ok(html.includes(`virtual="/${file}"`));
+  for (const file of ['css/website-development.css', 'js/website-development.js']) {
+    assert.ok(exists(file));
+    assert.ok(html.includes(`/${file}`));
+  }
+  const workflow = read('.github/workflows/deploy.yml');
+  assert.match(workflow, /^\s*\*\.shtml\s*$/m);
+  assert.match(workflow, /^\s*css\/\s*$/m);
+  assert.match(workflow, /^\s*js\/\s*$/m);
+  assert.match(read('services.shtml'), /<h3><a href="\/services\/website-development\/">Website Development<\/a><\/h3>/);
+});
