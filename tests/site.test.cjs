@@ -169,3 +169,15 @@ test('website-development page reuses root-resolved assets and is included by ex
   assert.match(workflow, /^\s*js\/\s*$/m);
   assert.match(read('services.shtml'), /<h3><a href="\/services\/website-development\/">Website Development<\/a><\/h3>/);
 });
+
+test('website-development routing preserves the approved trailing slash and canonicalizes aliases before generic rewrites', () => {
+  const htaccess = read('.htaccess');
+  const mapping = 'RewriteRule ^services/website-development/$ website-development.shtml [END]';
+  assert.ok(htaccess.includes(mapping));
+  assert.ok(htaccess.indexOf(mapping) < htaccess.indexOf('# Remove trailing slash'));
+  assert.ok(htaccess.includes('RewriteRule ^services/website-development$ /services/website-development/ [R=301,L,NE]'));
+  assert.ok(htaccess.includes('RewriteCond %{THE_REQUEST} \\s/+website-development\\.shtml(?:[?\\s]) [NC]'));
+  assert.ok(htaccess.includes('RewriteRule ^website-development\\.shtml$ /services/website-development/ [R=301,L,NE]'));
+  assert.ok(htaccess.includes('RewriteRule ^website-development$ /services/website-development/ [R=301,L,NE]'));
+  assert.ok(!exists('services'), 'No physical services folder may shadow the existing /services hub');
+});
