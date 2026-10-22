@@ -4,6 +4,7 @@
 
 # Enable Server Side Includes (SSI) and Disable Directory Browsing
 Options +Includes -Indexes
+DirectoryIndex index.shtml
 AddType text/html .shtml
 AddHandler server-parsed .shtml
 AddOutputFilter INCLUDES .shtml
