@@ -22,6 +22,14 @@ AddOutputFilter INCLUDES .shtml
     RewriteCond %{HTTP_HOST} ^www\. [NC]
     RewriteRule ^(.*)$ https://bhaivatech.com/$1 [L,R=301]
 
+    # Website-development page: one canonical trailing-slash URL
+    RewriteRule ^services/website-development$ /services/website-development/ [R=301,L,NE]
+    RewriteCond %{THE_REQUEST} \s/+website-development\.shtml(?:[?\s]) [NC]
+    RewriteRule ^website-development\.shtml$ /services/website-development/ [R=301,L,NE]
+    RewriteCond %{THE_REQUEST} \s/+website-development(?:[?\s]) [NC]
+    RewriteRule ^website-development$ /services/website-development/ [R=301,L,NE]
+    RewriteRule ^services/website-development/$ website-development.shtml [END]
+
     # Redirect /index and /index.shtml to root /
     RewriteCond %{HTTP_HOST} !^localhost [NC]
     RewriteCond %{HTTP_HOST} !^127\.0\.0\.1

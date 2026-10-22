@@ -1,0 +1,26 @@
+.website-development-page .service-reading-container { width: min(100%, 960px); margin: 0 auto; padding: 38px 40px 80px; }
+.website-development-page .service-breadcrumb { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 40px; }
+.website-development-page .service-breadcrumb a { color: #0046b0; text-decoration: underline !important; }
+.website-development-page .service-copy { color: #1f2937; overflow-wrap: anywhere; }
+.website-development-page .service-copy h1 { max-width: 780px; font-size: clamp(2.15rem, 5vw, 3.5rem); line-height: 1.15; letter-spacing: -0.035em; margin: 0 0 28px; }
+.website-development-page .service-copy h2 { font-size: clamp(1.6rem, 3.6vw, 2.2rem); line-height: 1.25; margin: 56px 0 20px; padding-top: 26px; border-top: 1px solid #d6dce5; }
+.website-development-page .service-copy h3 { font-size: 1.3rem; line-height: 1.35; margin: 30px 0 12px; }
+.website-development-page .service-copy p, .website-development-page .service-copy li { font-size: 1.125rem; line-height: 1.8; }
+.website-development-page .service-copy p { margin-bottom: 20px; }
+.website-development-page .service-copy ul, .website-development-page .service-copy ol { margin: 0 0 24px; padding-left: 26px; }
+.website-development-page .service-copy ul > li { list-style: disc; }
+.website-development-page .service-copy ol > li { list-style: decimal; }
+.website-development-page .service-copy li { margin-bottom: 12px; padding-left: 5px; }
+.website-development-page .service-copy a:not(.btn-primary) { display: inline; color: #0046b0; font-size: inherit; text-decoration: underline !important; text-underline-offset: 3px; }
+.website-development-page .service-copy .btn-primary { display: inline-flex; min-height: 48px; max-width: 100%; padding: 14px 24px; font-size: 1.05rem; white-space: normal; text-align: center; }
+.website-development-page :focus-visible { outline: 3px solid #0046b0; outline-offset: 4px; }
+@media (max-width: 600px) {
+  .website-development-page .service-reading-container { padding: 26px 22px 54px; }
+  .website-development-page .service-breadcrumb { gap: 8px; margin-bottom: 30px; }
+  .website-development-page .service-breadcrumb a { font-size: .95rem; }
+  .website-development-page .service-copy h2 { margin-top: 38px; }
+  .website-development-page .service-copy p, .website-development-page .service-copy li { font-size: 1.0625rem; line-height: 1.75; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .website-development-page *, .website-development-page *::before, .website-development-page *::after { scroll-behavior: auto !important; transition: none !important; animation: none !important; }
+}
