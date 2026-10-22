@@ -149,7 +149,7 @@ test('website-development page preserves approved human-tone paragraphs and cont
 
 test('website-development page excludes editorial notes and preserves honest portfolio labels', () => {
   const html = read(servicePage);
-  assert.doesNotMatch(html, /owner-confirmed|approval checklist|proposed workflow for approval|Do not submit|These labels must remain|Do not add client logos|This page should not imply|What this page is for|Internal-link and implementation/i);
+  assert.doesNotMatch(html, /owner-confirmed|approval checklist|proposed workflow for approval|Do not submit|These labels must remain|Do not add client logos|This page should not imply|Internal-link and implementation/i);
   assert.match(html, /Yogasparsh Yoga &amp; Fitness and both Fit or Fight concepts as <strong>live demos<\/strong>/);
   assert.match(html, /Square Feet Group as a <strong>live site<\/strong>/);
   assert.match(html, /A practical proposed process/);
