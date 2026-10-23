@@ -181,3 +181,62 @@ test('website-development routing preserves the approved trailing slash and cano
   assert.ok(htaccess.includes('RewriteRule ^website-development$ /services/website-development/ [R=301,L,NE]'));
   assert.ok(!exists('services'), 'No physical services folder may shadow the existing /services hub');
 });
+
+const stripMarkup = (html) => html.replace(/<svg\b[\s\S]*?<\/svg>/gi, '').replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
+const activeMarkup = (file) => read(file).replace(/<!--[\s\S]*?-->/g, '');
+test('website enquiry actions use the shared label without changing functional submits or WhatsApp labels', () => {
+  for (const [file, count] of [['index.shtml', 3], ['about.shtml', 1], ['services.shtml', 1], ['projects.shtml', 1], [servicePage, 2]]) {
+    const actions = [...activeMarkup(file).matchAll(/<a\b([^>]*)>([\s\S]*?)<\/a>/gi)]
+      .filter(([, attributes]) => /\bclass="[^"]*\bbtn-(?:blue|primary|start|contact-now)\b/.test(attributes) && !/wa\.me\//.test(attributes));
+    assert.equal(actions.length, count, `${file}: all primary enquiry actions covered`);
+    for (const [, , content] of actions) assert.equal(stripMarkup(content), 'Discuss your website', file);
+  }
+  assert.match(read('index.shtml'), /<button type="submit" class="btn-blue">Request Quote<\/button>/);
+  assert.match(read('contact.shtml'), /<button type="submit" class="btn-blue w-full">Send It Over →<\/button>/);
+  assert.match(read('includes/header.html'), />WhatsApp Quote<\/a>/);
+  assert.match(read('index.shtml'), />Get a Website Quote on WhatsApp<\/a>/);
+  assert.match(read('projects.shtml'), />Discuss Your Project<\/a>/);
+});
+test('portfolio count distinguishes three existing demos from one live site', () => {
+  const html = read('projects.shtml');
+  const cards = [...html.matchAll(/<article\b[\s\S]*?<\/article>/g)].map(m => m[0]);
+  assert.equal(cards.length, 4);
+  assert.equal(cards.filter(card => /class="portfolio-note">Live demo •/.test(card)).length, 3);
+  assert.equal(cards.filter(card => /class="portfolio-note">Live site •/.test(card)).length, 1);
+  assert.match(html, /<h2>Three live demos and one live site<\/h2>/);
+  assert.match(html, /<strong>4<\/strong>\s*<span>Three live demos and one live site with niche-specific UI direction and clear enquiry flows\.<\/span>/);
+  assert.doesNotMatch(html, /Live portfolio demos with/);
+});
+test('both enquiry forms identify only matching personal-data autocomplete purposes', () => {
+  for (const [file, fields] of [
+    ['index.shtml', { quoteName: 'name', quoteEmail: 'email', quotePhone: 'tel' }],
+    ['contact.shtml', { name: 'name', email: 'email', phone: 'tel' }],
+  ]) {
+    const html = read(file);
+    for (const [id, token] of Object.entries(fields)) {
+      const control = [...html.matchAll(/<input\b[^>]*>/g)].map(m => m[0]).find(tag => tag.includes(`id="${id}"`));
+      assert.ok(control, `${file}: ${id}`);
+      assert.ok(control.includes(`autocomplete="${token}"`), `${id}: ${token}`);
+    }
+    for (const [, attributes] of html.matchAll(/<textarea\b([^>]*)>/g)) assert.doesNotMatch(attributes, /\bautocomplete=/);
+    assert.equal([...html.matchAll(/\bautocomplete=/g)].length, 3, `${file}: no guessed field purposes`);
+  }
+  const location = read('contact.shtml').match(/<input\b[^>]*id="address"[^>]*>/)?.[0];
+  assert.ok(location);
+  assert.doesNotMatch(location, /\bautocomplete=/, 'free-form location is not a name, email, phone or URL');
+});
+test('mobile quote controls use a scoped 16px rule and no smaller override', () => {
+  const css = read('css/responsive.css');
+  assert.match(css, /@media \(max-width: 776px\) \{\s*\.quote-form input, \.quote-form textarea \{font-size: 16px; \}/);
+  const sizes = [...css.matchAll(/\.quote-form input, \.quote-form textarea\s*\{[^}]*font-size:\s*(\d+)px/g)].map(m => Number(m[1]));
+  assert.ok(sizes.length > 0);
+  assert.ok(sizes.every(size => size >= 16));
+});
+test('XML sitemap retains exactly one loc-only canonical website-development entry', () => {
+  const entries = [...read('sitemap.xml').matchAll(/<url>\s*([\s\S]*?)\s*<\/url>/g)].map(m => m[1]);
+  const matches = entries.filter(entry => entry.includes(`<loc>${serviceUrl}</loc>`));
+  assert.equal(matches.length, 1);
+  assert.equal(matches[0].trim(), `<loc>${serviceUrl}</loc>`);
+  const locations = entries.map(entry => entry.match(/<loc>([^<]+)<\/loc>/)?.[1]);
+  assert.equal(new Set(locations).size, locations.length, 'no duplicate sitemap URLs');
+});

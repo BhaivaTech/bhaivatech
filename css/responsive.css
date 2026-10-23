@@ -70,7 +70,8 @@
   .projects-proof-intro {flex-direction: column; align-items: flex-start; }
   .projects-proof-intro .view-gallery {margin-bottom: 0; }
 }
-@media (max-width: 776px) {  .project-card-small {flex: 1 1 100%; }
+@media (max-width: 776px) {  .quote-form input, .quote-form textarea {font-size: 16px; }
+  .project-card-small {flex: 1 1 100%; }
   .project-card-large {flex-wrap: wrap; flex-direction: column; }
   .value-card.small {flex: 1 1 0; }
   .values-flex {flex-direction: column; }
@@ -151,7 +152,6 @@
   .whatsapp-card .quick-icon {display: none;}
   .call-card .quick-icon {display: none;}
   .quote-form .btn-blue {padding: 12px; }
-  .quote-form input, .quote-form textarea {font-size: 12px; }
   .modal-header h3 {font-size: 17px; }
   .error-section {padding: 40px 0; }
   .sitemap-content-wrapper {padding: 20px 0 40px; }
