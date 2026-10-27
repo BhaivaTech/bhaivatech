@@ -52,7 +52,7 @@
 
             <div class="button-group">
               <a href="#" class="btn-blue" id="quoteBtnModal">
-                Get a Free Quote
+                Discuss your website
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                   stroke-linecap="round" stroke-linejoin="round">
                   <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -517,7 +517,7 @@ working on a web project">
               </div>
 
               <a href="contact" class="btn-start">
-                Start Your Journey
+                Discuss your website
               </a>
             </div>
           </div>
@@ -532,7 +532,7 @@ working on a web project">
           </p>
           <div class="cta-actions">
             <a href="https://wa.me/918277807904?text=Hi%20BhaivaTech%2C%20I%27d%20like%20to%20discuss%20a%20website%20project." class="btn-contact-now btn-contact-whatsapp">Get a Website Quote on WhatsApp</a>
-            <a href="contact" class="btn-contact-now btn-contact-secondary">Contact Us Now</a>
+            <a href="contact" class="btn-contact-now btn-contact-secondary">Discuss your website</a>
           </div>
         </div>
       </section>
@@ -554,15 +554,15 @@ working on a web project">
           <form class="quote-form" id="quoteFormModal">
             <div class="form-group">
               <label for="quoteName">Name</label>
-              <input type="text" id="quoteName" name="name" placeholder="John Doe" required>
+              <input type="text" id="quoteName" name="name" autocomplete="name" placeholder="John Doe" required>
             </div>
             <div class="form-group">
               <label for="quoteEmail">Email</label>
-              <input type="email" id="quoteEmail" name="email" placeholder="john@example.com" required>
+              <input type="email" id="quoteEmail" name="email" autocomplete="email" placeholder="john@example.com" required>
             </div>
             <div class="form-group">
               <label for="quotePhone">Phone Number</label>
-              <input type="tel" id="quotePhone" name="phone" placeholder="+91 0000000000">
+              <input type="tel" id="quotePhone" name="phone" autocomplete="tel" placeholder="+91 0000000000">
             </div>
             <div class="form-group">
               <label for="quoteMessage">Project Details</label>

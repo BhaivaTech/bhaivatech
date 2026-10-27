@@ -57,7 +57,7 @@
         <div class="projects-proof-intro" data-aos="fade-up">
           <div class="projects-proof-copy">
             <span class="badge">Project Portfolio</span>
-            <h2>Three Distinct Brand Directions, One Clear Portfolio Showcase</h2>
+            <h2>Three live demos and one live site</h2>
             <p>Each project below includes a focused summary, key deliverables, and a live link so prospects can quickly review the quality, style, and business intent behind BhaivaTech’s work.</p>
           </div>
           <a href="https://wa.me/918277807904?text=Hi%20BhaivaTech%2C%20I%27d%20like%20to%20discuss%20a%20website%20project." class="view-gallery btn-green">Discuss Your Project</a>
@@ -65,8 +65,8 @@
 
         <div class="projects-trust-strip" data-aos="fade-up" data-aos-delay="100">
           <div class="trust-pill">
-            <strong>3</strong>
-            <span>Live portfolio demos with niche-specific UI direction and clear enquiry flows.</span>
+            <strong>4</strong>
+            <span>Three live demos and one live site with niche-specific UI direction and clear enquiry flows.</span>
           </div>
           <div class="trust-pill">
             <strong>100%</strong>
@@ -311,7 +311,7 @@
         <div class="cta-card" data-aos="zoom-in">
           <h2>Ready to Build Your Next High-Performance Website?</h2>
           <div class="button-group" style="justify-content: center;">
-            <a href="contact" class="btn-primary">Start a Project</a>
+            <a href="contact" class="btn-primary">Discuss your website</a>
             <!-- <a href="services.shtml" class="btn-secondary">View All Services</a> -->
           </div>
         </div>
