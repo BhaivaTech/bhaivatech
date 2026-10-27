@@ -120,11 +120,19 @@ const serviceTitle = 'Website Development Company in Bangalore | Bhaivatech';
 const serviceDescription = 'Bhaivatech builds clear, mobile-friendly websites for small businesses and startups in Bangalore. Discuss your website scope, redesign or e-commerce idea.';
 const serviceWhatsApp = 'https://wa.me/918277807904?text=Hi%20BhaivaTech%2C%20I%27d%20like%20to%20discuss%20a%20website%20project.';
 
-test('homepage provides one crawlable contextual link to the website-development page', () => {
-  const html = read('index.shtml').replace(/<!--[\s\S]*?-->/g, '');
-  const links = [...html.matchAll(/<a\b[^>]*href=["']\/services\/website-development\/["'][^>]*>([\s\S]*?)<\/a>/gi)];
-  assert.equal(links.length, 1);
-  assert.equal(links[0][1].replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim(), 'Web Development');
+test('homepage links the Web Development service card to the canonical website-development page once', () => {
+  const html = read('index.shtml');
+  const targetLinkPattern = /<a\b[^>]*href=["']https:\/\/bhaivatech\.com\/services\/website-development\/["'][^>]*>([\s\S]*?)<\/a>/gi;
+  const matchingLinks = (markup) => [...markup.matchAll(targetLinkPattern)];
+  const activeHomepage = html.replace(/<!--[\s\S]*?-->/g, '');
+  const homepageLinks = matchingLinks(activeHomepage);
+  const webDevelopmentCard = html.match(/<!-- Web Development -->([\s\S]*?)<!-- Mobile Apps -->/);
+
+  assert.ok(webDevelopmentCard, 'the existing Web Development service card should be present');
+  assert.equal(homepageLinks.length, 1, 'homepage should contain exactly one link to the canonical service URL');
+  const cardLinks = matchingLinks(webDevelopmentCard[1].replace(/<!--[\s\S]*?-->/g, ''));
+  assert.equal(cardLinks.length, 1, 'the link should be in the Web Development service card');
+  assert.equal(cardLinks[0][1].replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim(), 'Web Development');
 });
 
 test('website-development page preserves approved metadata and one H1', () => {
