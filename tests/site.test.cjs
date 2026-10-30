@@ -137,6 +137,14 @@ test('website-development page preserves approved metadata and one H1', () => {
   assert.doesNotMatch(html, /noindex|application\/ld\+json|<form\b/i);
 });
 
+test('website-development social preview metadata uses its versioned JPEG', () => {
+  const html = read(servicePage);
+  const shareImage = 'https://bhaivatech.com/images/website-development-share-v1.jpg';
+  assert.equal(html.match(/<meta property="og:image" content="([^"]+)"/)?.[1], shareImage);
+  assert.equal(html.match(/<meta name="twitter:image" content="([^"]+)"/)?.[1], shareImage);
+  assert.ok(exists('images/website-development-share-v1.jpg'));
+});
+
 test('website-development page preserves approved human-tone paragraphs and contact payloads', () => {
   const html = read(servicePage);
   for (const copy of [
