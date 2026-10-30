@@ -261,3 +261,29 @@ test('XML sitemap retains exactly one loc-only canonical website-development ent
   const locations = entries.map(entry => entry.match(/<loc>([^<]+)<\/loc>/)?.[1]);
   assert.equal(new Set(locations).size, locations.length, 'no duplicate sitemap URLs');
 });
+
+
+test('shared logos select a versioned WebP with PNG fallback and intrinsic dimensions', () => {
+  const header = read('includes/header.html');
+  const pictures = [...header.matchAll(/<picture>\s*([\s\S]*?)\s*<\/picture>/g)].map(match => match[1]);
+  assert.equal(pictures.length, 2, 'primary and side-menu logos must both be covered');
+  for (const picture of pictures) {
+    assert.match(picture, /<source\s+srcset="\.\/images\/logo\/bhaivatech-logo-lossless-v1\.webp"\s+type="image\/webp">/);
+    assert.match(picture, /<img\s+src="\.\/images\/logo\/bhaivatech-logo\.png"\s+width="1370"\s+height="380"\s+alt="BhaivaTech - Affordable Web Development Bangalore">/);
+    assert.doesNotMatch(picture, /loading="lazy"/, 'above-fold logo must not be lazy-loaded');
+  }
+  assert.match(read('css/style.css'), /\.logo-group a img\s*\{[^}]*height:\s*auto;/);
+  assert.match(read('css/style.css'), /\.side-menu-header \.logo img\s*\{[^}]*height:\s*auto;/);
+});
+
+test('lossless logo asset is packaged beside its original PNG and is smaller', () => {
+  const png = fs.readFileSync(path.join(ROOT, 'images/logo/bhaivatech-logo.png'));
+  const webp = fs.readFileSync(path.join(ROOT, 'images/logo/bhaivatech-logo-lossless-v1.webp'));
+  assert.equal(png.readUInt32BE(16), 1370);
+  assert.equal(png.readUInt32BE(20), 380);
+  assert.equal(webp.toString('ascii', 0, 4), 'RIFF');
+  assert.equal(webp.toString('ascii', 8, 12), 'WEBP');
+  assert.equal(webp.readUInt32LE(4) + 8, webp.length, 'WebP container must be complete');
+  assert.ok(webp.length < png.length, 'new format must actually reduce bytes');
+  assert.match(read('.github/workflows/deploy.yml'), /^\s*images\/\s*$/m);
+});
