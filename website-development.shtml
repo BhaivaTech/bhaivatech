@@ -65,6 +65,44 @@
 <p>The current public portfolio shows brand-matched visual directions, focused summaries, and enquiry-oriented calls to action. A new project should define the audience, tone, priority action, content hierarchy, and any required booking, contact, or WhatsApp handoff before visual decisions are finalised.</p>
 <h3>Hosting, domain, and deployment questions</h3>
 <p>Bhaivatech lists AWS deployment, cPanel hosting, domain setup, SSL certificates and server management among its services. Ask the proposal to specify which apply, who owns the accounts and what renewals cost.</p>
+<h2 id="scope-confirmation-heading">What to confirm in your project scope</h2>
+<p>Before comparing proposals, ask the provider to mark each item as included, excluded or optional in writing.</p>
+<table class="scope-confirmation-table" aria-labelledby="scope-confirmation-heading" role="table">
+<thead role="rowgroup">
+<tr role="row">
+<th scope="col" role="columnheader">Area</th>
+<th scope="col" role="columnheader">Confirm in writing</th>
+<th scope="col" role="columnheader">Don’t assume it’s included</th>
+</tr>
+</thead>
+<tbody role="rowgroup">
+<tr role="row">
+<th scope="row" role="rowheader">Pages and features</th>
+<td role="cell" data-label="Confirm in writing">Which pages, layouts and functions are covered, and how many revisions are included?</td>
+<td role="cell" data-label="Don’t assume it’s included">A fixed number of pages, revisions, products, integrations or languages.</td>
+</tr>
+<tr role="row">
+<th scope="row" role="rowheader">Content</th>
+<td role="cell" data-label="Confirm in writing">Who supplies and approves copy, photos, product details and policy text?</td>
+<td role="cell" data-label="Don’t assume it’s included">Copywriting, photography, illustration, video, testimonials or client logos.</td>
+</tr>
+<tr role="row">
+<th scope="row" role="rowheader">Online store</th>
+<td role="cell" data-label="Confirm in writing">If needed, define products and variants, catalogue ownership, payments, taxes where relevant, shipping or fulfilment, notifications, returns, third-party accounts and security responsibilities.</td>
+<td role="cell" data-label="Don’t assume it’s included">An online store, its integrations or third-party fees.</td>
+</tr>
+<tr role="row">
+<th scope="row" role="rowheader">Hosting and domain</th>
+<td role="cell" data-label="Confirm in writing">Which services apply: AWS deployment, cPanel hosting, domain setup, SSL certificates or server management? Who owns the accounts, and what do renewals cost?</td>
+<td role="cell" data-label="Don’t assume it’s included">Hosting, domains, email, paid software or other supplier fees.</td>
+</tr>
+<tr role="row">
+<th scope="row" role="rowheader">Testing and after launch</th>
+<td role="cell" data-label="Confirm in writing">Which checks, handover items and support tasks are in scope? Who handles maintenance, if needed?</td>
+<td role="cell" data-label="Don’t assume it’s included">Ongoing maintenance, emergency support, guaranteed response times or results.</td>
+</tr>
+</tbody>
+</table>
 <h2>What is not automatically included</h2>
 <p>Unless explicitly written into an approved proposal, do not assume that a website project includes:</p>
 <ul>

@@ -14,12 +14,25 @@
 .website-development-page .service-copy a:not(.btn-primary) { display: inline; color: #0046b0; font-size: inherit; text-decoration: underline !important; text-underline-offset: 3px; }
 .website-development-page .service-copy .btn-primary { display: inline-flex; min-height: 48px; max-width: 100%; padding: 14px 24px; font-size: 1.05rem; white-space: normal; text-align: center; }
 .website-development-page :focus-visible { outline: 3px solid #0046b0; outline-offset: 4px; }
+.website-development-page .scope-confirmation-table { width: 100%; margin: 0 0 28px; border-collapse: collapse; table-layout: fixed; }
+.website-development-page .scope-confirmation-table th, .website-development-page .scope-confirmation-table td { border: 1px solid #d6dce5; padding: 14px; text-align: left; vertical-align: top; overflow-wrap: anywhere; }
+.website-development-page .scope-confirmation-table th { background: #f3f6fb; }
+.website-development-page .scope-confirmation-table td { font-size: 1rem; line-height: 1.65; }
+.website-development-page .scope-confirmation-table thead th:first-child { width: 22%; }
+.website-development-page .scope-confirmation-table thead th:nth-child(2) { width: 40%; }
+.website-development-page .scope-confirmation-table thead th:nth-child(3) { width: 38%; }
 @media (max-width: 600px) {
   .website-development-page .service-reading-container { padding: 26px 22px 54px; }
   .website-development-page .service-breadcrumb { gap: 8px; margin-bottom: 30px; }
   .website-development-page .service-breadcrumb a { font-size: .95rem; }
   .website-development-page .service-copy h2 { margin-top: 38px; }
   .website-development-page .service-copy p, .website-development-page .service-copy li { font-size: 1.0625rem; line-height: 1.75; }
+  .website-development-page .scope-confirmation-table, .website-development-page .scope-confirmation-table tbody, .website-development-page .scope-confirmation-table tr, .website-development-page .scope-confirmation-table th, .website-development-page .scope-confirmation-table td { display: block; width: 100%; }
+  .website-development-page .scope-confirmation-table thead { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0, 0, 0, 0); clip-path: inset(50%); white-space: nowrap; border: 0; }
+  .website-development-page .scope-confirmation-table tr { margin-bottom: 16px; border: 1px solid #d6dce5; border-radius: 8px; overflow: hidden; }
+  .website-development-page .scope-confirmation-table th[scope="row"] { border: 0; padding: 12px 14px; }
+  .website-development-page .scope-confirmation-table td { border: 0; border-top: 1px solid #d6dce5; padding: 12px 14px; }
+  .website-development-page .scope-confirmation-table td::before { display: block; margin-bottom: 5px; color: #1f2937; font-weight: 700; content: attr(data-label); }
 }
 @media (prefers-reduced-motion: reduce) {
   .website-development-page *, .website-development-page *::before, .website-development-page *::after { scroll-behavior: auto !important; transition: none !important; animation: none !important; }
