@@ -125,14 +125,20 @@ test('shared stylesheet URL is content-addressed and consistent across every rou
   const source = fs.readFileSync(path.join(ROOT, 'css/style.css'), 'utf8');
   const shippedBytes = Buffer.from(source.replace(/[ \t]+$/gm, ''));
   const digest = crypto.createHash('sha256').update(shippedBytes).digest('hex');
-  const relativeAsset = `css/style.${digest}.css`;
-  const expectedHref = `href="/${relativeAsset}"`;
+  const sharedHead = read('includes/meta-tags.html');
+  const versionedHrefMatch = sharedHead.match(/href=["'](\/css\/style\.([a-f0-9]{64})\.r[0-9]{8}-[a-f0-9]{32}\.css)["']/i);
+  assert.ok(versionedHrefMatch, 'shared head must use a fresh release-specific pathname with a full SHA-256');
+  const versionedHref = versionedHrefMatch[1];
+  const relativeAsset = versionedHref.slice(1);
+  assert.equal(versionedHrefMatch[2], digest, 'full SHA-256 in the filename must match the shipped CSS bytes');
+  assert.notEqual(relativeAsset, `css/style.${digest}.css`, 'do not reuse the previously requested, negatively cached candidate path');
+  assert.equal(exists(`css/style.${digest}.css`), false, 'the previously requested candidate asset must not be packaged');
   assert.ok(exists(relativeAsset), `Create ${relativeAsset} from css/style.css and update every core stylesheet link`);
   const versionedAsset = fs.readFileSync(path.join(ROOT, relativeAsset));
   assert.deepEqual(versionedAsset, shippedBytes, 'hashed asset must match css/style.css after trailing-whitespace normalization');
 
-  const sharedHead = read('includes/meta-tags.html');
-  assert.ok(sharedHead.includes(expectedHref), 'shared head must reference the content-hashed path');
+  const expectedHref = `href="${versionedHref}"`;
+  assert.ok(sharedHead.includes(expectedHref), 'shared head must reference the full-hash release path');
   assert.doesNotMatch(sharedHead, /href=["'][^"']*\/?css\/style\.css["']/i, 'shared head must not load the stale unversioned URL');
 
   const routeFiles = fs.readdirSync(ROOT).filter((file) => file.endsWith('.shtml'));
@@ -140,10 +146,10 @@ test('shared stylesheet URL is content-addressed and consistent across every rou
   for (const file of routeFiles) {
     const markup = read(file);
     const usesSharedHead = /<!--\s*#include\s+virtual=["']\/?includes\/meta-tags\.html["']\s*-->/.test(markup);
-    const linksDirectly = markup.includes(expectedHref);
+    const linksDirectly = markup.includes(versionedHref);
     assert.ok(usesSharedHead || linksDirectly, `${file} must load the shared head or link the hashed stylesheet directly`);
     assert.doesNotMatch(markup, /href=["'][^"']*\/?css\/style\.css["']/i, `${file} must not load the stale unversioned URL`);
-    if (!usesSharedHead) assert.ok(linksDirectly, `${file} must use the exact content-hashed URL`);
+    if (!usesSharedHead) assert.ok(linksDirectly, `${file} must use the exact full-hash release URL`);
   }
 
   assert.match(read('.github/workflows/deploy.yml'), /^\s*css\/\s*$/m, 'hosted package must include the hashed asset with the CSS directory');
