@@ -39,7 +39,7 @@ test('route files exist, retain their expected content, and use canonical URLs',
 
   assert.match(read('about.shtml'), /We're BhaivaTech/);
   assert.match(read('services.shtml'), /Here's How We Can Help Your Business Grow Online/);
-  assert.match(read('projects.shtml'), /Live Website Demos Built Around Brand Fit/);
+  assert.match(read('projects.shtml'), /Live Websites &amp; Demos Built Around Brand Fit/);
   assert.match(read('contact.shtml'), /Got a Project in Mind\?/);
 });
 
@@ -212,15 +212,28 @@ test('website enquiry actions use the shared label without changing functional s
   assert.match(read('index.shtml'), />Get a Website Quote on WhatsApp<\/a>/);
   assert.match(read('projects.shtml'), />Discuss Your Project<\/a>/);
 });
-test('portfolio count distinguishes three existing demos from one live site', () => {
+test('portfolio count distinguishes three live demos from two live sites', () => {
   const html = read('projects.shtml');
   const cards = [...html.matchAll(/<article\b[\s\S]*?<\/article>/g)].map(m => m[0]);
-  assert.equal(cards.length, 4);
+  assert.equal(cards.length, 5);
   assert.equal(cards.filter(card => /class="portfolio-note">Live demo •/.test(card)).length, 3);
-  assert.equal(cards.filter(card => /class="portfolio-note">Live site •/.test(card)).length, 1);
-  assert.match(html, /<h2>Three live demos and one live site<\/h2>/);
-  assert.match(html, /<strong>4<\/strong>\s*<span>Three live demos and one live site with niche-specific UI direction and clear enquiry flows\.<\/span>/);
+  assert.equal(cards.filter(card => /class="portfolio-note">Live site [•·]/.test(card)).length, 2);
+  assert.match(html, /<h2>Three live demos and two live sites<\/h2>/);
+  assert.match(html, /<strong>5<\/strong>\s*<span>Three live demos and two live sites with niche-specific UI direction and clear enquiry flows\.<\/span>/);
   assert.doesNotMatch(html, /Live portfolio demos with/);
+});
+test('Korax card uses the approved live URL, visible event categories, and attributed unaltered screenshot', () => {
+  const cards = [...read('projects.shtml').matchAll(/<article\b[\s\S]*?<\/article>/g)].map(m => m[0]);
+  const card = cards.find(markup => /<h3>Korax Experiences<\/h3>/.test(markup));
+  assert.ok(card, 'Korax Experiences card should exist');
+  assert.match(card, /class="portfolio-note">Live site · event experiences<\/span>/);
+  assert.match(card, /href="https:\/\/koraxexperiences\.com\/dist\/" target="_blank" rel="noopener" class="portfolio-link"/);
+  assert.match(read('projects.shtml'), /Screenshot source: https:\/\/koraxexperiences\.com\/dist\/ \(captured unaltered with client approval\)/);
+  assert.match(card, /<img src="\.\/images\/portfolio-korax-experiences\.png" alt="Screenshot of the Korax Experiences live site at koraxexperiences\.com\/dist\/">/);
+  assert.ok(exists('images/portfolio-korax-experiences.png'), 'Korax screenshot asset should exist');
+  assert.match(card, /Event experiences for corporate events, brand activations and celebrations\./);
+  assert.match(card, /<span>Corporate Events<\/span>[\s\S]*<span>Brand Activations<\/span>[\s\S]*<span>Celebrations<\/span>/);
+  assert.doesNotMatch(card, /client count|award|performance|conversion rate|ROI|rankings/i);
 });
 test('both enquiry forms identify only matching personal-data autocomplete purposes', () => {
   for (const [file, fields] of [
