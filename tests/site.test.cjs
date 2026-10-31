@@ -4,6 +4,7 @@ const test = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
+const crypto = require('node:crypto');
 
 const ROOT = path.resolve(__dirname, '..');
 const read = (relativePath) => fs.readFileSync(path.join(ROOT, relativePath), 'utf8');
@@ -118,6 +119,40 @@ test('horizontal overflow clipping preserves sticky header positioning', () => {
   const css = read('css/style.css');
   assert.match(css, /html,\s*body\s*\{\s*overflow-x:\s*clip;\s*\}/);
   assert.match(css, /header\s*\{[^}]*position:\s*sticky;[^}]*top:\s*0;/s);
+});
+
+test('shared stylesheet URL is content-addressed and consistent across every route', () => {
+  const source = fs.readFileSync(path.join(ROOT, 'css/style.css'), 'utf8');
+  const shippedBytes = Buffer.from(source.replace(/[ \t]+$/gm, ''));
+  const digest = crypto.createHash('sha256').update(shippedBytes).digest('hex');
+  const sharedHead = read('includes/meta-tags.html');
+  const versionedHrefMatch = sharedHead.match(/href=["'](\/css\/style\.([a-f0-9]{64})\.r[0-9]{8}-[a-f0-9]{32}\.css)["']/i);
+  assert.ok(versionedHrefMatch, 'shared head must use a fresh release-specific pathname with a full SHA-256');
+  const versionedHref = versionedHrefMatch[1];
+  const relativeAsset = versionedHref.slice(1);
+  assert.equal(versionedHrefMatch[2], digest, 'full SHA-256 in the filename must match the shipped CSS bytes');
+  assert.notEqual(relativeAsset, `css/style.${digest}.css`, 'do not reuse the previously requested, negatively cached candidate path');
+  assert.equal(exists(`css/style.${digest}.css`), false, 'the previously requested candidate asset must not be packaged');
+  assert.ok(exists(relativeAsset), `Create ${relativeAsset} from css/style.css and update every core stylesheet link`);
+  const versionedAsset = fs.readFileSync(path.join(ROOT, relativeAsset));
+  assert.deepEqual(versionedAsset, shippedBytes, 'hashed asset must match css/style.css after trailing-whitespace normalization');
+
+  const expectedHref = `href="${versionedHref}"`;
+  assert.ok(sharedHead.includes(expectedHref), 'shared head must reference the full-hash release path');
+  assert.doesNotMatch(sharedHead, /href=["'][^"']*\/?css\/style\.css["']/i, 'shared head must not load the stale unversioned URL');
+
+  const routeFiles = fs.readdirSync(ROOT).filter((file) => file.endsWith('.shtml'));
+  assert.ok(routeFiles.length > 0, 'route sources must be present');
+  for (const file of routeFiles) {
+    const markup = read(file);
+    const usesSharedHead = /<!--\s*#include\s+virtual=["']\/?includes\/meta-tags\.html["']\s*-->/.test(markup);
+    const linksDirectly = markup.includes(versionedHref);
+    assert.ok(usesSharedHead || linksDirectly, `${file} must load the shared head or link the hashed stylesheet directly`);
+    assert.doesNotMatch(markup, /href=["'][^"']*\/?css\/style\.css["']/i, `${file} must not load the stale unversioned URL`);
+    if (!usesSharedHead) assert.ok(linksDirectly, `${file} must use the exact full-hash release URL`);
+  }
+
+  assert.match(read('.github/workflows/deploy.yml'), /^\s*css\/\s*$/m, 'hosted package must include the hashed asset with the CSS directory');
 });
 
 const servicePage = 'website-development.shtml';
