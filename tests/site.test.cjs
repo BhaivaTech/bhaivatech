@@ -114,6 +114,12 @@ test('header and footer navigation link to all four extensionless routes', () =>
   }
 });
 
+test('horizontal overflow clipping preserves sticky header positioning', () => {
+  const css = read('css/style.css');
+  assert.match(css, /html,\s*body\s*\{\s*overflow-x:\s*clip;\s*\}/);
+  assert.match(css, /header\s*\{[^}]*position:\s*sticky;[^}]*top:\s*0;/s);
+});
+
 const servicePage = 'website-development.shtml';
 const serviceUrl = 'https://bhaivatech.com/services/website-development/';
 const serviceTitle = 'Website Development Company in Bangalore | Bhaivatech';
