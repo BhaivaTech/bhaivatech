@@ -30,6 +30,12 @@ AddOutputFilter INCLUDES .shtml
     RewriteRule ^website-development$ /services/website-development/ [R=301,L,NE]
     RewriteRule ^services/website-development/$ website-development.shtml [END]
 
+    # Website quote-comparison guide: one canonical trailing-slash URL
+    RewriteRule ^guides/website-development-cost$ /guides/website-development-cost/ [R=301,L,NE]
+    RewriteCond %{THE_REQUEST} \s/+guides/website-development-cost\.shtml(?:[?\s]) [NC]
+    RewriteRule ^guides/website-development-cost\.shtml$ /guides/website-development-cost/ [R=301,L,NE]
+    RewriteRule ^guides/website-development-cost/$ guides/website-development-cost.shtml [END]
+
     # Redirect /index and /index.shtml to root /
     RewriteCond %{HTTP_HOST} !^localhost [NC]
     RewriteCond %{HTTP_HOST} !^127\.0\.0\.1

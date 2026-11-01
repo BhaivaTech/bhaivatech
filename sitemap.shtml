@@ -58,6 +58,9 @@
                                 Contact Us
                             </a>
                         </li>
+                        <li class="sitemap-item">
+                            <a href="/guides/website-development-cost/" class="sitemap-link">Website quote comparison guide</a>
+                        </li>
                     </ul>
                 </div>
             </div>
