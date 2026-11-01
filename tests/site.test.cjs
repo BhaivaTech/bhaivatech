@@ -287,3 +287,46 @@ test('lossless logo asset is packaged beside its original PNG and is smaller', (
   assert.ok(webp.length < png.length, 'new format must actually reduce bytes');
   assert.match(read('.github/workflows/deploy.yml'), /^\s*images\/\s*$/m);
 });
+
+const guideFile = 'guides/website-development-cost.shtml';
+const guideUrl = 'https://bhaivatech.com/guides/website-development-cost/';
+test('website quote guide has the selected self-canonical and visible sourced draft content without unsupported markup', () => {
+  assert.ok(exists(guideFile));
+  const html = read(guideFile);
+  assert.equal(html.match(/<title>([^<]+)<\/title>/)?.[1], 'How to compare website development quotes in Bengaluru | Bhaivatech');
+  assert.ok(html.includes(`<link rel="canonical" href="${guideUrl}">`));
+  assert.equal((html.match(/<h1\b/g) || []).length, 1);
+  assert.match(html, /<h1>How to compare website development quotes in Bengaluru<\/h1>/);
+  for (const section of ['Give every provider the same brief', 'Ask for a cost and responsibility breakdown', 'Free software can still involve paid services', 'Compare the first year and the renewal year', 'Define support and maintenance', 'Before accepting a proposal']) assert.ok(html.includes(`<h2>${section}</h2>`));
+  for (const source of ['https://woocommerce.com/pricing/', 'https://razorpay.com/pricing/', 'https://wordpress.org/documentation/article/updating-wordpress/']) assert.ok(html.includes(`href="${source}"`));
+  for (const required of ['Supplier, payer and billing date', 'Renewal date and quoted basis', 'unknown renewal charge should remain marked unknown', 'not confirmation that Bhaivatech uses WordPress or includes a maintenance plan']) assert.ok(html.includes(required));
+  assert.doesNotMatch(html, /<meta\s+name=["']robots["'][^>]*noindex|<meta\s+name=["']author|application\/ld\+json|₹|\bguaranteed\b/i);
+  assert.ok(html.includes('href="/services/website-development/"'), 'guide should link to the existing commercial scope page');
+  assert.ok(html.includes('virtual="/includes/header.html"') && html.includes('virtual="/includes/footer.html"'));
+});
+
+test('website quote guide is linked internally, routed at the trailing-slash path and included in sitemap and deployment packaging', () => {
+  const serviceHub = read('services.shtml').replace(/<!--[\s\S]*?-->/g, '');
+  const htmlSitemap = read('sitemap.shtml').replace(/<!--[\s\S]*?-->/g, '');
+  assert.ok(serviceHub.includes('href="/guides/website-development-cost/"'));
+  assert.ok(htmlSitemap.includes('href="/guides/website-development-cost/"'));
+
+  const htaccess = read('.htaccess');
+  const mapRule = 'RewriteRule ^guides/website-development-cost/$ guides/website-development-cost.shtml [END]';
+  assert.ok(htaccess.includes('RewriteRule ^guides/website-development-cost$ /guides/website-development-cost/ [R=301,L,NE]'));
+  assert.ok(htaccess.includes('RewriteCond %{THE_REQUEST} \\s/+guides/website-development-cost\\.shtml(?:[?\\s]) [NC]'));
+  assert.ok(htaccess.includes(mapRule));
+  assert.ok(htaccess.indexOf(mapRule) < htaccess.indexOf('# Remove trailing slash'));
+
+  const entries = [...read('sitemap.xml').matchAll(/<url>\s*([\s\S]*?)\s*<\/url>/g)].map(m => m[1]);
+  const guideEntries = entries.filter(entry => entry.includes(`<loc>${guideUrl}</loc>`));
+  assert.equal(guideEntries.length, 1);
+  assert.equal(guideEntries[0].trim(), `<loc>${guideUrl}</loc>`);
+
+  const workflow = read('.github/workflows/deploy.yml');
+  assert.match(workflow, /^\s*guides\/\*\.shtml\s*$/m);
+  assert.ok(workflow.includes('test -s guides/website-development-cost.shtml'));
+  const css = read('css/guide.css');
+  assert.match(css, /overflow-x:\s*auto/);
+  assert.match(css, /min-width:\s*680px/);
+});

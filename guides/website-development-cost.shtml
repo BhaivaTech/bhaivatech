@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base href="/">
+  <title>How to compare website development quotes in Bengaluru | Bhaivatech</title>
+  <meta name="description" content="Compare website quotes using the same brief. Check build scope, supplier fees, renewals, ownership, testing and support responsibilities.">
+  <link rel="canonical" href="https://bhaivatech.com/guides/website-development-cost/">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://bhaivatech.com/guides/website-development-cost/">
+  <meta property="og:title" content="How to compare website development quotes in Bengaluru | Bhaivatech">
+  <meta property="og:description" content="Compare website quotes using the same brief. Check build scope, supplier fees, renewals, ownership, testing and support responsibilities.">
+  <link rel="icon" href="/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+  <link rel="stylesheet" href="/css/guide.css">
+</head>
+<body class="website-cost-guide-page">
+  <div class="main-wrapper">
+    <!--#include virtual="/includes/header.html" -->
+    <main id="main-content" tabindex="-1">
+      <div class="guide-reading-container">
+        <nav class="guide-breadcrumb" aria-label="Breadcrumb">
+          <a href="/">Home</a><span aria-hidden="true">/</span>
+          <a href="/services">Services</a>
+        </nav>
+        <article class="guide-copy">
+          <h1>How to compare website development quotes in Bengaluru</h1>
+          <p>Give each provider the same written brief, then compare what each quote includes. Separate build work from outside purchases, renewals, usage charges, taxes and future changes. Check who supplies content, owns accounts, tests the site and provides support. Mark anything missing as a question before comparing totals.</p>
+          <p>For a small business in Bengaluru, the first step is to describe what visitors need to do. An enquiry website and an online shop require different work. A catalogue with a contact button is also different from a store that takes payment and manages orders.</p>
+
+          <h2>Give every provider the same brief</h2>
+          <p>List the pages, features and content you need at launch. Say who supplies the copy, photographs, logo, product information and policy text. If you need more than one language, include translation and review responsibilities.</p>
+          <p>Page count alone leaves questions unanswered. Ask how many distinct layouts will be designed, which parts use an existing template, and how design revisions will be approved. For a form, booking flow or checkout, describe what should happen after the visitor submits it and where the information goes.</p>
+          <p>Keep later ideas separate from launch requirements. Each proposal can then identify what is included, excluded or optional against the same list.</p>
+
+          <h2>Ask for a cost and responsibility breakdown</h2>
+          <p>Use these headings when requesting or reviewing a quote:</p>
+          <div class="guide-table-scroll" role="region" aria-label="Cost and responsibility headings" tabindex="0">
+            <table>
+              <caption>Cost and responsibility headings</caption>
+              <thead><tr><th scope="col">Item</th><th scope="col">What to get in writing</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Build work</th><td>Design, development, content entry, integrations and the agreed review stages</td></tr>
+                <tr><th scope="row">External purchases</th><td>Domain, paid software, licences, images or other supplier purchases, where needed</td></tr>
+                <tr><th scope="row">Recurring services</th><td>Hosting, domain renewal, email, software subscriptions and any agreed maintenance</td></tr>
+                <tr><th scope="row">Usage charges</th><td>Payment processing, messages or other metered services, if used</td></tr>
+                <tr><th scope="row">Testing and handover</th><td>Acceptance checks, account access, documentation and training included in the proposal</td></tr>
+                <tr><th scope="row">Later changes</th><td>How extra pages, features, products and revisions will be approved and charged</td></tr>
+                <tr><th scope="row">Taxes</th><td>Whether the quoted figures include applicable taxes and how these are shown</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>For every charge, ask who bills it, when it is due and who controls the associated account. A supplier fee paid directly by your business should be visible in your budget even if it is outside the developer’s invoice.</p>
+          <p>If an item is included for an initial period, record its end date and the renewal basis. Ask what happens if you move the website or stop using that provider.</p>
+
+          <h2>Free software can still involve paid services</h2>
+          <p>If WooCommerce is proposed, its <a href="https://woocommerce.com/pricing/">official pricing page</a> distinguishes the free core platform from hosting, extensions and payment processing. Ask which components your project needs and who pays for them. Its published international examples are not Bengaluru development rates.</p>
+          <p>If the site will accept payments, review the selected processor’s current terms separately from the work of connecting it to the website. <a href="https://razorpay.com/pricing/">Razorpay’s pricing page</a> is one example of supplier pricing that needs its own check. This does not imply a particular integration or partnership with Bhaivatech.</p>
+
+          <h2>Compare the first year and the renewal year</h2>
+          <p>Ask each provider for a first-year total and a renewal-year estimate using stated assumptions. Keep one-off work separate from recurring commitments. Usage-based costs need a usage assumption; they cannot be compared fairly as though they were a fixed annual bill.</p>
+          <p>Use a simple worksheet for the same project brief:</p>
+          <div class="guide-table-scroll" role="region" aria-label="Website proposal comparison worksheet" tabindex="0">
+            <table>
+              <caption>Compare proposals using the same project brief</caption>
+              <thead><tr><th scope="col">Comparison field</th><th scope="col">Proposal A</th><th scope="col">Proposal B</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Included build deliverables</th><td>Fill from written proposal</td><td>Fill from written proposal</td></tr>
+                <tr><th scope="row">Excluded or optional work</th><td>List each item</td><td>List each item</td></tr>
+                <tr><th scope="row">External supplier purchases</th><td>Supplier, payer and billing date</td><td>Supplier, payer and billing date</td></tr>
+                <tr><th scope="row">Recurring commitments</th><td>Renewal date and quoted basis</td><td>Renewal date and quoted basis</td></tr>
+                <tr><th scope="row">Usage charges</th><td>Unit and usage assumption</td><td>Unit and usage assumption</td></tr>
+                <tr><th scope="row">Content and account responsibilities</th><td>Named responsible party</td><td>Named responsible party</td></tr>
+                <tr><th scope="row">Testing, handover and support</th><td>Defined tasks and limits</td><td>Defined tasks and limits</td></tr>
+                <tr><th scope="row">Unanswered questions</th><td>Resolve before comparing totals</td><td>Resolve before comparing totals</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>A lower headline total may cover a different scope. Resolve missing items before treating two proposals as equivalent. An unknown renewal charge should remain marked unknown until it is clarified.</p>
+
+          <h2>Define support and maintenance</h2>
+          <p>Ask what “support” covers, when it starts, how issues are reported and what counts as a new feature. Confirm who manages backups, updates and recovery work if those tasks are required.</p>
+          <p>For a WordPress build, <a href="https://wordpress.org/documentation/article/updating-wordpress/">WordPress’s official guidance</a> recommends updates and a backup before updating. Establish who will do that work. This is a conditional maintenance example, not confirmation that Bhaivatech uses WordPress or includes a maintenance plan.</p>
+          <p>Also distinguish agreed search setup from ongoing SEO or content work. The proposal should name the tasks and responsibilities rather than rely on a broad label such as “SEO included.”</p>
+
+          <h2>Before accepting a proposal</h2>
+          <p>Check that the written proposal identifies the deliverables, exclusions, ownership arrangements, approval stages and acceptance conditions. Agree how additional work will be requested and approved. Keep a copy of the supplier and renewal commitments alongside the build quote.</p>
+          <p>For Bhaivatech’s currently published scope, read the <a href="/services/website-development/">website-development service page</a>. Use the same brief to ask which requirements apply to your project; the written proposal must establish the actual inclusions and terms.</p>
+        </article>
+      </div>
+    </main>
+    <!--#include virtual="/includes/footer.html" -->
+  </div>
+  <script src="/js/script.js"></script>
+</body>
+</html>

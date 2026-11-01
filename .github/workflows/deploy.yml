@@ -73,6 +73,7 @@ jobs:
           path: |
             .htaccess
             *.shtml
+            guides/*.shtml
             *.php
             css/
             js/
@@ -102,6 +103,7 @@ jobs:
           for page in index about services projects contact; do
             test -s "$page.shtml" || exit 1
           done
+          test -s guides/website-development-cost.shtml
 
       - name: Deploy to FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4

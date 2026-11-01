@@ -1,0 +1,24 @@
+.website-cost-guide-page .guide-reading-container { width: min(100%, 960px); margin: 0 auto; padding: 38px 40px 80px; }
+.website-cost-guide-page .guide-breadcrumb { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 40px; }
+.website-cost-guide-page .guide-breadcrumb a { color: #0046b0; text-decoration: underline; text-underline-offset: 3px; }
+.website-cost-guide-page .guide-copy { color: #1f2937; overflow-wrap: anywhere; }
+.website-cost-guide-page .guide-copy h1 { max-width: 820px; font-size: clamp(2.15rem, 5vw, 3.5rem); line-height: 1.15; letter-spacing: -0.035em; margin: 0 0 28px; }
+.website-cost-guide-page .guide-copy h2 { font-size: clamp(1.6rem, 3.6vw, 2.2rem); line-height: 1.25; margin: 56px 0 20px; padding-top: 26px; border-top: 1px solid #d6dce5; }
+.website-cost-guide-page .guide-copy p { font-size: 1.125rem; line-height: 1.8; margin-bottom: 20px; }
+.website-cost-guide-page .guide-copy a { color: #0046b0; text-decoration: underline; text-underline-offset: 3px; }
+.website-cost-guide-page .guide-table-scroll { max-width: 100%; overflow-x: auto; margin: 0 0 24px; border: 1px solid #d6dce5; border-radius: 8px; }
+.website-cost-guide-page .guide-table-scroll:focus-visible { outline: 3px solid #0046b0; outline-offset: 3px; }
+.website-cost-guide-page .guide-table-scroll table { width: 100%; min-width: 620px; border-collapse: collapse; color: #1f2937; background: #fff; }
+.website-cost-guide-page .guide-table-scroll caption { padding: 12px 16px; text-align: left; font-weight: 600; background: #f3f6fa; }
+.website-cost-guide-page .guide-table-scroll th, .website-cost-guide-page .guide-table-scroll td { padding: 12px 16px; border-top: 1px solid #d6dce5; text-align: left; vertical-align: top; line-height: 1.55; }
+.website-cost-guide-page .guide-table-scroll th { font-weight: 600; background: #f8fafc; }
+.website-cost-guide-page .guide-table-scroll thead th { border-top: 0; }
+.website-cost-guide-page .guide-table-scroll tbody th { min-width: 170px; }
+@media (max-width: 600px) {
+  .website-cost-guide-page .guide-reading-container { padding: 26px 22px 54px; }
+  .website-cost-guide-page .guide-breadcrumb { gap: 8px; margin-bottom: 30px; }
+  .website-cost-guide-page .guide-breadcrumb a { font-size: .95rem; }
+  .website-cost-guide-page .guide-copy h2 { margin-top: 38px; }
+  .website-cost-guide-page .guide-copy p { font-size: 1.0625rem; line-height: 1.75; }
+  .website-cost-guide-page .guide-table-scroll table { min-width: 680px; }
+}
