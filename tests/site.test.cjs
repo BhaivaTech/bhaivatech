@@ -154,7 +154,7 @@ test('website-development social preview metadata uses its versioned JPEG', () =
 test('website-development page preserves approved human-tone paragraphs and contact payloads', () => {
   const html = read(servicePage);
   for (const copy of [
-    'A good business website should explain what you offer and make the next step clear.',
+    'Need a website for your Bengaluru business? Bhaivatech works with startups and small businesses on new websites, redesigns and selected e-commerce projects. Share what you want the site to help visitors do. We’ll clarify the scope first, then suggest a practical direction.',
     'Bhaivatech lists Next.js, React and plain HTML/CSS among its options. The right fit depends on the website’s requirements.',
     'Bhaivatech lists AWS deployment, cPanel hosting, domain setup, SSL certificates and server management among its services. Ask the proposal to specify which apply, who owns the accounts and what renewals cost.',
   ]) assert.ok(html.includes(copy), `Missing approved wording: ${copy}`);
@@ -171,8 +171,7 @@ test('website-development page preserves approved human-tone paragraphs and cont
 test('website-development page excludes editorial notes and preserves honest portfolio labels', () => {
   const html = read(servicePage);
   assert.doesNotMatch(html, /owner-confirmed|approval checklist|proposed workflow for approval|Do not submit|These labels must remain|Do not add client logos|This page should not imply|Internal-link and implementation/i);
-  assert.match(html, /Yogasparsh Yoga &amp; Fitness and both Fit or Fight concepts as <strong>live demos<\/strong>/);
-  assert.match(html, /Square Feet Group as a <strong>live site<\/strong>/);
+  assert.ok(html.includes('<h2>See what’s a demo and what’s a live site</h2>\n<p>See the <a href="https://bhaivatech.com/projects">Projects page</a> for examples. Yogasparsh Yoga &amp; Fitness and both Fit or Fight concepts are labelled live demos. Square Feet Group is labelled a live site. These pages show possible visual directions and enquiry paths; without permission and project records, they don’t establish paid-client outcomes, rankings, revenue, conversion improvements or testimonials.</p>'));
   assert.match(html, /A practical proposed process/);
 });
 
