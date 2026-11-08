@@ -286,3 +286,129 @@ test('lossless logo asset is packaged beside its original PNG and is smaller', (
   assert.ok(webp.length < png.length, 'new format must actually reduce bytes');
   assert.match(read('.github/workflows/deploy.yml'), /^\s*images\/\s*$/m);
 });
+
+
+const proposedServicePages = [
+  {
+    file: 'business-automation.shtml',
+    url: 'https://bhaivatech.com/services/business-automation/',
+    title: 'Business Automation Services in Bengaluru | BhaivaTech',
+    description: 'Explore business automation for Bengaluru businesses. Share a repetitive process or workflow and discuss whether an automation project is a fit.',
+    h1: 'Business Automation for Bengaluru Businesses',
+    ctas: ['Discuss a business automation project', 'Send a project enquiry'],
+    reciprocalUrl: 'https://bhaivatech.com/services/ai-agent-development/',
+    reciprocalText: 'AI-agent development for Bengaluru businesses',
+    hubUrl: '/services/business-automation/',
+    hubAnchor: 'Business automation services',
+    hubSummary: 'Discuss a business process or workflow you want to examine for automation.',
+    alias: 'business-automation',
+  },
+  {
+    file: 'ai-agent-development.shtml',
+    url: 'https://bhaivatech.com/services/ai-agent-development/',
+    title: 'AI Agent Development Services in Bengaluru | BhaivaTech',
+    description: 'Explore AI-agent development for Bengaluru businesses. Share the task you want an agent to support and discuss fit, scope, and next steps.',
+    h1: 'AI Agent Development for Bengaluru Businesses',
+    ctas: ['Discuss an AI-agent project', 'Send an AI-agent project enquiry'],
+    reciprocalUrl: 'https://bhaivatech.com/services/business-automation/',
+    reciprocalText: 'business automation',
+    hubUrl: '/services/ai-agent-development/',
+    hubAnchor: 'AI-agent development',
+    hubSummary: 'Explore whether an AI agent may suit a defined business task.',
+    alias: 'ai-agent-development',
+  },
+];
+
+test('the two new service pages use the approved metadata, visible copy structure, canonical links and enquiry CTAs', () => {
+  for (const page of proposedServicePages) {
+    assert.ok(exists(page.file), `${page.file} should be included at the site root`);
+    const html = activeMarkup(page.file);
+    assert.equal(html.match(/<title>\s*([^<]+?)\s*<\/title>/i)?.[1], page.title);
+    assert.ok(html.includes(`<meta name="description" content="${page.description}">`));
+    assert.ok(html.includes(`<link rel="canonical" href="${page.url}">`));
+    assert.ok(html.includes(`<meta property="og:url" content="${page.url}">`));
+    assert.equal((html.match(/<h1\b/g) || []).length, 1);
+    assert.ok(html.includes(`<h1>${page.h1}</h1>`));
+    assert.match(html, /<meta name="viewport" content="width=device-width, initial-scale=1\.0">/);
+    assert.match(html, /\/css\/responsive\.css/);
+    assert.match(html, /\/css\/website-development\.css/);
+    assert.match(html, /<nav class="service-breadcrumb" aria-label="Breadcrumb">/);
+    assert.doesNotMatch(html, /\bnoindex\b/i);
+    const ctas = [...html.matchAll(/<a href="https:\/\/bhaivatech\.com\/contact#message" class="btn-primary">([^<]+)<\/a>/g)].map(match => match[1]);
+    assert.deepEqual(ctas, page.ctas);
+    assert.ok(html.includes(`<a href="${page.reciprocalUrl}">${page.reciprocalText}</a>`));
+  }
+});
+
+test('the Services hub links separately to each approved service with its distinct summary', () => {
+  const hub = activeMarkup('services.shtml');
+  for (const page of proposedServicePages) {
+    const links = [...hub.matchAll(new RegExp(`<a href="${page.hubUrl}">([^<]+)<\\/a>`, 'g'))];
+    assert.equal(links.length, 1, `${page.hubUrl} should have one crawlable hub link`);
+    assert.equal(links[0][1], page.hubAnchor);
+    assert.ok(hub.includes(`<p>${page.hubSummary}</p>`));
+  }
+});
+
+test('the clean service routes and aliases precede generic extension and slash rewrites', () => {
+  const htaccess = read('.htaccess');
+  const hostRules = htaccess.indexOf('# Force HTTPS + non-www in ONE hop');
+  const extensionRules = htaccess.indexOf('# Redirect .shtml to non-extension version');
+  const slashRules = htaccess.indexOf('# Remove trailing slash');
+  assert.ok(hostRules > 0 && extensionRules > hostRules && slashRules > extensionRules);
+  for (const page of proposedServicePages) {
+    const slug = page.alias;
+    const canonical = page.url.replace('https://bhaivatech.com', '');
+    const mapping = `RewriteRule ^services/${slug}/$ ${slug}.shtml [END]`;
+    assert.ok(htaccess.includes(mapping));
+    assert.ok(htaccess.indexOf(mapping) < extensionRules && htaccess.indexOf(mapping) < slashRules);
+    assert.ok(htaccess.indexOf(`RewriteRule ^services/${slug}$ https://bhaivatech.com${canonical} [R=301,L,NE]`) < hostRules);
+    assert.ok(htaccess.includes(`RewriteRule ^${slug}\\.shtml$ https://bhaivatech.com${canonical} [R=301,L,NE]`));
+    assert.ok(htaccess.includes(`RewriteRule ^services/${slug}\\.shtml$ https://bhaivatech.com${canonical} [R=301,L,NE]`));
+    assert.ok(htaccess.includes(`RewriteRule ^${slug}$ https://bhaivatech.com${canonical} [R=301,L,NE]`));
+  }
+  assert.ok(!exists('services'), 'No physical /services directory should shadow the hub route');
+});
+
+test('both new sitemap entries are unique canonical loc-only URLs and resolve to their .shtml sources', () => {
+  const entries = [...read('sitemap.xml').matchAll(/<url>\s*([\s\S]*?)\s*<\/url>/g)].map(match => match[1]);
+  const locations = entries.map(entry => entry.match(/<loc>([^<]+)<\/loc>/)?.[1]);
+  assert.equal(new Set(locations).size, locations.length, 'the sitemap must not contain duplicate URLs');
+  for (const page of proposedServicePages) {
+    const matches = entries.filter(entry => entry.includes(`<loc>${page.url}</loc>`));
+    assert.equal(matches.length, 1);
+    assert.equal(matches[0].trim(), `<loc>${page.url}</loc>`);
+  }
+  const updater = read('sitemap-update.php');
+  assert.ok(updater.includes("'/services/business-automation/' => 'business-automation.shtml'"));
+  assert.ok(updater.includes("'/services/ai-agent-development/' => 'ai-agent-development.shtml'"));
+});
+
+test('the existing deployment allowlist packages the new root pages and sitemap but not tests or other workspace files', () => {
+  const workflow = read('.github/workflows/deploy.yml');
+  const artifactStart = workflow.indexOf('uses: actions/upload-artifact@');
+  const deployStart = workflow.indexOf('\n  deploy:');
+  assert.ok(artifactStart >= 0 && deployStart > artifactStart);
+  const allowlist = workflow.slice(artifactStart, deployStart);
+  assert.match(allowlist, /^\s+\.htaccess\s*$/m);
+  assert.match(allowlist, /^\s+\*\.shtml\s*$/m);
+  assert.match(allowlist, /^\s+\*\.php\s*$/m);
+  assert.match(allowlist, /^\s+sitemap\.xml\s*$/m);
+  assert.doesNotMatch(allowlist, /^\s+tests\/?\s*$/m);
+});
+
+
+test('canonical host redirects run before clean service rewrites while known aliases redirect directly', () => {
+  const htaccess = read('.htaccess');
+  const hostRedirect = htaccess.indexOf('RewriteRule ^(.*)$ https://bhaivatech.com/$1 [L,R=301]');
+  assert.ok(hostRedirect > 0);
+  for (const page of proposedServicePages) {
+    const slug = page.alias;
+    const canonical = page.url.replace('https://bhaivatech.com', '');
+    const mapping = htaccess.indexOf(`RewriteRule ^services/${slug}/$ ${slug}.shtml [END]`);
+    assert.ok(mapping > hostRedirect, `${slug} clean route should normalize host before internal rewrite`);
+    assert.ok(mapping < htaccess.indexOf('# Redirect .shtml to non-extension version'));
+    assert.ok(htaccess.indexOf(`RewriteRule ^services/${slug}$ https://bhaivatech.com${canonical} [R=301,L,NE]`) < hostRedirect);
+    assert.ok(htaccess.indexOf(`RewriteRule ^${slug}\\.shtml$ https://bhaivatech.com${canonical} [R=301,L,NE]`) < hostRedirect);
+  }
+});

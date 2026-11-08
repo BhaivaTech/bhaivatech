@@ -15,12 +15,33 @@ AddOutputFilter INCLUDES .shtml
 <IfModule mod_rewrite.c>
     RewriteEngine On
     
+    # Business automation: canonicalize known aliases before generic rewrites
+    RewriteRule ^services/business-automation$ https://bhaivatech.com/services/business-automation/ [R=301,L,NE]
+    RewriteCond %{THE_REQUEST} \s/+services/business-automation\.shtml(?:[?\s]) [NC]
+    RewriteRule ^services/business-automation\.shtml$ https://bhaivatech.com/services/business-automation/ [R=301,L,NE]
+    RewriteCond %{THE_REQUEST} \s/+business-automation\.shtml(?:[?\s]) [NC]
+    RewriteRule ^business-automation\.shtml$ https://bhaivatech.com/services/business-automation/ [R=301,L,NE]
+    RewriteCond %{THE_REQUEST} \s/+business-automation(?:[?\s]) [NC]
+    RewriteRule ^business-automation$ https://bhaivatech.com/services/business-automation/ [R=301,L,NE]
+
+    # AI-agent development: canonicalize known aliases before generic rewrites
+    RewriteRule ^services/ai-agent-development$ https://bhaivatech.com/services/ai-agent-development/ [R=301,L,NE]
+    RewriteCond %{THE_REQUEST} \s/+services/ai-agent-development\.shtml(?:[?\s]) [NC]
+    RewriteRule ^services/ai-agent-development\.shtml$ https://bhaivatech.com/services/ai-agent-development/ [R=301,L,NE]
+    RewriteCond %{THE_REQUEST} \s/+ai-agent-development\.shtml(?:[?\s]) [NC]
+    RewriteRule ^ai-agent-development\.shtml$ https://bhaivatech.com/services/ai-agent-development/ [R=301,L,NE]
+    RewriteCond %{THE_REQUEST} \s/+ai-agent-development(?:[?\s]) [NC]
+    RewriteRule ^ai-agent-development$ https://bhaivatech.com/services/ai-agent-development/ [R=301,L,NE]
+
     # Force HTTPS + non-www in ONE hop (eliminates redirect chains)
     RewriteCond %{HTTP_HOST} !^localhost [NC]
     RewriteCond %{HTTP_HOST} !^127\.0\.0\.1
     RewriteCond %{HTTPS} off [OR]
     RewriteCond %{HTTP_HOST} ^www\. [NC]
     RewriteRule ^(.*)$ https://bhaivatech.com/$1 [L,R=301]
+    # Serve canonical service URLs from their server-rendered root sources
+    RewriteRule ^services/business-automation/$ business-automation.shtml [END]
+    RewriteRule ^services/ai-agent-development/$ ai-agent-development.shtml [END]
 
     # Website-development page: one canonical trailing-slash URL
     RewriteRule ^services/website-development$ /services/website-development/ [R=301,L,NE]
