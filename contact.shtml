@@ -74,7 +74,8 @@
               </div>
               <div class="form-group">
                 <label for="message">Tell us about your project</label>
-                <textarea id="message" name="message" rows="5" placeholder="Describe what you want to build — type of website, features, timeline, or any questions..." required></textarea>
+                <p id="message-guidance-2026-11-08">Tell us about your business and what you'd like the website to do. If you have one, share its link. You can add features or changes you're considering and a target date if known. Rough notes welcome.</p>
+                <textarea id="message" name="message" rows="5" aria-describedby="message-guidance-2026-11-08" placeholder="Describe what you want to build — type of website, features, timeline, or any questions..." required></textarea>
               </div>
               <div id="form-response" class="form-response" style="margin-bottom: 20px; display: none;"></div>
               <button type="submit" class="btn-blue w-full">Send It Over →</button>
