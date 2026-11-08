@@ -26,6 +26,8 @@ $URL_MAP_OVERRIDES = [
     '/projects'          => 'projects.shtml',
     '/sitemap'           => 'sitemap.shtml',
     // add all your pages here
+    '/services/business-automation/' => 'business-automation.shtml',
+    '/services/ai-agent-development/' => 'ai-agent-development.shtml',
 ];
 
 // ─── BOOTSTRAP ────────────────────────────────────────

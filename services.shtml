@@ -153,6 +153,16 @@
             </div>
           </div>
 
+          <div class="service-box full text-left">
+            <h3><a href="/services/business-automation/">Business automation services</a></h3>
+            <p>Discuss a business process or workflow you want to examine for automation.</p>
+          </div>
+
+          <div class="service-box full text-left">
+            <h3><a href="/services/ai-agent-development/">AI-agent development</a></h3>
+            <p>Explore whether an AI agent may suit a defined business task.</p>
+          </div>
+
         </div>
       </div>
     </section>
